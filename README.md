@@ -6,6 +6,7 @@ ORDO builds on Mesa and connects Personas, positions, departments, reporting rel
 
 ## Start here
 
+- [Reproduction guide and appendix file index](REPRODUCTION_GUIDE.md)
 - [API and research-agent integration](docs/public_api.md)
 - [Organizational convention experiment](docs/organizational_conventions/README.md) · [results](docs/organizational_conventions/results/README.md)
 - [Figures and captions](docs/figures/README.md)
