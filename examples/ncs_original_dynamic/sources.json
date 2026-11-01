@@ -1,0 +1,22 @@
+{
+  "doi": "10.1038/s43588-026-01068-9",
+  "code_archive": "https://doi.org/10.5281/zenodo.22152088",
+  "archive_md5": "15d12d6f02aea003e4d37985059a9a31",
+  "archive_sha256": "ad5a642905a0a359e8eaed8614a4c665d4f33268c8b588a993ff11d9c27df34c",
+  "license": "MIT",
+  "source_hashes": {
+    "Demo.jl": "dbe83c850e2e2ff989f6fe996437b5f951a507d390e8c0e44f133c17c43bbea3",
+    "LICENSE": "941e510c5d847f72c1eb108ee3b5054c47be12f9efbbbe276478cf1fe217c682",
+    "README.md": "ff0983b0b9b2e445957eee58b1056e071292899a6478d179edfdff090706bfe6",
+    "Simulation.jl": "4c8e55fd29b927d795403acf7d0cdcf3100c60381eebf99906ebc2544770b415",
+    "Structure_Coefficients_of_Dynamic_Networks.jl": "b4d4c0517b52efd90605c97bf363b134e102bfeeebeff7f4c8be1e230fa0cac5"
+  },
+  "runtime_linux_sha256": "51bccc9bb245197f24e6b2394e6aa69c0dc1e41b4e300b796e17da34ef64db1e",
+  "public_publisher_materials": {
+    "article.html": "63c9a9b1d26a09ed4e38771f9e1fc231503fefb386124101415b7298f6ed1418",
+    "figure3.html": "3c0b93e155227aca8397dece2567cc36926db2a27bdd30d6ff5d509dd961896b",
+    "figure3.png": "96217e936cde7921deae016dc5d5d75d2608a0cb38b087e9c38474f665e21815",
+    "figure4.html": "ec4c040df177b0b5a92d31f9a8d11de7e1508c3fdbb10bef4c59b227e2343b6e",
+    "supplement.pdf": "c6c7d920be6f30898ba7aa7ce3aa3f7d1ec72914632ac8e22986de105a109802"
+  }
+}

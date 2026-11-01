@@ -1,0 +1,52 @@
+# Official dsh 0.2.0-rc.2 headless route; research assistant only.
+# Set HARNESS_API_KEY, HARNESS_BASE_URL and HARNESS_MODEL in the launch environment.
+# Apply together with deepseek-harness.entry.yml after editing its local paths.
+- id: agent-default-model
+  config:
+    provider: research-gateway
+    model: !!js process.env.HARNESS_MODEL
+- id: llm-pi-ai
+  config:
+    providers:
+      research-gateway:
+        apiKeyEnv: HARNESS_API_KEY
+        api: openai-completions
+        baseURL: !!js process.env.HARNESS_BASE_URL
+        timeoutMs: 60000
+        retryPolicy:
+          mode: normal
+          maxRetries: 0
+        compat:
+          supportsStore: false
+          supportsDeveloperRole: false
+          supportsReasoningEffort: false
+          supportsStrictMode: false
+          maxTokensField: max_tokens
+        models:
+          - id: !!js process.env.HARNESS_MODEL
+            contextWindow: 65536
+            maxTokens: 1200
+            reasoningEfforts: false
+# These bounds and wire switches describe the tested gateway route; adjust to
+# the actual provider's documented protocol. They do not verify model identity.
+- id: credentials
+  disabled: true
+- id: authorization
+  disabled: true
+- id: deepseek-account
+  disabled: true
+- id: session-log-deepseek
+  disabled: true
+- id: session-telemetry-otel
+  disabled: true
+- id: session-title-llm
+  disabled: true
+- id: system-prompt
+  config:
+    personaPrefix: >-
+      You are a research assistant operating ABM tools. Read the interface,
+      preview a plan, execute that exact plan, retrieve completed results,
+      and inspect recorded decisions. Use get_experiment wait_seconds to
+      avoid rapid polling. Report measured evidence only. Distinguish
+      final-round from whole-run metrics and simulation usage from your
+      own model calls. Do not invent data or substitute prose for simulation.

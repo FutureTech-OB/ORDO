@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ORDO | Organizational simulation prototype</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="top"><a class="brand" href="/" aria-label="ORDO home" title="Organizational Decision Modeling"><span class="brand-mark">O</span><span>ORDO</span></a><div class="top-meta"><span class="status-dot"></span> Research foundation <span class="version">v0.6</span></div></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">DECISION MODELS × ORGANIZATIONAL SCIENCE</p><h1>A shared foundation for organizational experiments.</h1><p class="lead">Connect an existing ABM, define an organization, and select a decision engine. This reference application follows organizational learning from individual choices to collective outcomes.</p></div><div class="lineage"><span>Reference application</span><b>Social learning on NK landscapes</b><a href="https://www.nature.com/articles/ncomms13109" target="_blank" rel="noreferrer">Barkoczi &amp; Galesic · 2016 ↗</a><small>Public SDK | Mesa adapters | MCP tools</small></div></section>
+    <p><a href="/workflow">Open the organization-design workbench: tasks, delegation, and review →</a></p>
+    <nav class="tabs" aria-label="Research workspace"><button class="tab active" data-tab="evidence" aria-selected="true">01 <span>Recorded Jev results</span></button><button class="tab" data-tab="experiment" aria-selected="false">02 <span>Design and run</span></button><button class="tab" data-tab="method" aria-selected="false">03 <span>Methods and evidence</span></button><button class="tab" data-tab="interfaces" aria-selected="false">04 <span>Interfaces and extensions</span></button></nav>
+    <div id="error" class="error hidden" role="alert"></div>
+    <section id="evidence" class="tab-panel">
+      <div class="section-heading"><div><p class="eyebrow">COMPLETED PILOT / 2026.10.15</p><h2>When exploration guidance meets failure penalties</h2><p>Four policy conditions and three paired seeds. Recorded Jev executions use fresh judgments for every action.</p></div><span class="pill teal">Recorded inference | Archive replay</span></div>
+      <div id="archive-kpis" class="kpis"></div>
+      <div class="chart-grid"><article class="panel"><div class="panel-title"><h3>When employees explore</h3><span>Mean of three worlds | %</span></div><div id="exploration-chart" class="chart"></div></article><article class="panel"><div class="panel-title"><h3>How organizational performance changes</h3><span>Mean of three worlds | 0–100</span></div><div id="performance-chart" class="chart"></div></article></div>
+      <div id="archive-legend" class="legend"></div>
+      <div class="evidence-bottom"><article class="panel insight"><p class="eyebrow">WHAT THIS PILOT SHOWS</p><h3>Guidance operates within institutional conditions.</h3><p>The increase in exploration under guidance falls from <strong>23.63</strong> percentage points without penalties to <strong>14.71</strong> percentage points under high penalties.</p><p class="muted">The interaction has the same direction across three seeds. Performance gains vary; the best-member rule achieves higher performance and cumulative net payoff in this pilot.</p><button id="open-experiment" class="text-button">Change the organization and run a rule baseline →</button></article><article class="panel"><div class="panel-title"><h3>Inspect behavior and payoffs separately</h3><button id="export-archive" class="small-button">Export evidence JSON ↓</button></div><div class="table-wrap"><table><thead><tr><th>Policy condition</th><th>Mean exploration</th><th>Final performance</th><th>Cumulative net payoff</th></tr></thead><tbody id="archive-table"></tbody></table></div><p class="footnote">Each condition uses 1,000 members, 12 rounds, and three seeds. Independent worlds are the replication unit. Department and permission experiments are separate examples.</p></article></div>
+    </section>
+    <section id="experiment" class="tab-panel hidden">
+      <div class="section-heading"><div><p class="eyebrow">EXPERIMENT WORKBENCH</p><h2>Turn organizational settings into executable interventions</h2><p>The browser runs free rule engines. Fresh Jev experiments use the command-line interfaces in the repository.</p></div><span class="pill amber">New execution | Rule baseline</span></div>
+      <article class="panel persona-panel">
+        <div class="panel-title"><h3>People and organization</h3><button id="persona-example" class="small-button" type="button">Load a 16-member fictional example</button></div>
+        <p class="muted">Import or define Personas, then configure departments, positions, and reporting relationships. A separate population seed fixes membership across institutional comparisons.</p>
+        <div class="persona-grid">
+          <div><label class="check"><input id="persona-enabled" type="checkbox">Use a Persona population</label>
+            <details><summary>Import public or custom records</summary>
+              <label>Data format<select id="persona-preset"><option value="custom">Custom standard fields</option><option value="nemotron">Nemotron-Personas-USA</option><option value="personahub">PersonaHub</option><option value="finepersonas">FinePersonas</option></select></label>
+              <label>Local subset (JSON / JSONL / CSV)<input id="persona-file" type="file" accept=".json,.jsonl,.csv"></label>
+              <label>Custom field mapping (optional JSON)<textarea id="persona-map" rows="2" spellcheck="false" placeholder='{"id":"person_id","description":"bio","background.occupation":"job"}'></textarea></label>
+              <button id="persona-import" class="small-button" type="button">Import into the editor</button>
+              <p class="footnote">Browser import accepts up to 1 MB. Select larger subsets with Python. Records retain source and license metadata.</p>
+            </details>
+            <label>Persona records (editable JSON array)<textarea id="persona-records" rows="10" spellcheck="false">[]</textarea></label>
+            <div class="field-grid"><label>Assignment method<select id="persona-sampling"><option value="without_replacement">Sample without replacement</option><option value="with_replacement">Sample with replacement</option><option value="ordered">Assign records in order</option></select></label><label>Population seed<input id="persona-seed" type="number" min="0" max="4294967295" value="2026"></label></div>
+          </div>
+          <div><label>Organizational structure<select id="structure-template"><option value="none">Use existing departments</option><option value="flat">Flat team</option><option value="department_hierarchy">Department hierarchy (one manager per department)</option><option value="custom">Custom positions and reporting</option></select></label>
+            <label>Roles and assignments (optional JSON extending the template)<textarea id="structure-options" rows="10" spellcheck="false">{}</textarea></label>
+            <p class="help">Define roles and assignments. Actions are keep, explore, and copy. Custom assignments specify agent, department, role, and manager; IDs start at zero and departments contain at least four members.</p>
+            <p class="help">In this learning scene, managers also choose work methods. Rules enforce role rights and departmental contact constraints.</p>
+            <button id="workforce-preview" class="secondary" type="button">Validate and preview the roster</button>
+            <p id="persona-status" class="footnote" role="status">Personas are not enabled.</p>
+          </div>
+        </div>
+        <details id="assignment-panel"><summary>Construct a position-conditioned population</summary>
+          <p class="help">Jev scores how likely a Persona is to occupy a position. Pool mode scores all candidates and samples by probability weights; streaming mode accepts sampled candidates at the threshold. Each Persona fills at most one position.</p>
+          <div class="field-grid"><label>Construction mode<select id="assignment-mode"><option value="stream">Streaming | Threshold acceptance</option><option value="pool">Full pool | Probability weights</option></select></label><label>Inclusive acceptance threshold<input id="assignment-threshold" type="number" min="0" max="1" step="0.01" value="0.5"></label><label>Maximum candidate-position evaluations (optional)<input id="assignment-limit" type="number" min="1" max="100000" placeholder="Default: evaluate until candidates are exhausted"></label><label>Assignment seed<input id="assignment-seed" type="number" min="0" max="4294967295" value="2026"></label></div>
+          <label>Organizational context (optional)<textarea id="assignment-context" rows="2" maxlength="4000" placeholder="For example, formal positions in a software R&D company; define responsibilities in the structure above"></textarea></label>
+          <button id="assignment-example" class="small-button" type="button">Load 24 candidates and eight positions</button>
+          <button id="assignment-preview" class="secondary" type="button">Preview and export assignment</button>
+          <p id="assignment-status" class="footnote" role="status">Default acceptance is at least 50%. Unfilled positions remain visible at the chosen threshold.</p>
+          <p class="help">Preview locally, then execute through start_persona_assignment in Harness or the command below. Assignment and simulation costs are recorded separately.</p>
+          <pre>python -m orgabm assign-personas --job persona-assignment-job.json --preview
+# Set request limits from the preview; provide TYPESAFE_API_KEY in the environment.
+python -m orgabm assign-personas --job persona-assignment-job.json --output runs/placement --max-requests 2 --max-cost-usd 0.10</pre>
+          <label>Import completed config.json or assignment.json<input id="assignment-result-file" type="file" accept=".json"></label>
+          <button id="assignment-import" class="small-button" type="button">Apply assignment results</button>
+        </details>
+        <div id="workforce-result" class="hidden"><div class="table-wrap"><table><thead><tr><th>Agent</th><th>Persona</th><th>Name</th><th>Department</th><th>Position</th><th>Reports to</th><th>Position probability</th></tr></thead><tbody id="workforce-rows"></tbody></table></div><p class="footnote">The researcher view displays up to twenty members. Simulated members receive their own Persona and permitted colleague information.</p></div>
+      </article>
+      <div class="workspace"><aside class="panel controls"><h3>Experiment settings</h3><div class="presets"><button data-preset="siloed">Department silos</button><button data-preset="bridge">Cross-department contact</button><button data-preset="approval">Adoption approval</button></div>
+        <form id="run-form"><div class="field-grid"><label>Members<input id="agents" type="number" min="4" max="2000" value="120" required></label><label>Departments<input id="departments" type="number" min="1" max="20" value="4" required></label><label>Rounds<input id="rounds" type="number" min="1" max="100" value="20" required></label><label>Random seed<input id="seed" type="number" min="0" max="4294967295" value="42" required></label></div>
+        <label>Knowledge contact<select id="contact"><option value="mixed">Random organization-wide contact</option><option value="siloed">Departmental colleagues only</option><option value="bridge">Two departmental and one external colleague</option></select></label><p class="help">Each member observes three colleagues and their current methods and performance.</p>
+        <label>Decision engine<select id="engine"><option value="best">Rule: follow the best colleague</option><option value="conformity">Rule: follow the majority method</option></select></label><p class="help">Rule baselines use explicit choice rules; the simulator executes contacts, payoffs, and permissions.</p>
+        <div class="field-grid"><label>Failure penalty<input id="penalty" type="number" min="0" max="100" step="1" value="0"></label><label>Adoption improvement threshold<input id="approval_gain" type="number" min="0" max="100" step="1" value="0"></label></div>
+        <label>Intervention start round<input id="intervention_round" type="number" min="1" max="100" value="1"></label><p class="help">Contact and anonymity settings apply from round one. Copying requires a strictly positive improvement that meets the threshold.</p>
+        <label class="check"><input id="guidance" type="checkbox">Management encourages exploration</label><label class="check"><input id="anonymous" type="checkbox">Hide departmental identity in decision records</label>
+        <button id="run-button" class="primary" type="submit">Run rule experiment <span>→</span></button><button id="export-config" class="secondary" type="button">Export configuration</button></form>
+      </aside><div class="results-column"><div id="run-empty" class="panel empty"><div class="empty-symbol">↗</div><h3>Start with a comparable world</h3><p>Keep the seed, population, and task environment fixed while varying contact or approval thresholds. Compare the two most recent runs.</p><div class="mechanism"><span>Local observations</span><i>→</i><span>Proposed action</span><i>→</i><span>Institutional execution</span><i>→</i><span>Next round</span></div></div>
+        <div id="run-results" class="hidden"><div class="result-toolbar"><span id="run-status" class="pill teal" role="status"></span><button id="export-run" class="small-button">Export complete results ↓</button></div><div id="run-kpis" class="kpis compact"></div><article class="panel"><div class="panel-title"><h3>Organizational performance</h3><span id="run-description"></span></div><div id="run-chart" class="chart"></div><div id="run-legend" class="legend"></div><div id="comparison" class="footnote"></div></article>
+        <div class="run-detail-grid"><article class="panel"><div class="panel-title"><h3>Departments and visible contacts</h3><span>Final round</span></div><div id="network"></div><p class="footnote">Displays up to eighty members and contacts between them. Colors identify departments.</p></article><article class="panel"><div class="panel-title"><h3>Inspect a decision</h3><select id="trace-agent" aria-label="Member to inspect"><option value="0">Employee 0</option><option value="1">Employee 1</option><option value="2">Employee 2</option><option value="3">Employee 3</option></select></div><label class="range-label">Round <span id="trace-round-label">1</span><input id="trace-round" type="range" min="1" max="20" value="1"></label><div id="trace-summary"></div><details><summary>Local observations and action probabilities</summary><pre id="trace-json"></pre></details></article></div></div>
+      </div></div>
+    </section>
+    <section id="method" class="tab-panel hidden"><div class="section-heading"><div><p class="eyebrow">METHOD & EVIDENCE</p><h2>Trace organizational interventions through execution</h2></div></div>
+      <div class="method-grid"><article class="panel"><span class="number">01</span><h3>An existing ABM provides the environment</h3><p>The NK environment supplies work methods, social learning, local search, and synchronous updates. Members observe outcomes of tried methods.</p><a href="https://github.com/dnlbrkc/social_learning" target="_blank" rel="noreferrer">Author source code ↗</a></article><article class="panel"><span class="number">02</span><h3>Organizational modules define conditions</h3><p>Departments restrict information, identity settings shape records, approval thresholds govern adoption, and penalties enter realized payoffs.</p><p class="muted">This scene implements the approval threshold as an institutional rule.</p></article><article class="panel"><span class="number">03</span><h3>Decision engines choose actions</h3><p>Each relevant event receives a new judgment. Native batches combine ready decisions before the world updates.</p><p class="muted">The simulator samples actions from validated engine probabilities.</p></article></div>
+      <article class="panel method-status"><h3>Recorded evidence</h3><div class="table-wrap"><table><thead><tr><th>Content</th><th>Status</th><th>What it demonstrates</th></tr></thead><tbody><tr><td>Guidance x failure penalty</td><td><span class="pill teal">Recorded Jev run</span></td><td>144,000 choices demonstrating policy interaction and execution</td></tr><tr><td>Department contact, hidden identity, adoption threshold</td><td><span class="pill amber">Implemented mechanism</span></td><td>Executable mechanisms with inspectable inputs and consequences</td></tr><tr><td>LLM, reasoning, and decision engines</td><td>Planned</td><td>Behavior and efficiency comparisons in a shared environment</td></tr><tr><td>Organizational behavioral validity</td><td>Planned</td><td>Evaluation against external empirical data</td></tr></tbody></table></div></article>
+      <article class="panel command-panel"><h3>Build your own experiment</h3><p>Install from the source checkout. Configurations define the environment and organization; results retain trajectories, probabilities, versions, and usage.</p><pre>python -m pip install -r requirements.txt
+python -m orgabm demo
+python -m orgabm run --config examples/boundaries.json --output runs/demo
+
+# Live Jev: set TYPESAFE_API_KEY in your process environment first.
+python -m orgabm run --config examples/boundaries.json --engine jev --max-cost-usd 0.10 --output runs/jev-demo</pre><p class="footnote">Configure API credentials in the local process environment.</p></article>
+    </section>
+    <section id="interfaces" class="tab-panel hidden">
+      <div class="section-heading"><div><p class="eyebrow">FOUNDATION / PUBLIC INTERFACES</p><h2>Your model, your experimental design.</h2><p>The browser is a reference application. The public SDK connects custom ABMs, observations, action spaces, and metrics.</p></div></div>
+      <div class="method-grid"><article class="panel"><span class="number">01</span><h3>Connect an existing ABM</h3><p>MesaAdapter connects local observations, decisions, and state updates to a Mesa model.</p><p class="muted">Other frameworks can implement Environment.</p></article><article class="panel"><span class="number">02</span><h3>Select a decision engine</h3><p>Jev or explicit rules supply member choices. The ABM updates states and computes outcomes.</p><p class="muted">Simulation and research-assistant usage are configured and measured separately.</p></article><article class="panel"><span class="number">03</span><h3>Research with Harness</h3><p>Use your compatible credentials for Harness to plan experiments, invoke tools, and inspect actual simulation results.</p><p class="muted">The Harness integration has executed 36,000 fresh Jev decisions across six checked worlds.</p></article></div>
+      <article class="panel command-panel"><h3>Start with an experiment plan</h3><p>Compare contact and adoption thresholds with three paired seeds: twelve worlds and 28,800 choices.</p><pre>{
+  "scenario": "nk_organization",
+  "base": {"agents": 120, "rounds": 20, "departments": 4},
+  "vary": {"contact": ["siloed", "bridge"], "approval_gain": [0, 10]},
+  "seeds": [7, 8, 9],
+  "decision": {"provider": "rule", "rule": "best"}
+}</pre><p class="footnote">Registered plans execute the organizational-learning scene. Custom environments connect through the Python SDK.</p></article>
+      <article class="panel command-panel"><h3>Public interfaces</h3><pre>Environment: describe → prepare → advance
+DecisionEngine: decide → usage
+Experiment: base × vary × seeds
+MCP: describe_interface / preview_experiment / start_experiment
+     get_experiment / inspect_decision</pre><p>Use Python 3.12+ and install .[mesa,harness] for Mesa and MCP. See docs/public_api.md for configuration and credential setup.</p><a href="https://github.com/deepseek-ai/deepseek-harness/tree/master/packages/mcp/mcp-client" target="_blank" rel="noreferrer">Official DeepSeek Harness MCP plugin ↗</a></article>
+    </section>
+    <footer><span>ORDO · A Foundation for Organizational Simulation</span><span>Organization → Local decisions → Interaction feedback → Collective outcomes</span></footer>
+  </main>
+</body></html>

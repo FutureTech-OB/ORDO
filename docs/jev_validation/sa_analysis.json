@@ -1,0 +1,256 @@
+{
+  "cases": [
+    {
+      "id": "sa-naming-committed_0-s7",
+      "paper_id": "sa_ashery_2025",
+      "condition": "committed_0",
+      "seed": 7,
+      "completed_rounds": 96,
+      "decisions": 192,
+      "run_status": "complete",
+      "final_recent_success": 0.5,
+      "final_latest_M_fraction": 0.5416666666666666,
+      "final_latest_dominance": 0.5416666666666666,
+      "observed_high_coordination": false
+    },
+    {
+      "id": "sa-naming-committed_4-s7",
+      "paper_id": "sa_ashery_2025",
+      "condition": "committed_4",
+      "seed": 7,
+      "completed_rounds": 96,
+      "decisions": 162,
+      "run_status": "complete",
+      "final_recent_success": 0.6944444444444444,
+      "final_latest_M_fraction": 0.20833333333333334,
+      "final_latest_dominance": 0.7916666666666666,
+      "observed_high_coordination": false
+    },
+    {
+      "id": "sa-naming-committed_5-s7",
+      "paper_id": "sa_ashery_2025",
+      "condition": "committed_5",
+      "seed": 7,
+      "completed_rounds": 96,
+      "decisions": 152,
+      "run_status": "complete",
+      "final_recent_success": 0.5972222222222222,
+      "final_latest_M_fraction": 0.20833333333333334,
+      "final_latest_dominance": 0.7916666666666666,
+      "observed_high_coordination": false
+    },
+    {
+      "id": "sa-majority-n20-s7",
+      "paper_id": "sa_demarzo_2026",
+      "condition": "N_20",
+      "seed": 7,
+      "completed_rounds": 80,
+      "decisions": 80,
+      "run_status": "complete",
+      "final_coordination": 0.9,
+      "reached_consensus": false,
+      "first_consensus_update": null
+    },
+    {
+      "id": "sa-majority-n50-s7",
+      "paper_id": "sa_demarzo_2026",
+      "condition": "N_50",
+      "seed": 7,
+      "completed_rounds": 200,
+      "decisions": 200,
+      "run_status": "complete",
+      "final_coordination": 1.0,
+      "reached_consensus": true,
+      "first_consensus_update": 198
+    },
+    {
+      "id": "sa-pgg-star_r3-s7",
+      "paper_id": "sa_wang_su_2026",
+      "condition": "star_r3",
+      "seed": 7,
+      "completed_rounds": 60,
+      "decisions": 4,
+      "run_status": "complete",
+      "final_cooperation": 0.0,
+      "final_colony_cooperation": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fully_cooperative": 0,
+      "fully_defective": 4,
+      "active_colonies": 0,
+      "neutral_single_mutant_baseline": 0.1
+    },
+    {
+      "id": "sa-pgg-star_r6-s7",
+      "paper_id": "sa_wang_su_2026",
+      "condition": "star_r6",
+      "seed": 7,
+      "completed_rounds": 60,
+      "decisions": 30,
+      "run_status": "complete",
+      "final_cooperation": 0.3,
+      "final_colony_cooperation": [
+        1.0,
+        0.1,
+        0.1,
+        0.0
+      ],
+      "fully_cooperative": 1,
+      "fully_defective": 1,
+      "active_colonies": 2,
+      "neutral_single_mutant_baseline": 0.1
+    },
+    {
+      "id": "sa-pgg-complete_r6-s7",
+      "paper_id": "sa_wang_su_2026",
+      "condition": "complete_r6",
+      "seed": 7,
+      "completed_rounds": 60,
+      "decisions": 6,
+      "run_status": "complete",
+      "final_cooperation": 0.0,
+      "final_colony_cooperation": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fully_cooperative": 0,
+      "fully_defective": 4,
+      "active_colonies": 0,
+      "neutral_single_mutant_baseline": 0.1
+    },
+    {
+      "id": "sa-naming-committed_0-s19",
+      "paper_id": "sa_ashery_2025",
+      "condition": "committed_0",
+      "seed": 19,
+      "completed_rounds": 96,
+      "decisions": 192,
+      "run_status": "complete",
+      "final_recent_success": 0.5138888888888888,
+      "final_latest_M_fraction": 0.2916666666666667,
+      "final_latest_dominance": 0.7083333333333334,
+      "observed_high_coordination": false
+    },
+    {
+      "id": "sa-naming-committed_4-s19",
+      "paper_id": "sa_ashery_2025",
+      "condition": "committed_4",
+      "seed": 19,
+      "completed_rounds": 96,
+      "decisions": 166,
+      "run_status": "complete",
+      "final_recent_success": 0.6944444444444444,
+      "final_latest_M_fraction": 0.16666666666666666,
+      "final_latest_dominance": 0.8333333333333334,
+      "observed_high_coordination": false
+    },
+    {
+      "id": "sa-naming-committed_5-s19",
+      "paper_id": "sa_ashery_2025",
+      "condition": "committed_5",
+      "seed": 19,
+      "completed_rounds": 96,
+      "decisions": 157,
+      "run_status": "complete",
+      "final_recent_success": 0.6527777777777778,
+      "final_latest_M_fraction": 0.2916666666666667,
+      "final_latest_dominance": 0.7083333333333334,
+      "observed_high_coordination": false
+    },
+    {
+      "id": "sa-majority-n20-s19",
+      "paper_id": "sa_demarzo_2026",
+      "condition": "N_20",
+      "seed": 19,
+      "completed_rounds": 80,
+      "decisions": 80,
+      "run_status": "complete",
+      "final_coordination": 1.0,
+      "reached_consensus": true,
+      "first_consensus_update": 65
+    },
+    {
+      "id": "sa-majority-n50-s19",
+      "paper_id": "sa_demarzo_2026",
+      "condition": "N_50",
+      "seed": 19,
+      "completed_rounds": 200,
+      "decisions": 200,
+      "run_status": "complete",
+      "final_coordination": 0.92,
+      "reached_consensus": false,
+      "first_consensus_update": null
+    },
+    {
+      "id": "sa-pgg-star_r3-s19",
+      "paper_id": "sa_wang_su_2026",
+      "condition": "star_r3",
+      "seed": 19,
+      "completed_rounds": 60,
+      "decisions": 7,
+      "run_status": "complete",
+      "final_cooperation": 0.0,
+      "final_colony_cooperation": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fully_cooperative": 0,
+      "fully_defective": 4,
+      "active_colonies": 0,
+      "neutral_single_mutant_baseline": 0.1
+    },
+    {
+      "id": "sa-pgg-star_r6-s19",
+      "paper_id": "sa_wang_su_2026",
+      "condition": "star_r6",
+      "seed": 19,
+      "completed_rounds": 60,
+      "decisions": 40,
+      "run_status": "complete",
+      "final_cooperation": 0.75,
+      "final_colony_cooperation": [
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "fully_cooperative": 3,
+      "fully_defective": 1,
+      "active_colonies": 0,
+      "neutral_single_mutant_baseline": 0.1
+    },
+    {
+      "id": "sa-pgg-complete_r6-s19",
+      "paper_id": "sa_wang_su_2026",
+      "condition": "complete_r6",
+      "seed": 19,
+      "completed_rounds": 60,
+      "decisions": 8,
+      "run_status": "complete",
+      "final_cooperation": 0.0,
+      "final_colony_cooperation": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fully_cooperative": 0,
+      "fully_defective": 4,
+      "active_colonies": 0,
+      "neutral_single_mutant_baseline": 0.1
+    }
+  ],
+  "expected_directions": {
+    "sa_ashery_2025": "Repeated personal interaction can yield coordination; more committed M members may overturn an established Q convention. Short, two-seed pilots cannot locate a tipping threshold.",
+    "sa_demarzo_2026": "Inspect endogenous coordination and consensus as N changes; the original paper reports model-dependent majority attraction and size limits. Do not presume Jev shares a published model's beta.",
+    "sa_wang_su_2026": "The original weak-selection PC mechanism favors cooperation on stars beyond a topology-dependent synergy threshold; complete graphs remain unfavorable. With Jev probabilities substituted, these are hypotheses to test, not guaranteed predictions."
+  },
+  "evidence_boundary": "Fresh live inference must be established by the shared runner logs. Completed execution is not reproduction of a paper conclusion. No target outcomes or original behavioral-rule answers are provided to Jev."
+}

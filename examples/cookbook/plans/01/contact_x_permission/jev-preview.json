@@ -1,0 +1,14 @@
+{
+  "scenario": "nk_organization",
+  "decision": {
+    "provider": "jev",
+    "batch_size": 64,
+    "concurrency": 4,
+    "rule": "best"
+  },
+  "worlds": 12,
+  "decisions": 28800,
+  "counts_are_upper_bounds": false,
+  "provider_requests": 480,
+  "batching": "fresh per-agent questions in native Jev batches, synchronized each round"
+}

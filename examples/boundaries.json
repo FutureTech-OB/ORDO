@@ -1,0 +1,15 @@
+{
+  "agents": 120,
+  "rounds": 20,
+  "seed": 42,
+  "departments": 4,
+  "contact": "bridge",
+  "guidance": true,
+  "penalty": 10,
+  "anonymous": false,
+  "approval_gain": 0,
+  "intervention_round": 6,
+  "engine": "best",
+  "batch_size": 64,
+  "concurrency": 4
+}

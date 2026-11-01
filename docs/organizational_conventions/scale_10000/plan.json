@@ -1,0 +1,14 @@
+{
+  "base": {
+    "agents": 10000,
+    "departments": 500,
+    "committed": 200,
+    "rounds": 32,
+    "pairs_per_round": 1250,
+    "hierarchy_bias": 0.6,
+    "cross_probability": 0.1,
+    "release_round": 1
+  },
+  "vary": {"placement": ["manager"], "message_mode": ["official"]},
+  "seeds": [7]
+}

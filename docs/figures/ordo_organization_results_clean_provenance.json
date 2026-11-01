@@ -1,0 +1,10 @@
+{
+  "method": "Matplotlib plot of saved experiment data; no generated numerical content",
+  "actual_model_api_calls": 0,
+  "raw_csv_sha256": "444e9b5385f4051a0091ab8cffd9c0978a9ace28122cbb5fec5f107932756946",
+  "summary_json_sha256": "c1381d32d8637a5ce7e4652d8e6d254e18b451791803729a748b16c10a4e9121",
+  "observations": 12,
+  "conditions": 6,
+  "seeds_per_condition": 2,
+  "csv_means_match_saved_summary": true
+}

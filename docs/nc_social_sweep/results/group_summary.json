@@ -1,0 +1,47 @@
+{
+  "N=128,R=0.5": {
+    "largest_fraction": 0.8619791666666666,
+    "avalanche_count": 10.666666666666666,
+    "worlds": 3
+  },
+  "N=128,R=0.8": {
+    "largest_fraction": 0.3671875,
+    "avalanche_count": 33.666666666666664,
+    "worlds": 3
+  },
+  "N=128,R=1.5": {
+    "largest_fraction": 0.0859375,
+    "avalanche_count": 77.66666666666667,
+    "worlds": 3
+  },
+  "N=512,R=0.5": {
+    "largest_fraction": 0.8671875,
+    "avalanche_count": 38.333333333333336,
+    "worlds": 3
+  },
+  "N=512,R=0.8": {
+    "largest_fraction": 0.3717447916666667,
+    "avalanche_count": 134,
+    "worlds": 3
+  },
+  "N=512,R=1.5": {
+    "largest_fraction": 0.038411458333333336,
+    "avalanche_count": 300.3333333333333,
+    "worlds": 3
+  },
+  "N=1024,R=0.5": {
+    "largest_fraction": 0.8427734375,
+    "avalanche_count": 86.66666666666667,
+    "worlds": 3
+  },
+  "N=1024,R=0.8": {
+    "largest_fraction": 0.3385416666666667,
+    "avalanche_count": 301,
+    "worlds": 3
+  },
+  "N=1024,R=1.5": {
+    "largest_fraction": 0.029296875,
+    "avalanche_count": 621.6666666666666,
+    "worlds": 3
+  }
+}

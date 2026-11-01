@@ -1,0 +1,25 @@
+{
+  "scenario": "task_workflow",
+  "mode": "pool",
+  "seed": 2026,
+  "threshold": null,
+  "pool_size": 24,
+  "slots": 12,
+  "roles": {
+    "manager": {
+      "title": "Department manager",
+      "count": 3
+    },
+    "employee": {
+      "title": "Specialist",
+      "count": 9
+    }
+  },
+  "max_evaluations": 48,
+  "max_provider_requests": 12,
+  "batch_size": 4,
+  "source_pool_sha256": "369db5af97ed2259e4d5d9876efd85d3ab7f906920d34c49c95b10c3c4c68a66",
+  "semantics": "P(holds target position | Persona, role description, context); separate binary judgment per role, not a hiring recommendation.",
+  "sampling": "Weighted without replacement after scoring the full pool.",
+  "note": "No duplicate Persona IDs in the final population. Candidate sampling settings are replaced by ordered assignments. Model scores are not validated population frequencies."
+}

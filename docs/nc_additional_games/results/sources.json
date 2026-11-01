@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/Saptarshi07/social-rewarding/blob/e26e00516c8448a951e25dd6ef388e4eb188f41c/two-player/reward_simuls.py",
+  "commit": "e26e00516c8448a951e25dd6ef388e4eb188f41c",
+  "git_blob_sha": "7723518b117b89ff7e33a20c527b217337d8ed92",
+  "sha256": "28a9ce1f68309e4d6aafba4c431672de793992abea77dc83dc84b4d17d3dc61d",
+  "bytes": 5888,
+  "compatibility": "random.sample(set,1) converted to random.sample(list(set),1) for Python >=3.11; same iteration order, no sorting."
+}

@@ -1,0 +1,6 @@
+{
+  "base": {"agents": 100, "rounds": 3000, "benefit": 4, "cost": 1, "reward": 3, "reward_cost": 1, "selection": 1},
+  "information": [0, 0.5, 1],
+  "mutation": [0.01, 0.1],
+  "seeds": [7, 8, 9]
+}

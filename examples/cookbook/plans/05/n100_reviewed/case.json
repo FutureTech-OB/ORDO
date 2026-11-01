@@ -1,0 +1,2351 @@
+{
+  "plan": {
+    "scenario": "task_workflow",
+    "base": {
+      "agents": 100,
+      "departments": 10,
+      "rounds": 12,
+      "structure": {
+        "template": "custom",
+        "roles": {
+          "employee": {
+            "title": "Specialist",
+            "responsibilities": "Execute assigned tasks; request approval when required.",
+            "allowed_actions": [
+              "work",
+              "request",
+              "revise",
+              "abandon",
+              "wait"
+            ]
+          },
+          "manager": {
+            "title": "Department manager",
+            "responsibilities": "Review submitted proposals within your processing capacity and budget authority.",
+            "allowed_actions": [
+              "approve",
+              "reject",
+              "revise",
+              "wait"
+            ]
+          }
+        },
+        "assignments": [
+          {
+            "agent": 0,
+            "department": 0,
+            "role": "manager",
+            "manager": null
+          },
+          {
+            "agent": 1,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 2,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 3,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 4,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 5,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 6,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 7,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 8,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 9,
+            "department": 0,
+            "role": "employee",
+            "manager": 0
+          },
+          {
+            "agent": 10,
+            "department": 1,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 11,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 12,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 13,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 14,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 15,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 16,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 17,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 18,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 19,
+            "department": 1,
+            "role": "employee",
+            "manager": 10
+          },
+          {
+            "agent": 20,
+            "department": 2,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 21,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 22,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 23,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 24,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 25,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 26,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 27,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 28,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 29,
+            "department": 2,
+            "role": "employee",
+            "manager": 20
+          },
+          {
+            "agent": 30,
+            "department": 3,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 31,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 32,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 33,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 34,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 35,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 36,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 37,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 38,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 39,
+            "department": 3,
+            "role": "employee",
+            "manager": 30
+          },
+          {
+            "agent": 40,
+            "department": 4,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 41,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 42,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 43,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 44,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 45,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 46,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 47,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 48,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 49,
+            "department": 4,
+            "role": "employee",
+            "manager": 40
+          },
+          {
+            "agent": 50,
+            "department": 5,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 51,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 52,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 53,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 54,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 55,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 56,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 57,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 58,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 59,
+            "department": 5,
+            "role": "employee",
+            "manager": 50
+          },
+          {
+            "agent": 60,
+            "department": 6,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 61,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 62,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 63,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 64,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 65,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 66,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 67,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 68,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 69,
+            "department": 6,
+            "role": "employee",
+            "manager": 60
+          },
+          {
+            "agent": 70,
+            "department": 7,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 71,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 72,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 73,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 74,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 75,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 76,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 77,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 78,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 79,
+            "department": 7,
+            "role": "employee",
+            "manager": 70
+          },
+          {
+            "agent": 80,
+            "department": 8,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 81,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 82,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 83,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 84,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 85,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 86,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 87,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 88,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 89,
+            "department": 8,
+            "role": "employee",
+            "manager": 80
+          },
+          {
+            "agent": 90,
+            "department": 9,
+            "role": "manager",
+            "manager": 0
+          },
+          {
+            "agent": 91,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 92,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 93,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 94,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 95,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 96,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 97,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 98,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          },
+          {
+            "agent": 99,
+            "department": 9,
+            "role": "employee",
+            "manager": 90
+          }
+        ]
+      },
+      "population": {
+        "records": [
+          {
+            "id": "synthetic-0",
+            "description": "Fictional benchmark member 0; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-1",
+            "description": "Fictional benchmark member 1; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-2",
+            "description": "Fictional benchmark member 2; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-3",
+            "description": "Fictional benchmark member 3; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-4",
+            "description": "Fictional benchmark member 4; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-5",
+            "description": "Fictional benchmark member 5; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-6",
+            "description": "Fictional benchmark member 6; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-7",
+            "description": "Fictional benchmark member 7; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-8",
+            "description": "Fictional benchmark member 8; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-9",
+            "description": "Fictional benchmark member 9; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-10",
+            "description": "Fictional benchmark member 10; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-11",
+            "description": "Fictional benchmark member 11; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-12",
+            "description": "Fictional benchmark member 12; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-13",
+            "description": "Fictional benchmark member 13; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-14",
+            "description": "Fictional benchmark member 14; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-15",
+            "description": "Fictional benchmark member 15; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-16",
+            "description": "Fictional benchmark member 16; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-17",
+            "description": "Fictional benchmark member 17; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-18",
+            "description": "Fictional benchmark member 18; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-19",
+            "description": "Fictional benchmark member 19; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-20",
+            "description": "Fictional benchmark member 20; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-21",
+            "description": "Fictional benchmark member 21; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-22",
+            "description": "Fictional benchmark member 22; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-23",
+            "description": "Fictional benchmark member 23; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-24",
+            "description": "Fictional benchmark member 24; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-25",
+            "description": "Fictional benchmark member 25; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-26",
+            "description": "Fictional benchmark member 26; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-27",
+            "description": "Fictional benchmark member 27; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-28",
+            "description": "Fictional benchmark member 28; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-29",
+            "description": "Fictional benchmark member 29; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-30",
+            "description": "Fictional benchmark member 30; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-31",
+            "description": "Fictional benchmark member 31; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-32",
+            "description": "Fictional benchmark member 32; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-33",
+            "description": "Fictional benchmark member 33; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-34",
+            "description": "Fictional benchmark member 34; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-35",
+            "description": "Fictional benchmark member 35; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-36",
+            "description": "Fictional benchmark member 36; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-37",
+            "description": "Fictional benchmark member 37; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-38",
+            "description": "Fictional benchmark member 38; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-39",
+            "description": "Fictional benchmark member 39; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-40",
+            "description": "Fictional benchmark member 40; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-41",
+            "description": "Fictional benchmark member 41; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-42",
+            "description": "Fictional benchmark member 42; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-43",
+            "description": "Fictional benchmark member 43; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-44",
+            "description": "Fictional benchmark member 44; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-45",
+            "description": "Fictional benchmark member 45; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-46",
+            "description": "Fictional benchmark member 46; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-47",
+            "description": "Fictional benchmark member 47; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-48",
+            "description": "Fictional benchmark member 48; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-49",
+            "description": "Fictional benchmark member 49; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-50",
+            "description": "Fictional benchmark member 50; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-51",
+            "description": "Fictional benchmark member 51; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-52",
+            "description": "Fictional benchmark member 52; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-53",
+            "description": "Fictional benchmark member 53; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-54",
+            "description": "Fictional benchmark member 54; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-55",
+            "description": "Fictional benchmark member 55; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-56",
+            "description": "Fictional benchmark member 56; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-57",
+            "description": "Fictional benchmark member 57; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-58",
+            "description": "Fictional benchmark member 58; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-59",
+            "description": "Fictional benchmark member 59; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-60",
+            "description": "Fictional benchmark member 60; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-61",
+            "description": "Fictional benchmark member 61; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-62",
+            "description": "Fictional benchmark member 62; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-63",
+            "description": "Fictional benchmark member 63; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-64",
+            "description": "Fictional benchmark member 64; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-65",
+            "description": "Fictional benchmark member 65; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-66",
+            "description": "Fictional benchmark member 66; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-67",
+            "description": "Fictional benchmark member 67; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-68",
+            "description": "Fictional benchmark member 68; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-69",
+            "description": "Fictional benchmark member 69; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-70",
+            "description": "Fictional benchmark member 70; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-71",
+            "description": "Fictional benchmark member 71; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-72",
+            "description": "Fictional benchmark member 72; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-73",
+            "description": "Fictional benchmark member 73; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-74",
+            "description": "Fictional benchmark member 74; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-75",
+            "description": "Fictional benchmark member 75; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-76",
+            "description": "Fictional benchmark member 76; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-77",
+            "description": "Fictional benchmark member 77; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-78",
+            "description": "Fictional benchmark member 78; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-79",
+            "description": "Fictional benchmark member 79; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-80",
+            "description": "Fictional benchmark member 80; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-81",
+            "description": "Fictional benchmark member 81; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-82",
+            "description": "Fictional benchmark member 82; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-83",
+            "description": "Fictional benchmark member 83; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-84",
+            "description": "Fictional benchmark member 84; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-85",
+            "description": "Fictional benchmark member 85; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-86",
+            "description": "Fictional benchmark member 86; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-87",
+            "description": "Fictional benchmark member 87; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-88",
+            "description": "Fictional benchmark member 88; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-89",
+            "description": "Fictional benchmark member 89; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-90",
+            "description": "Fictional benchmark member 90; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-91",
+            "description": "Fictional benchmark member 91; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-92",
+            "description": "Fictional benchmark member 92; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-93",
+            "description": "Fictional benchmark member 93; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-94",
+            "description": "Fictional benchmark member 94; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-95",
+            "description": "Fictional benchmark member 95; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-96",
+            "description": "Fictional benchmark member 96; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-97",
+            "description": "Fictional benchmark member 97; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-98",
+            "description": "Fictional benchmark member 98; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          },
+          {
+            "id": "synthetic-99",
+            "description": "Fictional benchmark member 99; experienced in routine organizational tasks.",
+            "source": {
+              "kind": "synthetic_scaling_fixture"
+            }
+          }
+        ],
+        "sampling": "ordered",
+        "seed": 2026
+      },
+      "tasks": [
+        {
+          "id": "work-1",
+          "owner": 1,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-2",
+          "owner": 2,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-3",
+          "owner": 3,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-4",
+          "owner": 4,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-5",
+          "owner": 5,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-6",
+          "owner": 6,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-7",
+          "owner": 7,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-8",
+          "owner": 8,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-9",
+          "owner": 9,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-11",
+          "owner": 11,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-12",
+          "owner": 12,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-13",
+          "owner": 13,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-14",
+          "owner": 14,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-15",
+          "owner": 15,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-16",
+          "owner": 16,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-17",
+          "owner": 17,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-18",
+          "owner": 18,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-19",
+          "owner": 19,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-21",
+          "owner": 21,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-22",
+          "owner": 22,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-23",
+          "owner": 23,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-24",
+          "owner": 24,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-25",
+          "owner": 25,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-26",
+          "owner": 26,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-27",
+          "owner": 27,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-28",
+          "owner": 28,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-29",
+          "owner": 29,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-31",
+          "owner": 31,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-32",
+          "owner": 32,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-33",
+          "owner": 33,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-34",
+          "owner": 34,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-35",
+          "owner": 35,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-36",
+          "owner": 36,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-37",
+          "owner": 37,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-38",
+          "owner": 38,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-39",
+          "owner": 39,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-41",
+          "owner": 41,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-42",
+          "owner": 42,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-43",
+          "owner": 43,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-44",
+          "owner": 44,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-45",
+          "owner": 45,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-46",
+          "owner": 46,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-47",
+          "owner": 47,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-48",
+          "owner": 48,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-49",
+          "owner": 49,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-51",
+          "owner": 51,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-52",
+          "owner": 52,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-53",
+          "owner": 53,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-54",
+          "owner": 54,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-55",
+          "owner": 55,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-56",
+          "owner": 56,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-57",
+          "owner": 57,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-58",
+          "owner": 58,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-59",
+          "owner": 59,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-61",
+          "owner": 61,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-62",
+          "owner": 62,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-63",
+          "owner": 63,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-64",
+          "owner": 64,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-65",
+          "owner": 65,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-66",
+          "owner": 66,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-67",
+          "owner": 67,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-68",
+          "owner": 68,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-69",
+          "owner": 69,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-71",
+          "owner": 71,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-72",
+          "owner": 72,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-73",
+          "owner": 73,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-74",
+          "owner": 74,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-75",
+          "owner": 75,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-76",
+          "owner": 76,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-77",
+          "owner": 77,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-78",
+          "owner": 78,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-79",
+          "owner": 79,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-81",
+          "owner": 81,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-82",
+          "owner": 82,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-83",
+          "owner": 83,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-84",
+          "owner": 84,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-85",
+          "owner": 85,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-86",
+          "owner": 86,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-87",
+          "owner": 87,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-88",
+          "owner": 88,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-89",
+          "owner": 89,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-91",
+          "owner": 91,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-92",
+          "owner": 92,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-93",
+          "owner": 93,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-94",
+          "owner": 94,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-95",
+          "owner": 95,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-96",
+          "owner": 96,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-97",
+          "owner": 97,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-98",
+          "owner": 98,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        },
+        {
+          "id": "work-99",
+          "owner": 99,
+          "title": "Synthetic task for throughput measurement",
+          "effort": 3,
+          "cost": 2,
+          "value": 8,
+          "signal": 0.8,
+          "success_probability": 1,
+          "deadline": 8
+        }
+      ],
+      "delegation_limit": 0,
+      "review_capacity": 1,
+      "budget": 180,
+      "individual_reward_weight": 0.5,
+      "objective": "Synthetic workload for measuring a multilevel organization runtime; not a behavioral study."
+    },
+    "vary": {},
+    "seeds": [
+      7
+    ],
+    "decision": {
+      "provider": "rule",
+      "rule": "threshold"
+    }
+  },
+  "offline_engine": "registered",
+  "recipe": "05"
+}

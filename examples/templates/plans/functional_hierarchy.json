@@ -1,0 +1,437 @@
+{
+  "scenario": "task_workflow",
+  "base": {
+    "agents": 12,
+    "departments": 3,
+    "rounds": 12,
+    "tasks": [
+      {
+        "id": "w0_task0",
+        "title": "Synthetic delivery task 1-1",
+        "owner": 1,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task1",
+        "title": "Synthetic delivery task 1-2",
+        "owner": 2,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task2",
+        "title": "Synthetic delivery task 1-3",
+        "owner": 3,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task3",
+        "title": "Synthetic delivery task 1-4",
+        "owner": 5,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task4",
+        "title": "Synthetic delivery task 1-5",
+        "owner": 6,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task5",
+        "title": "Synthetic delivery task 1-6",
+        "owner": 7,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task6",
+        "title": "Synthetic delivery task 1-7",
+        "owner": 9,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task7",
+        "title": "Synthetic delivery task 1-8",
+        "owner": 10,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task8",
+        "title": "Synthetic delivery task 1-9",
+        "owner": 11,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w1_task0",
+        "title": "Synthetic delivery task 2-1",
+        "owner": 1,
+        "dependencies": [
+          "w0_task0",
+          "w0_task3"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task1",
+        "title": "Synthetic delivery task 2-2",
+        "owner": 2,
+        "dependencies": [
+          "w0_task1",
+          "w0_task4"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task2",
+        "title": "Synthetic delivery task 2-3",
+        "owner": 3,
+        "dependencies": [
+          "w0_task2",
+          "w0_task5"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task3",
+        "title": "Synthetic delivery task 2-4",
+        "owner": 5,
+        "dependencies": [
+          "w0_task3",
+          "w0_task6"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task4",
+        "title": "Synthetic delivery task 2-5",
+        "owner": 6,
+        "dependencies": [
+          "w0_task4",
+          "w0_task7"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task5",
+        "title": "Synthetic delivery task 2-6",
+        "owner": 7,
+        "dependencies": [
+          "w0_task5",
+          "w0_task8"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task6",
+        "title": "Synthetic delivery task 2-7",
+        "owner": 9,
+        "dependencies": [
+          "w0_task6",
+          "w0_task0"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task7",
+        "title": "Synthetic delivery task 2-8",
+        "owner": 10,
+        "dependencies": [
+          "w0_task7",
+          "w0_task1"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task8",
+        "title": "Synthetic delivery task 2-9",
+        "owner": 11,
+        "dependencies": [
+          "w0_task8",
+          "w0_task2"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      }
+    ],
+    "budget": 40,
+    "review_capacity": 1,
+    "delegation_limit": 0,
+    "population": {
+      "records": [
+        {
+          "id": "workflow-member-0",
+          "name": "Fictional member 0",
+          "description": "Coordinate team resources and tasks.",
+          "background": {
+            "occupation": "Department manager"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-1",
+          "name": "Fictional member 1",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-2",
+          "name": "Fictional member 2",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-3",
+          "name": "Fictional member 3",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-4",
+          "name": "Fictional member 4",
+          "description": "Coordinate team resources and tasks.",
+          "background": {
+            "occupation": "Department manager"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-5",
+          "name": "Fictional member 5",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-6",
+          "name": "Fictional member 6",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-7",
+          "name": "Fictional member 7",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-8",
+          "name": "Fictional member 8",
+          "description": "Coordinate team resources and tasks.",
+          "background": {
+            "occupation": "Department manager"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-9",
+          "name": "Fictional member 9",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-10",
+          "name": "Fictional member 10",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "workflow-member-11",
+          "name": "Fictional member 11",
+          "description": "Perform R&D delivery and specialist tasks.",
+          "background": {
+            "occupation": "Specialist employee"
+          },
+          "source": {
+            "dataset": "Org ABM fictional workflow example",
+            "synthetic": true
+          }
+        }
+      ],
+      "sampling": "ordered",
+      "seed": 2026
+    },
+    "structure": {
+      "template": "department_hierarchy"
+    }
+  },
+  "vary": {},
+  "seeds": [
+    7,
+    8,
+    9
+  ],
+  "decision": {
+    "provider": "rule",
+    "rule": "threshold"
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "schema": "ordo-review-v2",
+  "snapshot_date": "2026-10-30",
+  "files": [
+    {
+      "path": "naming/plan-before-calls.json",
+      "source": "runs/behavior-jev-20261029/plan-before-calls.json",
+      "bytes": 7237,
+      "source_bytes": 7237,
+      "sha256": "bd356a934f53b8ac420b3d2c0795a32c361bf08b73db38df00184dd8d3c0d547",
+      "uncompressed_sha256": "bd356a934f53b8ac420b3d2c0795a32c361bf08b73db38df00184dd8d3c0d547",
+      "compression": null
+    },
+    {
+      "path": "naming/verification.json",
+      "source": "runs/behavior-jev-20261029/verification.json",
+      "bytes": 165666,
+      "source_bytes": 165666,
+      "sha256": "bf33aab64130951f7226dab755a7906fe9bdde9ca849ecfaf847eb770179fbf2",
+      "uncompressed_sha256": "bf33aab64130951f7226dab755a7906fe9bdde9ca849ecfaf847eb770179fbf2",
+      "compression": null,
+      "pre_anonymization_sha256": "214f3b6b78991eacd5ab333509e9c1552f173e421562674bc3a5610332d94457"
+    },
+    {
+      "path": "naming/naming-jev-worlds.json",
+      "source": "runs/behavior-jev-20261029/naming-jev-worlds.json",
+      "bytes": 41371,
+      "source_bytes": 41371,
+      "sha256": "dc3b1fd738ac6d335424ec6d44066fa93f78de73544632b694ecefb2020a3ebd",
+      "uncompressed_sha256": "dc3b1fd738ac6d335424ec6d44066fa93f78de73544632b694ecefb2020a3ebd",
+      "compression": null
+    },
+    {
+      "path": "naming/naming-uniform-worlds.json",
+      "source": "runs/behavior-jev-20261029/naming-uniform-worlds.json",
+      "bytes": 41740,
+      "source_bytes": 41740,
+      "sha256": "16ad43c35e588102853cf07faad6b6af362c10474ed055f690b14d57029d4bb8",
+      "uncompressed_sha256": "16ad43c35e588102853cf07faad6b6af362c10474ed055f690b14d57029d4bb8",
+      "compression": null
+    },
+    {
+      "path": "naming/naming-jev-events.jsonl.gz",
+      "source": "runs/behavior-jev-20261029/naming-jev/events.jsonl",
+      "bytes": 2423214,
+      "source_bytes": 40687731,
+      "sha256": "5475c4ad83ff66ab874aa2c82eca9279527e72b80a4e96b1b1c745183bf3fd5d",
+      "uncompressed_sha256": "d4568f461d98f5dc4fe56994b6af17264f3843ee4c8ead72a529d9619775c4b7",
+      "compression": "gzip"
+    },
+    {
+      "path": "naming/naming-jev-result.json.gz",
+      "source": "runs/behavior-jev-20261029/naming-jev/result.json",
+      "bytes": 801265,
+      "source_bytes": 14684921,
+      "sha256": "ccbddc074e4594f446163a703c183c42cd2c58f7cb3deb364394fbf1ff9de066",
+      "uncompressed_sha256": "d6d2a57076f95d8c08e8559455bc55429026dc7ecaf9a3f60e8b5a88515e4e55",
+      "compression": "gzip"
+    },
+    {
+      "path": "naming/naming-uniform-events.jsonl.gz",
+      "source": "runs/behavior-jev-20261029/naming-uniform/events.jsonl",
+      "bytes": 4318687,
+      "source_bytes": 52292955,
+      "sha256": "60faf61793801b0ff80547bac9753d40e4c713947a8b3b964af677e124d086c5",
+      "uncompressed_sha256": "d393584cf2843c7cff6d54afe81ff0e245291efa28530fa7a4c8064ffbc3175e",
+      "compression": "gzip"
+    },
+    {
+      "path": "naming/naming-uniform-result.json.gz",
+      "source": "runs/behavior-jev-20261029/naming-uniform/result.json",
+      "bytes": 1928965,
+      "source_bytes": 18065372,
+      "sha256": "5ba4166684795d49765ecfcd6fa4ea4074f41b4ac3cdad182a90686b7b4f44ec",
+      "uncompressed_sha256": "decaf173f87e904c35fcd75cf972844ce48d3b818117b4cfa9445c4f9214864d",
+      "compression": "gzip"
+    },
+    {
+      "path": "naming/shared-provider-calls.jsonl.gz",
+      "source": "runs/behavior-jev-20261029/calls/openrouter_calls.jsonl",
+      "bytes": 1820547,
+      "source_bytes": 36572071,
+      "sha256": "a9950c5a17be041fbf60579d0af711d057b3899f8b2c0c7aaee83e5efa5f2a1f",
+      "uncompressed_sha256": "bbba2ab07ab69c70742c079459071551090427db40d9dc31c0d28a6e437ed124",
+      "compression": "gzip"
+    },
+    {
+      "path": "majority/plan-before-calls.json",
+      "source": "runs/llm-original-sa-demarzo-20261030/plan-before-calls.json",
+      "bytes": 34837,
+      "source_bytes": 34837,
+      "sha256": "b5022554120d2d552f37a4eddf94ac9f898e3d7c4cd45f44226a86868fa302a1",
+      "uncompressed_sha256": "b5022554120d2d552f37a4eddf94ac9f898e3d7c4cd45f44226a86868fa302a1",
+      "compression": null
+    },
+    {
+      "path": "majority/verification.json",
+      "source": "runs/llm-original-sa-demarzo-20261030/verification.json",
+      "bytes": 12329,
+      "source_bytes": 12329,
+      "sha256": "1f0c6080e4476c956e2d1a038649959d32416b8bc717eb03e875789dddda55ff",
+      "uncompressed_sha256": "1f0c6080e4476c956e2d1a038649959d32416b8bc717eb03e875789dddda55ff",
+      "compression": null
+    },
+    {
+      "path": "majority/analysis.json",
+      "source": "runs/llm-original-sa-demarzo-20261030/analysis.json",
+      "bytes": 8844,
+      "source_bytes": 8844,
+      "sha256": "774d4751b1850975393b0b299c048b233b9000facc2d0f3a10c2ff9de7f6d3e8",
+      "uncompressed_sha256": "774d4751b1850975393b0b299c048b233b9000facc2d0f3a10c2ff9de7f6d3e8",
+      "compression": null
+    },
+    {
+      "path": "majority/events.jsonl.gz",
+      "source": "runs/llm-original-sa-demarzo-20261030/live-1/events.jsonl",
+      "bytes": 1066885,
+      "source_bytes": 9569697,
+      "sha256": "0174b694be0566b9398138915bd7703c4040c172206b385913d78f47bca975d6",
+      "uncompressed_sha256": "1daa76e3f7fa4a38c5564b4fb5c9b5355351adcd1f0dcbae09f1b7f941b51477",
+      "compression": "gzip"
+    },
+    {
+      "path": "majority/result.json.gz",
+      "source": "runs/llm-original-sa-demarzo-20261030/live-1/result.json",
+      "bytes": 56008,
+      "source_bytes": 3971996,
+      "sha256": "0083238a6a8d2880475258892629982e10a1394098d3b326e4aef68a0c3d3ca4",
+      "uncompressed_sha256": "8b289ae0ebabf5d41d4ecd9c0f40a494ce223e0a17c60f82f0ef9db4b45ba76f",
+      "compression": "gzip"
+    },
+    {
+      "path": "majority/calls-1-openrouter_calls.jsonl.gz",
+      "source": "runs/llm-original-sa-demarzo-20261030/calls-1/openrouter_calls.jsonl",
+      "bytes": 950174,
+      "source_bytes": 6715410,
+      "sha256": "ffabe38e5c19a7859c7f65e9b2882616622b32a9a1a77950f4e1c19bd753fdd6",
+      "uncompressed_sha256": "912daeedaaa4bb65cc1bc79e7b9210c1e03c9a630ecd5aebdaa148e43f0e4fad",
+      "compression": "gzip"
+    },
+    {
+      "path": "games/plan-before-calls.json",
+      "source": "runs/llm-nhb-sampled-20261030/plan-before-calls.json",
+      "bytes": 7980,
+      "source_bytes": 7980,
+      "sha256": "0837c127083d087eea1af32a9eab15213bd5eab5e1d84eb7733d8c0daf97bd84",
+      "uncompressed_sha256": "0837c127083d087eea1af32a9eab15213bd5eab5e1d84eb7733d8c0daf97bd84",
+      "compression": null
+    },
+    {
+      "path": "games/verification.json",
+      "source": "runs/llm-nhb-sampled-20261030/verification.json",
+      "bytes": 4880,
+      "source_bytes": 4880,
+      "sha256": "31e5c35ed7660d42cd7c02059472f12ef3ca2c88f72a5a346c299e5ff7b38c17",
+      "uncompressed_sha256": "31e5c35ed7660d42cd7c02059472f12ef3ca2c88f72a5a346c299e5ff7b38c17",
+      "compression": null
+    },
+    {
+      "path": "games/analysis.json",
+      "source": "runs/llm-nhb-sampled-20261030/analysis.json",
+      "bytes": 19626,
+      "source_bytes": 19626,
+      "sha256": "d9aca11bd76d36009b9b62038f79755ed4d0d42c1963b8336c67cefcb51ff107",
+      "uncompressed_sha256": "d9aca11bd76d36009b9b62038f79755ed4d0d42c1963b8336c67cefcb51ff107",
+      "compression": null
+    },
+    {
+      "path": "games/events.jsonl.gz",
+      "source": "runs/llm-nhb-sampled-20261030/live-1/events.jsonl",
+      "bytes": 40457,
+      "source_bytes": 1037188,
+      "sha256": "57dcd52deaae3aedd14e274342c83b085c5afca695ce1be8c3894e7c714d496f",
+      "uncompressed_sha256": "4e787253292894898535a91f9d7bacfc09a62f9fb1703e1f9b5cd1180e1e7d41",
+      "compression": "gzip"
+    },
+    {
+      "path": "games/result.json.gz",
+      "source": "runs/llm-nhb-sampled-20261030/live-1/result.json",
+      "bytes": 28736,
+      "source_bytes": 373448,
+      "sha256": "a2a4cec8dfb51619605328eb6c3f9d49ced61c047c782b14f7957ae49269a46f",
+      "uncompressed_sha256": "a6ec0add78d2a5967faf51eec955cc56f650724cf83435db1f24f2e1f380e776",
+      "compression": "gzip"
+    },
+    {
+      "path": "games/calls-1-openrouter_calls.jsonl.gz",
+      "source": "runs/llm-nhb-sampled-20261030/calls-1/openrouter_calls.jsonl",
+      "bytes": 26135,
+      "source_bytes": 925150,
+      "sha256": "82b3ced26c21ed55a1dbb1da830acc0c9201b11aa97939cd79f2f0eceb30eb17",
+      "uncompressed_sha256": "68ea256a6eb87cb4031c535280b0edf31503807864d3f68643bc31bb8cc13c44",
+      "compression": "gzip"
+    },
+    {
+      "path": "games/source_trace.json",
+      "source": "runs/llm-nhb-sampled-20261030/source_trace.json",
+      "bytes": 165172,
+      "source_bytes": 165172,
+      "sha256": "ef47433d9a917c8541648999784490c145585b6f46bb195f9389374f022ecb1e",
+      "uncompressed_sha256": "ef47433d9a917c8541648999784490c145585b6f46bb195f9389374f022ecb1e",
+      "compression": null
+    },
+    {
+      "path": "polarization-partial/plan-before-calls.json",
+      "source": "runs/nc-polarization-hybrid-20261030/plan-before-calls.json",
+      "bytes": 5296,
+      "source_bytes": 5296,
+      "sha256": "baa1590feed0a10c7ca180e90625b79421faa83b9c59ed9d6f5d35f62facc25c",
+      "uncompressed_sha256": "baa1590feed0a10c7ca180e90625b79421faa83b9c59ed9d6f5d35f62facc25c",
+      "compression": null
+    },
+    {
+      "path": "polarization-partial/verification.json",
+      "source": "runs/nc-polarization-hybrid-20261030/verification.json",
+      "bytes": 3848,
+      "source_bytes": 3848,
+      "sha256": "cf2df289ff0006440b0d87bf8ab4c5323e144a57037b463f525f0485d57e0137",
+      "uncompressed_sha256": "cf2df289ff0006440b0d87bf8ab4c5323e144a57037b463f525f0485d57e0137",
+      "compression": null
+    },
+    {
+      "path": "polarization-partial/progress.json",
+      "source": "runs/nc-polarization-hybrid-20261030/progress.json",
+      "bytes": 1546,
+      "source_bytes": 1546,
+      "sha256": "48f166ef8d052a0d8db925fe54f8be366c865a58cf595f474422eb108b67435f",
+      "uncompressed_sha256": "48f166ef8d052a0d8db925fe54f8be366c865a58cf595f474422eb108b67435f",
+      "compression": null
+    }
+  ],
+  "completed_cases": [
+    "naming",
+    "majority",
+    "games"
+  ],
+  "partial_case": "polarization-partial",
+  "naming_billing_scope": "shared-provider-calls also contains the older opinion pilot; no naming-only cost is inferred",
+  "interpretation": "Original-event replay checks saved inputs and outcomes, not independent fresh-model reproducibility.",
+  "credentials_exported": false,
+  "model_api_calls": 0,
+  "metadata_anonymization": "Local filesystem prefixes replaced with project-relative paths; choice data retained."
+}

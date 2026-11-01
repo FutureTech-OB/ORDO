@@ -1,0 +1,39 @@
+ORDO architecture figure
+Generated with the built-in image_gen tool on 31 October 2026.
+
+INITIAL GENERATION
+
+Use case: infographic-diagram.
+Create a publication-quality architecture figure for a computer-science research paper about ORDO (Organizational Decision Modeling), suitable for a NeurIPS / ICML / ACL-style two-column paper appendix. This must be a NEW designed research figure, not a screenshot, not a software dashboard, and not a stack of text-heavy rounded cards.
+
+Format: high-resolution landscape, approximately 16:10, solid white background, generous precise whitespace, crisp vector-like flat linework, restrained muted navy / teal / blue / lavender accents, black or dark-slate highly legible typography. Professional small schematic icons, no illustrations of brains, no robots, no gradients, no 3D, no decorative background, no watermarks. Uncluttered directional arrows. Consistent baseline alignment. Make technical structure and the organizational modeling contribution visually obvious. English labels only. Short labels, no paragraphs. No empirical plots or invented numerical results.
+
+Content reflects CURRENT CODE, not future market features. ORDO builds on Mesa but has generic Python Environment and DecisionEngine interfaces. There are organizational components for Personas, positions, departments, reporting, task/approval rules, and memory permissions. Runtime obtains local permitted observations, calls a replaceable decision engine, validates returned probabilities, samples actions with a seed, and commits environment updates. Independent ready decisions can batch, while dependent stages wait. Jev is an external choice service; the researcher assistant is separate from the simulated behavioral engine.
+
+COMPOSITION:
+At top, a slim research-control ribbon, clearly separate from the simulated organization:
+"Researcher" -> "DeepSeek Harness" -> "MCP tools" -> "Experiment plan".
+Below it, the main figure is dominated by two connected numbered panels:
+(a) "Organizational environment" on the left, taking about 40% of the main area.
+Draw a real, understandable organizational schematic: one executive connected to three department managers, each connected to several distinct small member nodes. Different departments have subtle color grouping. Add a small Persona sheet icon labeled "Personas + positions"; three compact memory-tree/document icons with lock/access cues labeled "Personal", "Department", "Organization". Show filtered information moving toward one focal member's local view. Include a simple task/approval arrow motif within the organization. Under the organizational schematic put two brief labels: "Roles and reporting" and "Information permissions". At its bottom, tiny module labels "personas.py · workforce.py · memory.py" and "Mesa models / custom ABMs".
+(b) "Simulation and decision interfaces" on the right, taking about 60%.
+Within a clear thin ORDO boundary, draw a short, precise closed simulation loop with four steps:
+"Prepare local context" -> "Validate probabilities" -> "Sample action" -> "Commit world update".
+The semantics must be correct: the preparation step first sends "questions" outward to an adjacent replaceable engine module; that module returns "probabilities" to the validation step. Do NOT draw validation before the decision response. Commit world update returns by a clean loop arrow to the organizational environment and the next permitted local context.
+The engine module sits outside the world-state-update boundary and is labeled "DecisionEngine". It contains three small alternatives, not a giant Jev centerpiece: "Jev API", "Rules", "Custom model". A tiny batching glyph beside the Jev API is labeled "Native batching". Place "Environment" on the world/runtime boundary. Put "sdk.py · staged.py" as a compact implementation label under the runtime. Include a small stage-barrier schematic with the label "Causal stage barriers".
+Between panel (a) and (b), depict "permitted observations" flowing to preparation and "actions + feedback" flowing back. Make the feedback loop clear but avoid crossing arrows.
+At bottom, a clean shared evidence strip receives event records from runtime:
+"Events + probabilities" -> "Metrics + snapshots" -> "Replay + comparison".
+A small arrow back toward the researcher ribbon may be used for inspection, routed around the edge with no overlap.
+
+Use the heading "ORDO architecture" above the figure, modestly sized. Panels (a) and (b) have clear paper-style labels. The organizational hierarchy, permission-filtered context, external choice interface, and executable feedback loop are the visual focus. Use enough empty space that every label is crisp at normal paper scale. Do not include unsupported multi-organization markets or policy execution features. No filesystem directory trees, no large lists of filenames, no code blocks.
+
+ACCURACY EDIT
+
+Edit this ORDO paper architecture figure with a strict accuracy correction. Preserve its existing composition, visual quality, colors, hierarchy schematic, typography, icons, panels, all other text, and white background.
+Only make these precise changes:
+1. The two vertical arrows between the replaceable DecisionEngine and the lower simulation-runtime container currently have the wrong directions. The LEFT arrow labeled "Questions (local context)" MUST point UPWARD, from the runtime/Prepare local context toward DecisionEngine. The RIGHT arrow labeled "Probabilities (action distribution)" MUST point DOWNWARD from DecisionEngine toward the runtime/Validate probabilities. This is essential: runtime sends questions; engine returns probabilities.
+2. Replace the lower container heading "Environment (world state and runtime)" with the exact heading "Simulation runtime". The organizational environment on the left owns world state; the runtime orchestrates preparation, judgment, sampling and commit.
+3. Under the Organization memory icon, replace "(broad access)" with "(configured access)" to make clear that organizational information is permission-controlled, not automatically public.
+Everything else should remain unchanged. Keep all labels crisp and readable, with no overlap. Do not change the overall design.
+

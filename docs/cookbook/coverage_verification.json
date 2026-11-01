@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "verified_utc": "2026-10-30T02:49:09.300956+00:00",
+  "catalog_entries": 13,
+  "distinct_referenced_studies": 9,
+  "added_papers": 6,
+  "added_author_kernel_or_loop_studies": 5,
+  "added_archive_studies": 1,
+  "added_pair_games": 972,
+  "added_population_worlds": 90,
+  "native_rule_choices": 148352,
+  "mobility_native_agent_updates": 181440,
+  "mobility_sdk_period_control_actions": 600,
+  "archived_snapshots": 123,
+  "archived_state_assignments": 120000,
+  "archived_directed_edge_rows": 491474,
+  "actual_model_api_calls": 0,
+  "adapter_source_hashes_checked": 28,
+  "all_declared_reference_checks_passed": true,
+  "all_catalog_paths_and_links_valid": true,
+  "source_reports": {
+    "games": "docs/nc_evolutionary_games/results/verification.json",
+    "rewarding": "docs/nc_additional_games/results/verification.json",
+    "cascades": "docs/nc_social_sweep/results/verification.json",
+    "foraging": "docs/nc_social_sweep/foraging_results/verification.json",
+    "mobility": "docs/ncs_mobility/results.json",
+    "polarization": "docs/nc_polarization/results/verification.json"
+  },
+  "units": "Pair games, population worlds, native choices, native movement updates, period controls and restored archive states are distinct quantities."
+}

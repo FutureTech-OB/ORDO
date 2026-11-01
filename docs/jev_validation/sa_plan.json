@@ -1,0 +1,718 @@
+{
+  "group": "sa",
+  "model": "typesafe/jev-1.14",
+  "seed": 20261030,
+  "max_cost_usd": 2.0,
+  "max_requests": 2500,
+  "batch_size": 64,
+  "concurrency": 2,
+  "rounds": 200,
+  "source_hashes": {
+    "examples/jev_sa/__init__.py": "9bc660773142cd6a5e0794c3fcfeec0d66b3642c7f64458ded30f0c5aec40113",
+    "examples/jev_sa/pgg.py": "258e392534c56777254225fb3ca4ba8069a9dd75e74aa8c9fb7f81f20a4eda97",
+    "examples/jev_sa/suite.py": "945647514cb1d9470a432d816fecba475dde0e96082eb1bd251a05bc100607c1",
+    "examples/jev_validation/__init__.py": "fd209358c9621726eb721763d3a2cac65edf812a46ef669e97821f167143984a",
+    "examples/jev_validation/run.py": "54ea0a2078ecd3b2454fe76238b09c77170abef4ee9617c16f1d50974371b9d9",
+    "examples/llm_abm_cookbook/__init__.py": "b98a5883f0087ddf3f996f8c4b308343db1a44afe171d52a84b639e2061b088d",
+    "examples/llm_abm_cookbook/environments.py": "705986585eac46af0d94d324b1aedb17012d7170f296d474cc7b778a7d9f12d6",
+    "orgabm/__init__.py": "7078b1f563c8bc84e31e3007678f6f08268dab888534d137e0d7fb68f55ec01f",
+    "orgabm/__main__.py": "f227cf623a5d36fb84c57436f5ca173bdc2901e08b8203a9d8b4bcd426443ebf",
+    "orgabm/decision_journal.py": "52e1ca903f233d2b6ff39dbc7dd7fd7bbb0dad1559a9325c937a95b94c4644bf",
+    "orgabm/deepseek.py": "9e6a03908e9d98c9805a1e748ab0d820f960595a85a7cc06973ada221fab8557",
+    "orgabm/engines.py": "09b935f58fb9bd954fdda0aee5272524359294ff52554fba003288404df89215",
+    "orgabm/experiment.py": "fd3fbc7a256e3ce2ed0a6988af8aa4118ea312ecc92bacc878f69b2137e245a2",
+    "orgabm/kernel.py": "e6e6bffdfb813fac5256525c924b33ab855fff38b570225ccd2b4046a3c4ddd6",
+    "orgabm/mcp_server.py": "e24339e2de20c8a4f1aadb8d226864888663225e9809100cbc4f02a519f3c17c",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/mesa_bridge.py": "bbf22640031d48850afaaf8d9b5ea9976da5c41f575dbd4af76bb1981eee43c3",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a",
+    "orgabm/organization.py": "921001f1b4d6e31d80ba58cfab4858a7e15be2cff44b0993a8b652e8e6f06481",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/placement.py": "06bdff86772974743526a2aa70f1b995d453ee189a85c94cc755401d5778f060",
+    "orgabm/plans.py": "71738bb194bc2b4fdbbb255f90258040d094d2ca28b38756479bf3ea8975ad60",
+    "orgabm/randomness.py": "a8b74b3c59261135d0c79bcc96230bc0a227f56fbfc6e9ffa874ab879df696f6",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/server.py": "ed18f3e975bd67e17f7f44408479d4539d6fd08abe00dacd5b341b0fb48478d4",
+    "orgabm/staged.py": "e939295fdebf54434028853deb4832c2e32f910c5254fdec4b4c1b62e4a36e9a",
+    "orgabm/templates.py": "dcbe086a2df17effe616168fdd7f2e4707630adaf6b61ccbed6f995452d3d831",
+    "orgabm/workflow.py": "232b7ef8377b8b0c77f110475ae4e4ab21b7aa0f56df7bf99e9b3bfafbabca98",
+    "orgabm/workflow_mesa.py": "ae9b822050b4c4525993e647294684f1ccc6dbed10428fd1119196a4a4333fa5",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91"
+  },
+  "description": {
+    "scenario": "fresh_jev_paper_validation",
+    "cases": [
+      {
+        "id": "sa-naming-committed_0-s7",
+        "paper_id": "sa_ashery_2025",
+        "rounds": 96,
+        "seed": 7,
+        "condition": "committed_0",
+        "environment": {
+          "scenario": "llm_naming_game",
+          "paper_doi": "10.1126/sciadv.adu9368",
+          "agents": 24,
+          "memory_size": 5,
+          "options": [
+            "Q",
+            "M"
+          ],
+          "reward": 100,
+          "penalty": -50,
+          "seed": 7,
+          "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+          "mode": "fresh_engine",
+          "option_order": "fresh seeded order; original order was not recorded in archive",
+          "committed_members": 0,
+          "committed_to": null,
+          "initial_convention": "no history",
+          "reproduction_scope": "Fresh external model substitution; two-option selected protocol; no full tipping-threshold estimate."
+        }
+      },
+      {
+        "id": "sa-naming-committed_4-s7",
+        "paper_id": "sa_ashery_2025",
+        "rounds": 96,
+        "seed": 7,
+        "condition": "committed_4",
+        "environment": {
+          "scenario": "llm_naming_game",
+          "paper_doi": "10.1126/sciadv.adu9368",
+          "agents": 24,
+          "memory_size": 5,
+          "options": [
+            "Q",
+            "M"
+          ],
+          "reward": 100,
+          "penalty": -50,
+          "seed": 7,
+          "initial_state_sha256": "7d0d73aae7e38ca9082a134e6eb57f003c622903284404dace3802e50faf81e5",
+          "mode": "fresh_engine",
+          "option_order": "fresh seeded order; original order was not recorded in archive",
+          "committed_members": 4,
+          "committed_to": "M",
+          "initial_convention": "five Q/Q successes per individual",
+          "reproduction_scope": "Fresh external model substitution; two-option selected protocol; no full tipping-threshold estimate."
+        }
+      },
+      {
+        "id": "sa-naming-committed_5-s7",
+        "paper_id": "sa_ashery_2025",
+        "rounds": 96,
+        "seed": 7,
+        "condition": "committed_5",
+        "environment": {
+          "scenario": "llm_naming_game",
+          "paper_doi": "10.1126/sciadv.adu9368",
+          "agents": 24,
+          "memory_size": 5,
+          "options": [
+            "Q",
+            "M"
+          ],
+          "reward": 100,
+          "penalty": -50,
+          "seed": 7,
+          "initial_state_sha256": "68bb3fa983bb692cdec8fd13cff907a2568ee2313248eb5ab3c794a3aa53b51d",
+          "mode": "fresh_engine",
+          "option_order": "fresh seeded order; original order was not recorded in archive",
+          "committed_members": 5,
+          "committed_to": "M",
+          "initial_convention": "five Q/Q successes per individual",
+          "reproduction_scope": "Fresh external model substitution; two-option selected protocol; no full tipping-threshold estimate."
+        }
+      },
+      {
+        "id": "sa-majority-n20-s7",
+        "paper_id": "sa_demarzo_2026",
+        "rounds": 80,
+        "seed": 7,
+        "condition": "N_20",
+        "environment": {
+          "scenario": "llm_majority_opinion",
+          "paper_doi": "10.1126/sciadv.aea6091",
+          "agents": 20,
+          "seed": 7,
+          "schedule": "one random member per update; dt=1/N; no memory, reward or own opinion in input",
+          "prompt_fidelity": "semantic adaptation, not original token/output-format replication"
+        }
+      },
+      {
+        "id": "sa-majority-n50-s7",
+        "paper_id": "sa_demarzo_2026",
+        "rounds": 200,
+        "seed": 7,
+        "condition": "N_50",
+        "environment": {
+          "scenario": "llm_majority_opinion",
+          "paper_doi": "10.1126/sciadv.aea6091",
+          "agents": 50,
+          "seed": 7,
+          "schedule": "one random member per update; dt=1/N; no memory, reward or own opinion in input",
+          "prompt_fidelity": "semantic adaptation, not original token/output-format replication"
+        }
+      },
+      {
+        "id": "sa-pgg-star_r3-s7",
+        "paper_id": "sa_wang_su_2026",
+        "rounds": 60,
+        "seed": 7,
+        "condition": "star_r3",
+        "environment": {
+          "scenario": "network_public_goods_pairwise_comparison",
+          "paper_doi": "10.1126/sciadv.aeb1263",
+          "agents_per_colony": 10,
+          "independent_colonies": 4,
+          "topology": "star",
+          "synergy": 3.0,
+          "cost": 1,
+          "seed": 7,
+          "initial_states": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "source_repository": "https://github.com/ChaoqianSCI/Spatial-PGGs-any-network",
+          "source_commit": "5a2f280bf76fe3ca36566242ca4edf5700d66229",
+          "source_file": "pgggraph_PC.py",
+          "preserved": "Overlapping self-and-neighbor groups; averaged payoff; random focal and neighbor; PC keep/adopt; one initial cooperator; absorbing homogeneous states.",
+          "changed": "External decision model replaces the original Fermi probability with selection strength .01; reduced horizon/replicates.",
+          "information": "Only current focal/selected-neighbor strategies and average payoffs, focal group sizes and public game rules; no other colony or future action.",
+          "independent_batch": "One asynchronous update in each disjoint colony per SDK round."
+        }
+      },
+      {
+        "id": "sa-pgg-star_r6-s7",
+        "paper_id": "sa_wang_su_2026",
+        "rounds": 60,
+        "seed": 7,
+        "condition": "star_r6",
+        "environment": {
+          "scenario": "network_public_goods_pairwise_comparison",
+          "paper_doi": "10.1126/sciadv.aeb1263",
+          "agents_per_colony": 10,
+          "independent_colonies": 4,
+          "topology": "star",
+          "synergy": 6.0,
+          "cost": 1,
+          "seed": 7,
+          "initial_states": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "source_repository": "https://github.com/ChaoqianSCI/Spatial-PGGs-any-network",
+          "source_commit": "5a2f280bf76fe3ca36566242ca4edf5700d66229",
+          "source_file": "pgggraph_PC.py",
+          "preserved": "Overlapping self-and-neighbor groups; averaged payoff; random focal and neighbor; PC keep/adopt; one initial cooperator; absorbing homogeneous states.",
+          "changed": "External decision model replaces the original Fermi probability with selection strength .01; reduced horizon/replicates.",
+          "information": "Only current focal/selected-neighbor strategies and average payoffs, focal group sizes and public game rules; no other colony or future action.",
+          "independent_batch": "One asynchronous update in each disjoint colony per SDK round."
+        }
+      },
+      {
+        "id": "sa-pgg-complete_r6-s7",
+        "paper_id": "sa_wang_su_2026",
+        "rounds": 60,
+        "seed": 7,
+        "condition": "complete_r6",
+        "environment": {
+          "scenario": "network_public_goods_pairwise_comparison",
+          "paper_doi": "10.1126/sciadv.aeb1263",
+          "agents_per_colony": 10,
+          "independent_colonies": 4,
+          "topology": "complete",
+          "synergy": 6.0,
+          "cost": 1,
+          "seed": 7,
+          "initial_states": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "source_repository": "https://github.com/ChaoqianSCI/Spatial-PGGs-any-network",
+          "source_commit": "5a2f280bf76fe3ca36566242ca4edf5700d66229",
+          "source_file": "pgggraph_PC.py",
+          "preserved": "Overlapping self-and-neighbor groups; averaged payoff; random focal and neighbor; PC keep/adopt; one initial cooperator; absorbing homogeneous states.",
+          "changed": "External decision model replaces the original Fermi probability with selection strength .01; reduced horizon/replicates.",
+          "information": "Only current focal/selected-neighbor strategies and average payoffs, focal group sizes and public game rules; no other colony or future action.",
+          "independent_batch": "One asynchronous update in each disjoint colony per SDK round."
+        }
+      },
+      {
+        "id": "sa-naming-committed_0-s19",
+        "paper_id": "sa_ashery_2025",
+        "rounds": 96,
+        "seed": 19,
+        "condition": "committed_0",
+        "environment": {
+          "scenario": "llm_naming_game",
+          "paper_doi": "10.1126/sciadv.adu9368",
+          "agents": 24,
+          "memory_size": 5,
+          "options": [
+            "Q",
+            "M"
+          ],
+          "reward": 100,
+          "penalty": -50,
+          "seed": 19,
+          "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+          "mode": "fresh_engine",
+          "option_order": "fresh seeded order; original order was not recorded in archive",
+          "committed_members": 0,
+          "committed_to": null,
+          "initial_convention": "no history",
+          "reproduction_scope": "Fresh external model substitution; two-option selected protocol; no full tipping-threshold estimate."
+        }
+      },
+      {
+        "id": "sa-naming-committed_4-s19",
+        "paper_id": "sa_ashery_2025",
+        "rounds": 96,
+        "seed": 19,
+        "condition": "committed_4",
+        "environment": {
+          "scenario": "llm_naming_game",
+          "paper_doi": "10.1126/sciadv.adu9368",
+          "agents": 24,
+          "memory_size": 5,
+          "options": [
+            "Q",
+            "M"
+          ],
+          "reward": 100,
+          "penalty": -50,
+          "seed": 19,
+          "initial_state_sha256": "7d0d73aae7e38ca9082a134e6eb57f003c622903284404dace3802e50faf81e5",
+          "mode": "fresh_engine",
+          "option_order": "fresh seeded order; original order was not recorded in archive",
+          "committed_members": 4,
+          "committed_to": "M",
+          "initial_convention": "five Q/Q successes per individual",
+          "reproduction_scope": "Fresh external model substitution; two-option selected protocol; no full tipping-threshold estimate."
+        }
+      },
+      {
+        "id": "sa-naming-committed_5-s19",
+        "paper_id": "sa_ashery_2025",
+        "rounds": 96,
+        "seed": 19,
+        "condition": "committed_5",
+        "environment": {
+          "scenario": "llm_naming_game",
+          "paper_doi": "10.1126/sciadv.adu9368",
+          "agents": 24,
+          "memory_size": 5,
+          "options": [
+            "Q",
+            "M"
+          ],
+          "reward": 100,
+          "penalty": -50,
+          "seed": 19,
+          "initial_state_sha256": "68bb3fa983bb692cdec8fd13cff907a2568ee2313248eb5ab3c794a3aa53b51d",
+          "mode": "fresh_engine",
+          "option_order": "fresh seeded order; original order was not recorded in archive",
+          "committed_members": 5,
+          "committed_to": "M",
+          "initial_convention": "five Q/Q successes per individual",
+          "reproduction_scope": "Fresh external model substitution; two-option selected protocol; no full tipping-threshold estimate."
+        }
+      },
+      {
+        "id": "sa-majority-n20-s19",
+        "paper_id": "sa_demarzo_2026",
+        "rounds": 80,
+        "seed": 19,
+        "condition": "N_20",
+        "environment": {
+          "scenario": "llm_majority_opinion",
+          "paper_doi": "10.1126/sciadv.aea6091",
+          "agents": 20,
+          "seed": 19,
+          "schedule": "one random member per update; dt=1/N; no memory, reward or own opinion in input",
+          "prompt_fidelity": "semantic adaptation, not original token/output-format replication"
+        }
+      },
+      {
+        "id": "sa-majority-n50-s19",
+        "paper_id": "sa_demarzo_2026",
+        "rounds": 200,
+        "seed": 19,
+        "condition": "N_50",
+        "environment": {
+          "scenario": "llm_majority_opinion",
+          "paper_doi": "10.1126/sciadv.aea6091",
+          "agents": 50,
+          "seed": 19,
+          "schedule": "one random member per update; dt=1/N; no memory, reward or own opinion in input",
+          "prompt_fidelity": "semantic adaptation, not original token/output-format replication"
+        }
+      },
+      {
+        "id": "sa-pgg-star_r3-s19",
+        "paper_id": "sa_wang_su_2026",
+        "rounds": 60,
+        "seed": 19,
+        "condition": "star_r3",
+        "environment": {
+          "scenario": "network_public_goods_pairwise_comparison",
+          "paper_doi": "10.1126/sciadv.aeb1263",
+          "agents_per_colony": 10,
+          "independent_colonies": 4,
+          "topology": "star",
+          "synergy": 3.0,
+          "cost": 1,
+          "seed": 19,
+          "initial_states": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "source_repository": "https://github.com/ChaoqianSCI/Spatial-PGGs-any-network",
+          "source_commit": "5a2f280bf76fe3ca36566242ca4edf5700d66229",
+          "source_file": "pgggraph_PC.py",
+          "preserved": "Overlapping self-and-neighbor groups; averaged payoff; random focal and neighbor; PC keep/adopt; one initial cooperator; absorbing homogeneous states.",
+          "changed": "External decision model replaces the original Fermi probability with selection strength .01; reduced horizon/replicates.",
+          "information": "Only current focal/selected-neighbor strategies and average payoffs, focal group sizes and public game rules; no other colony or future action.",
+          "independent_batch": "One asynchronous update in each disjoint colony per SDK round."
+        }
+      },
+      {
+        "id": "sa-pgg-star_r6-s19",
+        "paper_id": "sa_wang_su_2026",
+        "rounds": 60,
+        "seed": 19,
+        "condition": "star_r6",
+        "environment": {
+          "scenario": "network_public_goods_pairwise_comparison",
+          "paper_doi": "10.1126/sciadv.aeb1263",
+          "agents_per_colony": 10,
+          "independent_colonies": 4,
+          "topology": "star",
+          "synergy": 6.0,
+          "cost": 1,
+          "seed": 19,
+          "initial_states": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "source_repository": "https://github.com/ChaoqianSCI/Spatial-PGGs-any-network",
+          "source_commit": "5a2f280bf76fe3ca36566242ca4edf5700d66229",
+          "source_file": "pgggraph_PC.py",
+          "preserved": "Overlapping self-and-neighbor groups; averaged payoff; random focal and neighbor; PC keep/adopt; one initial cooperator; absorbing homogeneous states.",
+          "changed": "External decision model replaces the original Fermi probability with selection strength .01; reduced horizon/replicates.",
+          "information": "Only current focal/selected-neighbor strategies and average payoffs, focal group sizes and public game rules; no other colony or future action.",
+          "independent_batch": "One asynchronous update in each disjoint colony per SDK round."
+        }
+      },
+      {
+        "id": "sa-pgg-complete_r6-s19",
+        "paper_id": "sa_wang_su_2026",
+        "rounds": 60,
+        "seed": 19,
+        "condition": "complete_r6",
+        "environment": {
+          "scenario": "network_public_goods_pairwise_comparison",
+          "paper_doi": "10.1126/sciadv.aeb1263",
+          "agents_per_colony": 10,
+          "independent_colonies": 4,
+          "topology": "complete",
+          "synergy": 6.0,
+          "cost": 1,
+          "seed": 19,
+          "initial_states": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "source_repository": "https://github.com/ChaoqianSCI/Spatial-PGGs-any-network",
+          "source_commit": "5a2f280bf76fe3ca36566242ca4edf5700d66229",
+          "source_file": "pgggraph_PC.py",
+          "preserved": "Overlapping self-and-neighbor groups; averaged payoff; random focal and neighbor; PC keep/adopt; one initial cooperator; absorbing homogeneous states.",
+          "changed": "External decision model replaces the original Fermi probability with selection strength .01; reduced horizon/replicates.",
+          "information": "Only current focal/selected-neighbor strategies and average payoffs, focal group sizes and public game rules; no other colony or future action.",
+          "independent_batch": "One asynchronous update in each disjoint colony per SDK round."
+        }
+      }
+    ],
+    "batch_semantics": "independent ready decisions; each question embeds only its local context",
+    "action_sampling": "SDK stable seed with namespaced actor IDs; not paired common random numbers",
+    "probability_reuse": false
+  },
+  "claim": "fresh decision-model substitution; phenomenon tests, not full-paper replication"
+}

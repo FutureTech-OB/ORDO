@@ -1,0 +1,113 @@
+{
+  "study_doi": "10.1038/s41467-026-78228-y",
+  "arm": "baseline Gun Control, new hybrid model",
+  "population": 1000,
+  "epochs": 40,
+  "independent_worlds": 1,
+  "seed": 20261030,
+  "stages": 121,
+  "jev_model": "typesafe/jev-1.14",
+  "content_model": "deepseek/deepseek-v4.1-flash-1017",
+  "content_temperature": 1,
+  "content_reasoning": "low",
+  "content_max_tokens": 4096,
+  "jev_cap_usd": 10.0,
+  "content_cap_usd": 40.0,
+  "workers": 32,
+  "jev_concurrency": 8,
+  "upstream": {
+    "repo": "tsinghua-fib-lab/LLM_for_Polarization",
+    "commit": "7bc447f6d470aa232f93de5dabaa4c87fc4414d9",
+    "files": [
+      {
+        "path": "simulate.py",
+        "bytes": 20910,
+        "sha256": "05147b487a98615efd2600e0e736966330721bed7f8f962b90138eab51d01a68"
+      },
+      {
+        "path": "utils.py",
+        "bytes": 58977,
+        "sha256": "0784c500283bd58057a4fb2fe9bb1d185187810af0b18eeadd25102908cb7b48"
+      },
+      {
+        "path": "run.py",
+        "bytes": 3299,
+        "sha256": "1384c8dc099e1b425f58bdc669974809a967e061ef3424aa0d33e5c0b3bbc090"
+      },
+      {
+        "path": "source_data/Gun Control/epoch_run0.pkl",
+        "bytes": 70970,
+        "sha256": "5148ba74fdc48a6f7cd6c43c0c0107da414d69410188afec8d64b2fda14459f5"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1068,
+        "sha256": "a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde"
+      }
+    ]
+  },
+  "source_hashes": {
+    "examples/nc_polarization_live/analyze.py": "9daeb564078f1414d05cb66ea5af5f2d677b3c93139a9867bcc6da015d13a324",
+    "examples/nc_polarization_live/content.py": "986a1990b5813336e5a5c468be0a7a4b44b7e6fb06bf263f48a2b35a55c27950",
+    "examples/nc_polarization_live/protocol.py": "c3a14f4235d3092b3d95cff6dde2aaac56bb77db08691a84a94d670e20db5cf4",
+    "examples/nc_polarization_live/run.py": "96c9c8caa9ee50c4ad1be4aef9f0496d3dd1fb624354ec0fc44a4dfeff96302f",
+    "examples/nc_polarization_live/sources.py": "a4bbb3b6c92753c48c7249c8db619bfdf39c99069f64d97fb820d92768601684",
+    "examples/nc_polarization_live/__init__.py": "117dea0a1f7e05ce1bf8d88726f1ba8d1a532c37aff14e30815fb104d0477145",
+    "examples/nc_polarization_live/source_manifest.json": "488fa33394535c37102513af7bfb0d69c07a28e5bbfe03346a58ab2add74d863",
+    "examples/nc_polarization/archive.py": "47283ff2a0ebb1e620005e0b27eef9492074756f5fba9b4250fadaaa60469ea7",
+    "examples/jev_validation/run.py": "54ea0a2078ecd3b2454fe76238b09c77170abef4ee9617c16f1d50974371b9d9",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/randomness.py": "a8b74b3c59261135d0c79bcc96230bc0a227f56fbfc6e9ffa874ab879df696f6",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a",
+    "orgabm/decision_journal.py": "52e1ca903f233d2b6ff39dbc7dd7fd7bbb0dad1559a9325c937a95b94c4644bf"
+  },
+  "initial_metrics": {
+    "population": 1000,
+    "edges": 4000,
+    "unique_edges": 4000,
+    "duplicate_edge_rows": 0,
+    "self_edge_rows": 0,
+    "counts": {
+      "-2": 99,
+      "-1": 201,
+      "0": 396,
+      "1": 204,
+      "2": 100
+    },
+    "neutral_share": 0.396,
+    "mean_opinion": 0.005,
+    "polarization": 0.803,
+    "exact_opinion_homophily": 0.253,
+    "same_sign_homophily": 0.335
+  },
+  "scope": "One full main-figure-size condition, not all topics/models/interventions or source repetitions.",
+  "no_future_archive_inputs": true,
+  "probability_reuse": false,
+  "criterion": "Compare direction and trajectory of mean absolute opinion, neutral share and network homophily to baseline archive; successful execution alone is not behavioral replication.",
+  "adapter": {
+    "scenario": "nc_polarization_fresh_hybrid",
+    "doi": "10.1038/s41467-026-78228-y",
+    "population": 1000,
+    "epochs": 40,
+    "topic": "Gun Control",
+    "source_initial_sha256": "1619dce63d67e6ae4e4abe3ec767a7c8c058231584a41b03be25d06f06690873",
+    "source_condition": "archived baseline Gun Control epoch 0; original 1000/40 main-figure dimensions",
+    "decision_units": "stance per person, continue per outgoing edge slot, speak per unique directed pair",
+    "modifications": [
+      "Jev samples stance/continue/speak; conditional fresh LLM reasons/posts replace joint generation",
+      "Missing author patience initialized to 0 for all people; not inferred from archived data",
+      "Deterministic ascending actor/pair order replaces Python object-set order",
+      "Omit overwritten persuasion calls; retain exact final author prompt",
+      "Modern explicitly pinned generation backbone; not original GPT-3.5 trajectories"
+    ],
+    "source_quirks_preserved": [
+      "-0 message indexing",
+      "sequential spread and target=0 truthiness",
+      "rewiring excludes self but allows duplicate outgoing edges",
+      "reasons and fresh posts feed next period"
+    ],
+    "initial_message_status": "Source initialization input has empty messages. Fresh 10% seed posts are generated.",
+    "evidence": "One new hybrid model arm; not pure Jev, not a full-paper replication, not human validation."
+  }
+}

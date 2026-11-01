@@ -1,0 +1,1288 @@
+{
+  "status": "complete",
+  "decisions": 35631,
+  "worlds": [
+    {
+      "family": "naming",
+      "condition": "spontaneous_W10",
+      "repeat": 0,
+      "seed": 1001,
+      "world": "w0",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          13,
+          19
+        ],
+        "answers": [
+          "D",
+          "Y"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.16666666666666666,
+        "local_view_sha256": {
+          "13": "5bd9fcc99c9b225ed7145d99ef918c1d10771bc181999e7224e394b267113f1f",
+          "19": "14a5669c12682d09e38ef12f2ff88b1d0ceb24b78f260942f9bee67f1b2a8c93"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.16666666666666666,
+        "dominant": "Y",
+        "dominant_share": 0.13194444444444445,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M",
+          "X",
+          "Y",
+          "F",
+          "J",
+          "P",
+          "R",
+          "C",
+          "D"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1001,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "427c24cec7cb96b94fd3e0664d226c0683e396ce565efca1ac2f7417a4896c76"
+    },
+    {
+      "family": "naming",
+      "condition": "spontaneous_W10",
+      "repeat": 1,
+      "seed": 1002,
+      "world": "w1",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          3,
+          18
+        ],
+        "answers": [
+          "J",
+          "Y"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.09722222222222222,
+        "local_view_sha256": {
+          "3": "ca455d9030e1e7527ce28f6d7f4d3939f8191142562b4768eea09cd587c54edc",
+          "18": "d8f95b4822355483c0ef29c8ab30fee985cd21346becb2c82a3ba99f6b49a816"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.09722222222222222,
+        "dominant": "M",
+        "dominant_share": 0.13194444444444445,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M",
+          "X",
+          "Y",
+          "F",
+          "J",
+          "P",
+          "R",
+          "C",
+          "D"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1002,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "eec302a05c0700a2ce4fd2b55e45c2e99d7b603da0df077f2da5acee95ebcc1f"
+    },
+    {
+      "family": "naming",
+      "condition": "spontaneous_W10",
+      "repeat": 2,
+      "seed": 1003,
+      "world": "w2",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          17,
+          11
+        ],
+        "answers": [
+          "F",
+          "M"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.16666666666666666,
+        "local_view_sha256": {
+          "17": "78805a5efcb51df8260a8b7a5afd744d07cf8907650b3408b1e367f7d3670a48",
+          "11": "64a43057309af2f1c830844b8bad03f684a44b1fea0fc1c71344012bb1f8d518"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.16666666666666666,
+        "dominant": "Y",
+        "dominant_share": 0.13194444444444445,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M",
+          "X",
+          "Y",
+          "F",
+          "J",
+          "P",
+          "R",
+          "C",
+          "D"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1003,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "2a94e648dbf3439d66467f2c3f5eeb99510e83b672582e74c7da3912f92d5e55"
+    },
+    {
+      "family": "naming",
+      "condition": "spontaneous_W10",
+      "repeat": 3,
+      "seed": 1004,
+      "world": "w3",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          7,
+          15
+        ],
+        "answers": [
+          "D",
+          "D"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.1388888888888889,
+        "local_view_sha256": {
+          "7": "b30dbe046d432faf081278871fa391814dc4ce55e593f44cdc6d46b86c97acff",
+          "15": "c5ecf0c31bb48024d53a6e50ee1f2024dc7e9509323d3be2f93727a00f850b0b"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.1388888888888889,
+        "dominant": "D",
+        "dominant_share": 0.13194444444444445,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M",
+          "X",
+          "Y",
+          "F",
+          "J",
+          "P",
+          "R",
+          "C",
+          "D"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1004,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "ce337efaa5bafff6113788e385fbbe2ed9065283397006d851b02f1ce1efbc91"
+    },
+    {
+      "family": "naming",
+      "condition": "spontaneous_W2",
+      "repeat": 0,
+      "seed": 1005,
+      "world": "w4",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          21,
+          19
+        ],
+        "answers": [
+          "Q",
+          "Q"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.4444444444444444,
+        "local_view_sha256": {
+          "21": "8a7ff10843d16f0c5b5628390f55f99977c249d239f0f3ef6492253451dd2c95",
+          "19": "4ed0e1d8817efc7f9f72d8641877d38655a2992e50cc2fecca4021cbf8eb674e"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.4444444444444444,
+        "dominant": "Q",
+        "dominant_share": 0.5277777777777778,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1005,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "766c908b0567d3a3259d2be2e88bb775694ed9e60c8ed5ae2fb292fcf40faa46"
+    },
+    {
+      "family": "naming",
+      "condition": "spontaneous_W2",
+      "repeat": 1,
+      "seed": 1006,
+      "world": "w5",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          19,
+          6
+        ],
+        "answers": [
+          "M",
+          "M"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.4861111111111111,
+        "local_view_sha256": {
+          "19": "ab44bf9ecb0d9483076ca470bb8302a0db118175cd72ffea6bc196ca8c55b02a",
+          "6": "050eac36fa765624d13873c9e1d592f11892bdaf6be59db0f488c431218d23b2"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.4861111111111111,
+        "dominant": "Q",
+        "dominant_share": 0.5347222222222222,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1006,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "e64b667fb7e6800f6dd6c2977e7fb7223c85e3e9da097f99ac92c30d0fe5bfd6"
+    },
+    {
+      "family": "naming",
+      "condition": "spontaneous_W2",
+      "repeat": 2,
+      "seed": 1007,
+      "world": "w6",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          12,
+          22
+        ],
+        "answers": [
+          "M",
+          "Q"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.5694444444444444,
+        "local_view_sha256": {
+          "12": "8f604db8932fa0aecf4bbe23298f8338de9f3253a81bb411254480fdfd48483f",
+          "22": "894a48953b99236c3d077468f6ffb69d326704f8a4499654de1d74f160b90dd0"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5694444444444444,
+        "dominant": "Q",
+        "dominant_share": 0.5069444444444444,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1007,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "f3b14075cbcb99fcc45a33a4c504f36f2d6786cd71643773cb75f176494cf72a"
+    },
+    {
+      "family": "naming",
+      "condition": "spontaneous_W2",
+      "repeat": 3,
+      "seed": 1008,
+      "world": "w7",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          15,
+          22
+        ],
+        "answers": [
+          "Q",
+          "M"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.4861111111111111,
+        "local_view_sha256": {
+          "15": "c6e0d04beac416c908c34999b6fb855bb688a4c2ecca8435e076b08698cb2ae8",
+          "22": "daeea69699fecb188a729e5bcef62fd26e4b37384358c8606ec0e4929a63f69b"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.4861111111111111,
+        "dominant": "M",
+        "dominant_share": 0.5069444444444444,
+        "target_share": null,
+        "mutable_target_share": null,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1008,
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": null,
+        "committed_agents": 0,
+        "target": null,
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "cb94b6ea3cd8f93e9f3835dbd674ff82a702d14f8f09401e9cc7fa296f73d668"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_0",
+      "repeat": 0,
+      "seed": 1009,
+      "committed": 0,
+      "initial": "Q",
+      "target": "M",
+      "world": "w8",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          22,
+          7
+        ],
+        "answers": [
+          "M",
+          "M"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.5,
+        "local_view_sha256": {
+          "22": "dc01191f7e625b8bfddaf97c6e6f90e26d2e154e2f31f4f0228c5107643653d3",
+          "7": "ba24ab9dff38295789131e318b634c86f9b0f70e68823c39830541695b5c5806"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5,
+        "dominant": "M",
+        "dominant_share": 0.5138888888888888,
+        "target_share": 0.5138888888888888,
+        "mutable_target_share": 0.5138888888888888,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1009,
+        "initial_state_sha256": "aaaff6dd9a85730ac892ce662ad42f589aaa107193aa3ca9ccf8dc7cc9c876e4",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 0,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "193c716a9b0f37c0d50d3123996efc213af68ca6bd01449feb19193651482b07"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_0",
+      "repeat": 1,
+      "seed": 1010,
+      "committed": 0,
+      "initial": "Q",
+      "target": "M",
+      "world": "w9",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          11,
+          18
+        ],
+        "answers": [
+          "M",
+          "Q"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.4722222222222222,
+        "local_view_sha256": {
+          "11": "260969d728477bbe4460f69e41a9fb529ab0bc34c73e303c14200bb6468775fb",
+          "18": "923e0458be570d27f326cbdd66d5adaee6362a74153ac70bf8928e3558776034"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.4722222222222222,
+        "dominant": "M",
+        "dominant_share": 0.5416666666666666,
+        "target_share": 0.5416666666666666,
+        "mutable_target_share": 0.5416666666666666,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1010,
+        "initial_state_sha256": "aaaff6dd9a85730ac892ce662ad42f589aaa107193aa3ca9ccf8dc7cc9c876e4",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 0,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "ea443e4ab0a2476e5b59c44c06e2055b93677736bdc441d3a50751250367e8b4"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_0",
+      "repeat": 2,
+      "seed": 1011,
+      "committed": 0,
+      "initial": "Q",
+      "target": "M",
+      "world": "w10",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          5,
+          15
+        ],
+        "answers": [
+          "M",
+          "M"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.5138888888888888,
+        "local_view_sha256": {
+          "5": "311983f7a86489a82f101abffb45ef29fc1d65f5b41daa300c65de3e6ce3ff81",
+          "15": "9c6b67533e2eab5aae766130bb5f3df973cae9baa29a1d5be2c9fdfd20d67519"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5138888888888888,
+        "dominant": "Q",
+        "dominant_share": 0.5208333333333334,
+        "target_share": 0.4791666666666667,
+        "mutable_target_share": 0.4791666666666667,
+        "fixed_agents": 0
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1011,
+        "initial_state_sha256": "aaaff6dd9a85730ac892ce662ad42f589aaa107193aa3ca9ccf8dc7cc9c876e4",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 0,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "27cf494ae783ff1f3db3944634344b593baa1f740d13a1e3a3410592af11d3c8"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_4",
+      "repeat": 0,
+      "seed": 1012,
+      "committed": 4,
+      "initial": "Q",
+      "target": "M",
+      "world": "w11",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          2,
+          8
+        ],
+        "answers": [
+          "Q",
+          "M"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.5,
+        "local_view_sha256": {
+          "2": "dede8e8eb454686f497281d662f8499f81bde15990470b104e3aa8e6b5125f1d"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5,
+        "dominant": "M",
+        "dominant_share": 0.625,
+        "target_share": 0.625,
+        "mutable_target_share": 0.5221238938053098,
+        "fixed_agents": 4
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1012,
+        "initial_state_sha256": "80389e09aefe50354f3dd4036580d9f8a379aa9a7e05d122e795389c66ff26c7",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 4,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "0da3216c915b3f26dfc8e71357cd6f733e3802f5e17fb100ad308be5765ece60"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_4",
+      "repeat": 1,
+      "seed": 1013,
+      "committed": 4,
+      "initial": "Q",
+      "target": "M",
+      "world": "w12",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          7,
+          8
+        ],
+        "answers": [
+          "M",
+          "M"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.5,
+        "local_view_sha256": {
+          "8": "805eed7f7ad31331b982492785d6558620b0fbceff847e68710083b1700ede5d"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5,
+        "dominant": "M",
+        "dominant_share": 0.5833333333333334,
+        "target_share": 0.5833333333333334,
+        "mutable_target_share": 0.48717948717948717,
+        "fixed_agents": 4
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1013,
+        "initial_state_sha256": "088c9ffd8ea3c5b21ddfb65bb9741db84b5706819d9b740c7b8f79b79f6326e1",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 4,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "529f8ad700e28b6e42e8d37095c446e1a5a3e7c7f951861aa54f410ee258daba"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_4",
+      "repeat": 2,
+      "seed": 1014,
+      "committed": 4,
+      "initial": "Q",
+      "target": "M",
+      "world": "w13",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          3,
+          24
+        ],
+        "answers": [
+          "M",
+          "Q"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.5972222222222222,
+        "local_view_sha256": {
+          "24": "2bb52eede72f46c816576fe4abce41c4c6a6c6b8d40d7b1001003c5e3b3b6492"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5972222222222222,
+        "dominant": "M",
+        "dominant_share": 0.6736111111111112,
+        "target_share": 0.6736111111111112,
+        "mutable_target_share": 0.5948275862068966,
+        "fixed_agents": 4
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1014,
+        "initial_state_sha256": "5b3082d5a6d7607b5f8030f4ca10b16a26a573d77da960ea5f0d6ec73a6e94bd",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 4,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "e0cb3e0ca649501e176e220b9fff63291b6a5c97fce3a987c7a3ff51dfb9fa82"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_5",
+      "repeat": 0,
+      "seed": 1015,
+      "committed": 5,
+      "initial": "Q",
+      "target": "M",
+      "world": "w14",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          21,
+          6
+        ],
+        "answers": [
+          "M",
+          "M"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.5138888888888888,
+        "local_view_sha256": {
+          "6": "12ebbed3711c45faa99b94e7b29c0aa178c4945aa1be826e6c851f1bd98d251d"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5138888888888888,
+        "dominant": "M",
+        "dominant_share": 0.6736111111111112,
+        "target_share": 0.6736111111111112,
+        "mutable_target_share": 0.584070796460177,
+        "fixed_agents": 5
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1015,
+        "initial_state_sha256": "cc9982e404f9204456e0bd737533a15d7833be7ba38557d58b5f7dd5a7f1f070",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 5,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "605ac01605ca1a6b9678704f2444d163024104f4279df6f9066efbe8fbf28ccc"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_5",
+      "repeat": 1,
+      "seed": 1016,
+      "committed": 5,
+      "initial": "Q",
+      "target": "M",
+      "world": "w15",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          18,
+          14
+        ],
+        "answers": [
+          "Q",
+          "M"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.5138888888888888,
+        "local_view_sha256": {
+          "18": "12f35010ef295e041ebe00b1a3ba222a00f2d5a41d06f86a2bf07abb4504463b"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5138888888888888,
+        "dominant": "M",
+        "dominant_share": 0.6319444444444444,
+        "target_share": 0.6319444444444444,
+        "mutable_target_share": 0.5046728971962616,
+        "fixed_agents": 5
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1016,
+        "initial_state_sha256": "9bdf09d5b5ce0d09f0f037310e870479b024041afee44d070c48eb645efa845b",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 5,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "52763f76f3cd32eba2f5660ff0b91ed02dad051d946fe0d974c84f7955158251"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_5",
+      "repeat": 2,
+      "seed": 1017,
+      "committed": 5,
+      "initial": "Q",
+      "target": "M",
+      "world": "w16",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          10,
+          24
+        ],
+        "answers": [
+          "M",
+          "Q"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.4861111111111111,
+        "local_view_sha256": {
+          "10": "ac8b6b87a142def685df62f736bd03b07f8d732e67924e3788f9f3c76f6764bb",
+          "24": "25cb1bc904e2f7bc3c7b71ac370128c4150c13dc8f429fa25b12e30602cf0332"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.4861111111111111,
+        "dominant": "M",
+        "dominant_share": 0.6597222222222222,
+        "target_share": 0.6597222222222222,
+        "mutable_target_share": 0.5739130434782609,
+        "fixed_agents": 5
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1017,
+        "initial_state_sha256": "2010ec5d65a31fc6fcfdfaebdf06d32f5f6964617b782ef7bc21f7d9977df9f2",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 5,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "89ab20330f13baa3a61017f418cdf947c9cc0b899903661e3fa1f1bad1a8b7ac"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_8",
+      "repeat": 0,
+      "seed": 1018,
+      "committed": 8,
+      "initial": "Q",
+      "target": "M",
+      "world": "w17",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          16,
+          23
+        ],
+        "answers": [
+          "M",
+          "Q"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.5138888888888888,
+        "local_view_sha256": {
+          "16": "210cef219b685c8f4f1bd6ea23d12a9cba7a293e9697c5f234414649a8533e09",
+          "23": "1fd2ed815f761aa1bb1f4b27b6e8f584a6b32709b76cc218c53d770411a49b49"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5138888888888888,
+        "dominant": "M",
+        "dominant_share": 0.6319444444444444,
+        "target_share": 0.6319444444444444,
+        "mutable_target_share": 0.45918367346938777,
+        "fixed_agents": 8
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1018,
+        "initial_state_sha256": "941d2574818f0425b35d8f0974aedd05ee20404e82c5de8a201daa97e820ece2",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 8,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "a614ed9ff6086c28ddb505b9f56f1458fce9f2174716d00c3cc2e1f3e870e762"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_8",
+      "repeat": 1,
+      "seed": 1019,
+      "committed": 8,
+      "initial": "Q",
+      "target": "M",
+      "world": "w18",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          23,
+          16
+        ],
+        "answers": [
+          "Q",
+          "M"
+        ],
+        "successful": 0,
+        "payoff": -50,
+        "recent_success": 0.4583333333333333,
+        "local_view_sha256": {
+          "23": "bd2939dfbd5121c3bfb7f1513ff84bafd606a3c66b88fc21eb51b0a3e6bcfd4b"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.4583333333333333,
+        "dominant": "M",
+        "dominant_share": 0.6319444444444444,
+        "target_share": 0.6319444444444444,
+        "mutable_target_share": 0.49038461538461536,
+        "fixed_agents": 8
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1019,
+        "initial_state_sha256": "b23e438c12c107e46a86374fd7330508722673e0adac7a985c2c5c534a81ad13",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 8,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "21d92bd0cf27695d5778a4cc341a70991449b73d435f1cb1e1015f232af7ed7b"
+    },
+    {
+      "family": "naming",
+      "condition": "Q_to_M_8",
+      "repeat": 2,
+      "seed": 1020,
+      "committed": 8,
+      "initial": "Q",
+      "target": "M",
+      "world": "w19",
+      "updates": 1000,
+      "stop": "horizon",
+      "first_target_window_update": null,
+      "first_consensus_update": null,
+      "last": {
+        "interaction": 1000,
+        "population_round": 41.666666666666664,
+        "players": [
+          9,
+          24
+        ],
+        "answers": [
+          "Q",
+          "Q"
+        ],
+        "successful": 1,
+        "payoff": 100,
+        "recent_success": 0.5555555555555556,
+        "local_view_sha256": {
+          "9": "859bb040c3233ed4d438c1b563056e322a9a69dd704f1169704b6a7787727de0",
+          "24": "b9b926339b7cab1ce5e3e374c15391d08dd506ba8d2e94eb0c7e4facfbecc9c2"
+        },
+        "updates": 1000,
+        "population_rounds": 41.666666666666664,
+        "window_interactions": 72,
+        "success": 0.5555555555555556,
+        "dominant": "M",
+        "dominant_share": 0.6666666666666666,
+        "target_share": 0.6666666666666666,
+        "mutable_target_share": 0.4782608695652174,
+        "fixed_agents": 8
+      },
+      "environment": {
+        "scenario": "llm_naming_game",
+        "paper_doi": "10.1126/sciadv.adu9368",
+        "agents": 24,
+        "memory_size": 5,
+        "options": [
+          "Q",
+          "M"
+        ],
+        "reward": 100,
+        "penalty": -50,
+        "seed": 1020,
+        "initial_state_sha256": "d7e999a6cba76f3c1767a507aa08479d25357a3fdeca4f79311d5bf550864a5b",
+        "mode": "fresh_engine",
+        "option_order": "fresh seeded order; original order was not recorded in archive",
+        "prompt_version": "paper-semantic-v1",
+        "initial_convention": "Q",
+        "committed_agents": 8,
+        "target": "M",
+        "adaptation": "source game framing/history, typed probability output instead of chain-of-thought text"
+      },
+      "final_individual_state_sha256": "964608d8a759608bd627ad91d98fcc55d26412e8d4cf78c95f6af66ef9285da2"
+    }
+  ]
+}

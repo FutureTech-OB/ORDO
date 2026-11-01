@@ -1,0 +1,19 @@
+{
+  "agents": 16,
+  "departments": 4,
+  "rounds": 3,
+  "seed": 7,
+  "contact": "bridge",
+  "engine": "best",
+  "population": {
+    "sampling": "with_replacement",
+    "seed": 2026,
+    "records": [
+      {"id": "demo-a", "name": "Alex Lin", "background": {"occupation": "Product R&D", "years_experience": 2}, "skills": {"domain": "Prototyping"}, "traits": {"work_style": "Curious and interested in understanding new methods"}, "goals": ["Build professional experience"], "source": {"dataset": "Org ABM fictional demonstration", "synthetic": true}},
+      {"id": "demo-b", "name": "Casey Chen", "background": {"occupation": "Operations", "years_experience": 8}, "skills": {"domain": "Process improvement"}, "traits": {"work_style": "Values stability and experience-based judgment"}, "goals": ["Improve work quality", "Reduce rework"], "source": {"dataset": "Org ABM fictional demonstration", "synthetic": true}},
+      {"id": "demo-c", "name": "Jordan Zhou", "background": {"occupation": "Technical support", "years_experience": 5}, "skills": {"domain": "Cross-team communication"}, "traits": {"work_style": "Attentive to colleague feedback"}, "goals": ["Help the team solve problems"], "source": {"dataset": "Org ABM fictional demonstration", "synthetic": true}},
+      {"id": "demo-d", "name": "Riley Xu", "background": {"occupation": "Data analysis", "years_experience": 4}, "skills": {"domain": "Statistical analysis"}, "traits": {"work_style": "Values comparable evidence"}, "goals": ["Increase professional influence"], "source": {"dataset": "Org ABM fictional demonstration", "synthetic": true}}
+    ]
+  },
+  "structure": {"template": "department_hierarchy"}
+}

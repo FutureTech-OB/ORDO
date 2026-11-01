@@ -1,0 +1,1439 @@
+{
+  "status": "complete",
+  "python": "3.12.14",
+  "actual_model_api_calls": 0,
+  "requested_scope": "archived replay and mocked interfaces",
+  "probability_reuse": false,
+  "source_hashes": {
+    "environments.py": "705986585eac46af0d94d324b1aedb17012d7170f296d474cc7b778a7d9f12d6",
+    "run.py": "688fc25f1386372d65b3145df233af8b5a030472c1628578462fb07e0b6e0e0e",
+    "sources.py": "4b6cb5166610e8f865d9f1dccffc1b30bc4279ec86926186f81e5b0f612c67c1",
+    "verify_interfaces.py": "c5c30144ede575c1d826460f41a6e1bab8b65b8191e0b18bf0c41f71c220f8e3",
+    "__init__.py": "b98a5883f0087ddf3f996f8c4b308343db1a44afe171d52a84b639e2061b088d"
+  },
+  "naming": {
+    "evidence": "archived_author_LLM_action_replay",
+    "source_model_subset": "Claude archive only",
+    "episodes": 39,
+    "interactions": 12449,
+    "decisions": 22622,
+    "all_trackers_exact": true,
+    "all_final_individual_states_exact": true,
+    "conditions": {
+      "minority_4_Q_to_M": {
+        "episodes": 6,
+        "interactions": 4127,
+        "decisions": 6844,
+        "median_population_rounds": 27.3125,
+        "final_3N_success_mean": 0.9351851851851852,
+        "final_3N_target_M_share_mean": 0.8796296296296297
+      },
+      "minority_5_Q_to_M": {
+        "episodes": 6,
+        "interactions": 2001,
+        "decisions": 3136,
+        "median_population_rounds": 14.458333333333332,
+        "final_3N_success_mean": 1,
+        "final_3N_target_M_share_mean": 1.0
+      },
+      "spontaneous_W10": {
+        "episodes": 27,
+        "interactions": 6321,
+        "decisions": 12642,
+        "median_population_rounds": 9.708333333333334,
+        "final_3N_success_mean": 1,
+        "final_3N_target_M_share_mean": 0.14814814814814814
+      }
+    },
+    "individual_no_memory_choices": {
+      "M": 477,
+      "Y": 463,
+      "F": 476,
+      "D": 440,
+      "C": 466,
+      "X": 433,
+      "Q": 412,
+      "P": 461,
+      "J": 438,
+      "R": 434
+    },
+    "individual_no_memory_n": 4500,
+    "runs": [
+      {
+        "interactions": 265,
+        "decisions": 530,
+        "population_rounds": 11.041666666666666,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "5daa3537e0a0c00022a071817eb41bdfa6422f490218227195ad1c416cc6bffd",
+        "final_state_sha256": "75ebc87016ae2f556dde71a5ac9ac9c1ba6b2d5bfc73ca0b0e33fd205add63ba",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 265,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 0,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 211,
+        "decisions": 422,
+        "population_rounds": 8.791666666666666,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "8aec227e63e01ad856bf9d9251f042bb927d4ec69029579cbfe9b1a16a4927ca",
+        "final_state_sha256": "bf01154a0ebd934a03ec6aac60329b32c2dedafc4600e810964b25d16cc4f7bf",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "Y": 144
+        },
+        "archived_convergence": {
+          "converged_index": 211,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 1,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 384,
+        "decisions": 768,
+        "population_rounds": 16.0,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "ef80d3285484c5a34f4b85c6d8cf5308f0844d52cbf7ed1ae7071c6f828eaee9",
+        "final_state_sha256": "0ee8d2386d861589ef8957b83ab35335b94bc82ea031d35a7839c7c2963b12f1",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "X": 144
+        },
+        "archived_convergence": {
+          "converged_index": 384,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 2,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 323,
+        "decisions": 646,
+        "population_rounds": 13.458333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "a93fd01cd9b29a575651ccf52a75ac8d8abef0f5c3ba46a510d5e13021576e9f",
+        "final_state_sha256": "e37438aaac5990c10be089e151a2e11255dc0138e271d21c266954490faead3e",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "Q": 144
+        },
+        "archived_convergence": {
+          "converged_index": 323,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 3,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 167,
+        "decisions": 334,
+        "population_rounds": 6.958333333333333,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "58ea4c5c42cbe02de9f0433e3e0ce3717cf931366ce910d88b84d63987c7fcdd",
+        "final_state_sha256": "397b9be24bc376295c7fc6d086e99384ea12ff4eba33264fc3dd103236eeb1a4",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "X": 144
+        },
+        "archived_convergence": {
+          "converged_index": 167,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 4,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 233,
+        "decisions": 466,
+        "population_rounds": 9.708333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "61c3a0dda9a02db629ce07d313e340643bdd9848f5b91950470a8f1a9eee7253",
+        "final_state_sha256": "c47c4e2c9669550616040de00b44be46be2e7244524aac1df0676fc817656a8b",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "R": 144
+        },
+        "archived_convergence": {
+          "converged_index": 233,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 5,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 164,
+        "decisions": 328,
+        "population_rounds": 6.833333333333333,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "34fc27fa07de2e1860ddba22ff83cf8c6a5af2fa5e881cba9a568505d6c93dfd",
+        "final_state_sha256": "684541af30430a1fd2a2625a0cba7b725106e8b310b4e092ff760984fff308c8",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "D": 144
+        },
+        "archived_convergence": {
+          "converged_index": 164,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 6,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 242,
+        "decisions": 484,
+        "population_rounds": 10.083333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "33ba651fa4fa2ff8c3899a529feb33b2e9cda76582bea8e42110eb282c85b872",
+        "final_state_sha256": "f8455e38707329089a8232ac0d187265a7fb31f2521b80bae49b90e7a6deb75b",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 242,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 7,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 175,
+        "decisions": 350,
+        "population_rounds": 7.291666666666667,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "6c3a97ece80b764b75debc936335c15ef312e9e9d58f576232b22ecf8c532909",
+        "final_state_sha256": "d5383a30f5dcc779abd3b9eca508e733d67169112f22c347f2b4bc30186a192d",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "R": 144
+        },
+        "archived_convergence": {
+          "converged_index": 175,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 8,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 172,
+        "decisions": 344,
+        "population_rounds": 7.166666666666667,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "b4333f578dddb3cae5dc2e6aaf6ceb5967e690ac15fce7ed6bbb8d71a993e441",
+        "final_state_sha256": "758d6caaa3e4ef8e5817d71fe7d6f90a2c35289c588bc7e427351cb4b23e6384",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 172,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 9,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 161,
+        "decisions": 322,
+        "population_rounds": 6.708333333333333,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "a44bacf9e33d7373f7a2bf9d65f971cf2746f3c3b66785f93fa2b2304892570b",
+        "final_state_sha256": "5ef7ae5fc5c531488b984121eecf77c9d70b9d3f61f445cd99a48d10c2949e3a",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "Q": 144
+        },
+        "archived_convergence": {
+          "converged_index": 161,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 10,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 236,
+        "decisions": 472,
+        "population_rounds": 9.833333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "ddd333bf7b13cef0dec5094e6d9d361a0e49d4fa7968d6960e24ce826eeba802",
+        "final_state_sha256": "9e95287382a0fd0a0ee09642874239ef807bf1780573608f3d3ee9ad598206a4",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 236,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 11,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 194,
+        "decisions": 388,
+        "population_rounds": 8.083333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "6d1536a65c3e7516f524f8589476e339606f0651d94f8ec92239285f89ac9246",
+        "final_state_sha256": "148cbb1c20560f2db201fb4a605caa5da6cc8dee392a406df32fa4e557892fa9",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "Y": 144
+        },
+        "archived_convergence": {
+          "converged_index": 194,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 12,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 306,
+        "decisions": 612,
+        "population_rounds": 12.75,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "d1d69a8efd7f50240a409d4fcf1b821f29af985c3db4b1d8943440ae08cce3ff",
+        "final_state_sha256": "a8799bbf8d7cb447f24b4eab581bd18894bc5a11ca86ef97ee66b5edef876aa2",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "Q": 144
+        },
+        "archived_convergence": {
+          "converged_index": 306,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 13,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 257,
+        "decisions": 514,
+        "population_rounds": 10.708333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "948ca06898d7f2a2c04558005109232798c8b30d99bce3275d996ae46716cc6c",
+        "final_state_sha256": "a03f84f93b9cbb474ca055f9aa9b02c573e8182dba3206badc7a9ece1e86ff1b",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "D": 144
+        },
+        "archived_convergence": {
+          "converged_index": 257,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 14,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 187,
+        "decisions": 374,
+        "population_rounds": 7.791666666666667,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "e94ad39e92a8f604a8ffbf5c426f380797c7e9eeef635dc5aba3ba6d5849925b",
+        "final_state_sha256": "d7c08d42aa0cfc68c49dc2e87cafe4431f8868f836179644941002d55e4a5af3",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "C": 144
+        },
+        "archived_convergence": {
+          "converged_index": 187,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 15,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 264,
+        "decisions": 528,
+        "population_rounds": 11.0,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "a178b006084046c42c69bf5a7dfee886a0b6ebcea74ace8a23b8d5f4f6b62185",
+        "final_state_sha256": "964d8e015b4751119d08f62831b2ee35a26725b76b751e125853be951ea7be94",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "C": 144
+        },
+        "archived_convergence": {
+          "converged_index": 264,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 16,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 236,
+        "decisions": 472,
+        "population_rounds": 9.833333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "75f769638bfc879aa7a790b83c9846e8f3b3e4eac7d00c9c7ad9ab89dbfcc908",
+        "final_state_sha256": "f6a3b7e1c41717305523e3f6f5d578c0a2f50cc22ced245cc49bf5ca22f134bf",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "C": 144
+        },
+        "archived_convergence": {
+          "converged_index": 236,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 17,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 170,
+        "decisions": 340,
+        "population_rounds": 7.083333333333333,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "b3b23b1c2de9787b58c7106134c35c6a50706d98f7312d92adea3a38af35586b",
+        "final_state_sha256": "d83cd9f8ee022274177f7e87f31dc4582b0d4d01b91a014e0625bd0087b713c3",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "Y": 144
+        },
+        "archived_convergence": {
+          "converged_index": 170,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 18,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 254,
+        "decisions": 508,
+        "population_rounds": 10.583333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "9d433278116943400d8790aae5cde01ca10e42349f494b3447df1194e891ee66",
+        "final_state_sha256": "a41c4e4fe85cf8b61974824779a976c318841fdb16b9857c49bb7da0537a2867",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "Q": 144
+        },
+        "archived_convergence": {
+          "converged_index": 254,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 19,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 204,
+        "decisions": 408,
+        "population_rounds": 8.5,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "3a80be06df3eff09cdb74754fa4fcbe4c427dc0609166a3129e59d03532f5d6d",
+        "final_state_sha256": "bc86d969cbde339d09a1334072fc97f2ae41380bb55e70fce833efa90cbc940c",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "C": 144
+        },
+        "archived_convergence": {
+          "converged_index": 204,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 20,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 263,
+        "decisions": 526,
+        "population_rounds": 10.958333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "40f9bfcd774a2d10eaa49940b4253f38034f769e324bc2545b5f713e9d505d48",
+        "final_state_sha256": "7a4810b6c012225ec63ff467885578223c0aab17f25c4330ed5c2f00ab999c8b",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "J": 144
+        },
+        "archived_convergence": {
+          "converged_index": 263,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 21,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 199,
+        "decisions": 398,
+        "population_rounds": 8.291666666666666,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "b3f9c9edd3128a75ab284fc5daffe8cf149f3a680b02de140ec45b4921755d25",
+        "final_state_sha256": "d1529165c3025ef0c8bdc98a745cae66dd087cd389e563b94dba178c0963aeda",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "C": 144
+        },
+        "archived_convergence": {
+          "converged_index": 199,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 22,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 291,
+        "decisions": 582,
+        "population_rounds": 12.125,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "23bd86118f037983cdc5624e5c5ed590116ed6ab4fccd7e7348e145cd6f9a88e",
+        "final_state_sha256": "e309eb1fad8c856b10620586a085a210c2d91cbf8ebf0c1241ee4ebb0a4e6b54",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "R": 144
+        },
+        "archived_convergence": {
+          "converged_index": 291,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 23,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 204,
+        "decisions": 408,
+        "population_rounds": 8.5,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "7aa1f805954682360c9bb167eccfb16fae230038f8d6db5615464cfe8a82c9e5",
+        "final_state_sha256": "b738cad5c188d2d850a83793cd9f5920a2015fcacf7dc6ddd43e11f9d3d1b857",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "C": 144
+        },
+        "archived_convergence": {
+          "converged_index": 204,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 24,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 368,
+        "decisions": 736,
+        "population_rounds": 15.333333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "6f6f9c7cd6464ce674d51e852f1dba199a31a0e81585248eafa95d24e5ade521",
+        "final_state_sha256": "6a5a5d5238022a5a0672b6a71b948e886cecc6e2b9e5062d23bb6b90de2f990d",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "D": 144
+        },
+        "archived_convergence": {
+          "converged_index": 368,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 25,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 191,
+        "decisions": 382,
+        "population_rounds": 7.958333333333333,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "a3ea89ef8e913085bd9bae73dd1b98bae037aa25edd500ba0b907d8c1f888bcf",
+        "final_state_sha256": "3647bcd12580e37326c94ae9c573f6c47bc03769bc6e5315bfa123693d7d128d",
+        "initial_state_sha256": "bf4161108896e6d26949e2eb39f3874f11f7e8b04512ffe0bad35f006350fe43",
+        "committed_agents": 0,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "C": 144
+        },
+        "archived_convergence": {
+          "converged_index": 191,
+          "committed_to": null
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "spontaneous_W10",
+        "source_run": 26,
+        "archive_member": "claude_data/claude_converged_baseline_Q_M_X_Y_F_J_P_R_C_D_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 801,
+        "decisions": 1325,
+        "population_rounds": 33.375,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "24d287eb0b3bf7694266dc5028139ef570fd0e1ae9b6ac691071af8f04b028db",
+        "final_state_sha256": "6260405f66629b0fef32d39beea12e59b5347d9d3a6962b06fc3b4f43889b4fd",
+        "initial_state_sha256": "3d8e5c2072579abd26fda06607379456d1d6a2a32c7c802b486dc63c6e3f25ab",
+        "committed_agents": 4,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_4_Q_to_M",
+        "source_run": 0,
+        "archive_member": "claude_data/claude_swap_0_4cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 608,
+        "decisions": 1015,
+        "population_rounds": 25.333333333333332,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "f2e808bb6ba37cd066d37245f23e98ac0b56ae240a60ae86db92f4a5cd9b12c9",
+        "final_state_sha256": "b92b1aaa011f1b58c6246b8d850b48873c28fbdf3a9c0b0bda6e2ca706e9b7fc",
+        "initial_state_sha256": "ae14b09ec83b282aa689e7341fa1eb0e44112fe811533f905c4722bfa0ba69d3",
+        "committed_agents": 4,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_4_Q_to_M",
+        "source_run": 1,
+        "archive_member": "claude_data/claude_swap_0_4cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 693,
+        "decisions": 1141,
+        "population_rounds": 28.875,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "3f226d984055c5828de17865f190c2aebae3a1ca27cfc5db7be88b7d29a6a0cb",
+        "final_state_sha256": "38c28970a0b69503c8efeba03a2780d27534549b5d63c90acf095b4814d654e6",
+        "initial_state_sha256": "764d13ddedd020f4ff92b6b782144782b2dd0751d020f0c747212b7d3f71591e",
+        "committed_agents": 4,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_4_Q_to_M",
+        "source_run": 2,
+        "archive_member": "claude_data/claude_swap_0_4cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 800,
+        "decisions": 1330,
+        "population_rounds": 33.333333333333336,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "b21b8a6d3831dd7cfdd4684dfb95796db862884664ab66d447bd0d9b2f030d8c",
+        "final_state_sha256": "1d4e4822292c780ce228ee6bcdbea4dfa34ba4443534c67fce5daf55cf274f13",
+        "initial_state_sha256": "30d159767cd2214beced10cb562422fa1e2eaf20762585e3cd342519b4f7f8e0",
+        "committed_agents": 4,
+        "recent_3N_success": 0.6111111111111112,
+        "recent_3N_action_counts": {
+          "Q": 104,
+          "M": 40
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_4_Q_to_M",
+        "source_run": 3,
+        "archive_member": "claude_data/claude_swap_0_4cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 607,
+        "decisions": 1001,
+        "population_rounds": 25.291666666666668,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "783dd4b65e5f64ea2db06908ffbedb584fb19951ccb23b1ae613dd965381f48d",
+        "final_state_sha256": "d546455208a552b494e0fc582af1fde56951a37783a6f2e2c7224efb756589d3",
+        "initial_state_sha256": "76ebdab0de7b52b5c20f3f7fa51c7f58a021b456244b2f217ca511ad838bfb08",
+        "committed_agents": 4,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_4_Q_to_M",
+        "source_run": 4,
+        "archive_member": "claude_data/claude_swap_0_4cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 618,
+        "decisions": 1032,
+        "population_rounds": 25.75,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "498608034c5304451762b9ea598826cb310dbb072dc9bf552fd2ec356ff23d87",
+        "final_state_sha256": "8dffdd846096faa20e7e9af7f5f3ce8f987c1274ae1ceb2a2121da17a1b6f629",
+        "initial_state_sha256": "d0001899c0c1573d22af455c0b01212403f0b6ad8e9260f9658c29c688a6ba05",
+        "committed_agents": 4,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_4_Q_to_M",
+        "source_run": 5,
+        "archive_member": "claude_data/claude_swap_0_4cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 380,
+        "decisions": 603,
+        "population_rounds": 15.833333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "c8c13ea55b3a3af0c58614fd4af08b8d2a655c61b3f8df2e4fda64325ba00953",
+        "final_state_sha256": "f0e099f901b6c287b727d0a50e46e18b2bc5b421538c171294e9714644ef0013",
+        "initial_state_sha256": "2ab63ce4a36328e00e352312a417701fbce9c7ca66ab88f0f7f1434bd33970d9",
+        "committed_agents": 5,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_5_Q_to_M",
+        "source_run": 0,
+        "archive_member": "claude_data/claude_swap_0_5cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 380,
+        "decisions": 580,
+        "population_rounds": 15.833333333333334,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "932a50b951988028aa48996c090a22b2a2043d4c9118e4da552be28e2974fd18",
+        "final_state_sha256": "508008643a50bde1399d448cbadbcaeecea488ef481a7a0894ae0a2b7a11d868",
+        "initial_state_sha256": "6c1fc288366f93911882331c2a4e76d34747b7b3f162409abcc7d06221510945",
+        "committed_agents": 5,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_5_Q_to_M",
+        "source_run": 1,
+        "archive_member": "claude_data/claude_swap_0_5cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 372,
+        "decisions": 571,
+        "population_rounds": 15.5,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "b27f8fea2ff2dbad4d9316a7d7391587cff12c8b78a218ead46959462a40750e",
+        "final_state_sha256": "0bcd9a37d7066cbfaecb7bd84daa5d5048d9d07279e7702ab40b66bbaee8f79a",
+        "initial_state_sha256": "f6de4966c52cb3c04aad9271a744e594def208cf1e5cc2017e257fd08b762ea3",
+        "committed_agents": 5,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_5_Q_to_M",
+        "source_run": 2,
+        "archive_member": "claude_data/claude_swap_0_5cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 322,
+        "decisions": 517,
+        "population_rounds": 13.416666666666666,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "0ab08f8b6fa3d013421071059b60da062f393ea5552ba352e59643786404a282",
+        "final_state_sha256": "d2e6eab18e6a3c8149afe4a0cdc21b3df27ec0286f61634882e1356252ff1901",
+        "initial_state_sha256": "9dfae2f886d805e2c17ffe94933638700aba81ece4de2755a104c1d22e0fda63",
+        "committed_agents": 5,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_5_Q_to_M",
+        "source_run": 3,
+        "archive_member": "claude_data/claude_swap_0_5cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 267,
+        "decisions": 426,
+        "population_rounds": 11.125,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "4568f28741b1371bf88c04d1fce5a59ceede6071c05f2901c423ab3de45fc403",
+        "final_state_sha256": "f4b25f030b86f5a811ba7ddf8602f7e6ca2e9b67719f672495bfe74d0a98b393",
+        "initial_state_sha256": "aa66f697f13a5cffa713288293383453b910cb6a73dca3a4b4d91ad0e39acf37",
+        "committed_agents": 5,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_5_Q_to_M",
+        "source_run": 4,
+        "archive_member": "claude_data/claude_swap_0_5cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      },
+      {
+        "interactions": 280,
+        "decisions": 439,
+        "population_rounds": 11.666666666666666,
+        "agents": 24,
+        "source_tracker_exact": true,
+        "source_final_individual_state_exact": true,
+        "tracker_sha256": "6f2a9c86ce0ae4b4f799576df0d7058d1fa1908ab90e4311611c223a3589a2c2",
+        "final_state_sha256": "1ceb86e985beafba30d4ca07a56bd29d0c63f46428f29f3cb657ca08eeeb0786",
+        "initial_state_sha256": "6f4ea8c14d8274af5fcbe8d5cc185bf8dc3dbe660fce092e1d893da0c8d9b248",
+        "committed_agents": 5,
+        "recent_3N_success": 1,
+        "recent_3N_action_counts": {
+          "M": 144
+        },
+        "archived_convergence": {
+          "converged_index": 0,
+          "committed_to": "M"
+        },
+        "source_action_semantics": "sampled choices; original probabilities and option order unavailable",
+        "actual_model_api_calls": 0,
+        "condition": "minority_5_Q_to_M",
+        "source_run": 5,
+        "archive_member": "claude_data/claude_swap_0_5cmtd_Q_M_-50_100_5mem_complete_24ps_0.5tmp.pkl"
+      }
+    ]
+  },
+  "opinion": {
+    "evidence": "macro_trajectory_import_and_integrity_checks_only",
+    "population": 50,
+    "curve_files": 5,
+    "segments": 7,
+    "recorded_rows": 3064,
+    "zero_origin_segments": 6,
+    "nonzero_overlapping_fragments": 1,
+    "segments_with_observed_consensus": 3,
+    "zero_origin_segments_with_observed_consensus": 2,
+    "adoption_tables": 10,
+    "adoption_rows": 150,
+    "table_rows_with_count_share_discrepancy": 5,
+    "validation": [
+      "finite values",
+      "integer population counts",
+      "consecutive steps within each segment",
+      "single-agent step bound"
+    ],
+    "micro_action_replay": false,
+    "probability_reuse": false,
+    "traces": [
+      {
+        "source_file": "magnetization_0_50_0.2_0.0_claude-3-haiku-20240307.txt",
+        "segment": 0,
+        "rows": 1000,
+        "first_recorded_step": 0,
+        "segment_origin": "zero-origin record",
+        "last_recorded_step": 999,
+        "first_consensus_recorded_step": null,
+        "consensus_observed": false,
+        "interpretation": "right-censored in this recorded segment",
+        "final_coordination": 0.52,
+        "output_csv": "magnetization_0_50_0.2_0.0_claude-3-haiku-20240307-segment-0.csv"
+      },
+      {
+        "source_file": "magnetization_0_50_0.2_0.0_claude-3-opus-20240229.txt",
+        "segment": 0,
+        "rows": 249,
+        "first_recorded_step": 0,
+        "segment_origin": "zero-origin record",
+        "last_recorded_step": 248,
+        "first_consensus_recorded_step": 248,
+        "consensus_observed": true,
+        "interpretation": "consensus observed",
+        "final_coordination": 1.0,
+        "output_csv": "magnetization_0_50_0.2_0.0_claude-3-opus-20240229-segment-0.csv"
+      },
+      {
+        "source_file": "magnetization_0_50_0.2_0.0_gpt-3.5-turbo-1106.txt",
+        "segment": 0,
+        "rows": 1000,
+        "first_recorded_step": 0,
+        "segment_origin": "zero-origin record",
+        "last_recorded_step": 999,
+        "first_consensus_recorded_step": null,
+        "consensus_observed": false,
+        "interpretation": "right-censored in this recorded segment",
+        "final_coordination": 0.12,
+        "output_csv": "magnetization_0_50_0.2_0.0_gpt-3.5-turbo-1106-segment-0.csv"
+      },
+      {
+        "source_file": "magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09.txt",
+        "segment": 0,
+        "rows": 41,
+        "first_recorded_step": 0,
+        "segment_origin": "zero-origin record",
+        "last_recorded_step": 40,
+        "first_consensus_recorded_step": null,
+        "consensus_observed": false,
+        "interpretation": "right-censored in this recorded segment",
+        "final_coordination": 0.2,
+        "output_csv": "magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09-segment-0.csv"
+      },
+      {
+        "source_file": "magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09.txt",
+        "segment": 1,
+        "rows": 271,
+        "first_recorded_step": 0,
+        "segment_origin": "zero-origin record",
+        "last_recorded_step": 270,
+        "first_consensus_recorded_step": 270,
+        "consensus_observed": true,
+        "interpretation": "consensus observed",
+        "final_coordination": 1.0,
+        "output_csv": "magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09-segment-1.csv"
+      },
+      {
+        "source_file": "magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09.txt",
+        "segment": 2,
+        "rows": 3,
+        "first_recorded_step": 270,
+        "segment_origin": "nonzero overlapping fragment; not an independent trial",
+        "last_recorded_step": 272,
+        "first_consensus_recorded_step": 272,
+        "consensus_observed": true,
+        "interpretation": "consensus observed",
+        "final_coordination": 1.0,
+        "output_csv": "magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09-segment-2.csv"
+      },
+      {
+        "source_file": "magnetization_9_50_0.2_0.0_meta-llama-3-70b-instruct.txt",
+        "segment": 0,
+        "rows": 500,
+        "first_recorded_step": 0,
+        "segment_origin": "zero-origin record",
+        "last_recorded_step": 499,
+        "first_consensus_recorded_step": null,
+        "consensus_observed": false,
+        "interpretation": "right-censored in this recorded segment",
+        "final_coordination": 0.68,
+        "output_csv": "magnetization_9_50_0.2_0.0_meta-llama-3-70b-instruct-segment-0.csv"
+      }
+    ],
+    "tables": [
+      {
+        "source_file": "transition_prob_50_0.2_claude-2.0_k_z.txt",
+        "rows": 15,
+        "columns": 4,
+        "reported_share_count_discrepancies": []
+      },
+      {
+        "source_file": "transition_prob_50_0.2_claude-3-5-sonnet-20240620_k_z.txt",
+        "rows": 15,
+        "columns": 4,
+        "reported_share_count_discrepancies": []
+      },
+      {
+        "source_file": "transition_prob_50_0.2_claude-3-haiku-20240307_k_z.txt",
+        "rows": 15,
+        "columns": 4,
+        "reported_share_count_discrepancies": [
+          {
+            "row": 0,
+            "k": 98.0,
+            "z": 100.0,
+            "reported_share": 0.49,
+            "share_among_recorded_choices": 0.494949494949495
+          },
+          {
+            "row": 1,
+            "k": 90.0,
+            "z": 109.0,
+            "reported_share": 0.45,
+            "share_among_recorded_choices": 0.45226130653266333
+          },
+          {
+            "row": 14,
+            "k": 77.0,
+            "z": 122.0,
+            "reported_share": 0.385,
+            "share_among_recorded_choices": 0.3869346733668342
+          }
+        ]
+      },
+      {
+        "source_file": "transition_prob_50_0.2_claude-3-opus-20240229.txt",
+        "rows": 15,
+        "columns": 4,
+        "reported_share_count_discrepancies": [
+          {
+            "row": 2,
+            "k": 198.0,
+            "z": 0.0,
+            "reported_share": 0.99,
+            "share_among_recorded_choices": 1.0
+          }
+        ]
+      },
+      {
+        "source_file": "transition_prob_50_0.2_claude-3-sonnet-20240229.txt",
+        "rows": 15,
+        "columns": 4,
+        "reported_share_count_discrepancies": [
+          {
+            "row": 11,
+            "k": 20.0,
+            "z": 179.0,
+            "reported_share": 0.1,
+            "share_among_recorded_choices": 0.10050251256281408
+          }
+        ]
+      },
+      {
+        "source_file": "transition_prob_50_0.2_gpt-3.5-turbo-1106_k_z.txt",
+        "rows": 15,
+        "columns": 2,
+        "reported_share_count_discrepancies": []
+      },
+      {
+        "source_file": "transition_prob_50_0.2_gpt-4-0613.txt",
+        "rows": 15,
+        "columns": 2,
+        "reported_share_count_discrepancies": []
+      },
+      {
+        "source_file": "transition_prob_50_0.2_gpt-4-turbo-2024-04-09.txt",
+        "rows": 15,
+        "columns": 2,
+        "reported_share_count_discrepancies": []
+      },
+      {
+        "source_file": "transition_prob_50_0.2_gpt-4o-2024-05-13_k_z.txt",
+        "rows": 15,
+        "columns": 2,
+        "reported_share_count_discrepancies": []
+      },
+      {
+        "source_file": "transition_prob_50_0.2_meta-llama-3-70b-instruct_k_z.txt",
+        "rows": 15,
+        "columns": 4,
+        "reported_share_count_discrepancies": []
+      }
+    ]
+  },
+  "interfaces": {
+    "mode": "mock_transport_real_serializers",
+    "actual_network_requests": 0,
+    "cases": [
+      {
+        "provider": "jev",
+        "scene": "naming",
+        "status": "complete",
+        "decisions": 8,
+        "mock_http_requests": 4,
+        "questions_per_mock_request": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "actual_network_requests": 0,
+        "usage_semantics": "synthetic test values; not measured tokens or cost"
+      },
+      {
+        "provider": "jev",
+        "scene": "opinion",
+        "status": "complete",
+        "decisions": 4,
+        "mock_http_requests": 4,
+        "questions_per_mock_request": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "actual_network_requests": 0,
+        "usage_semantics": "synthetic test values; not measured tokens or cost"
+      },
+      {
+        "provider": "chat",
+        "scene": "naming",
+        "status": "complete",
+        "decisions": 8,
+        "mock_http_requests": 8,
+        "questions_per_mock_request": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "actual_network_requests": 0,
+        "usage_semantics": "synthetic test values; not measured tokens or cost"
+      },
+      {
+        "provider": "chat",
+        "scene": "opinion",
+        "status": "complete",
+        "decisions": 4,
+        "mock_http_requests": 4,
+        "questions_per_mock_request": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "actual_network_requests": 0,
+        "usage_semantics": "synthetic test values; not measured tokens or cost"
+      }
+    ]
+  },
+  "source_manifest": [
+    {
+      "file": "claude_data.zip",
+      "url": "https://raw.githubusercontent.com/Ariel-Flint-Ashery/AI-norms/main/data/claude_data.zip",
+      "git_blob_sha": "c4ae4e90ba79a869ef100adf88a37e41df13c52d",
+      "sha256": "dd1f7132f24b7c16c0a37abd123122dc14a8b6800cf66eec42d0906e3d90ae36",
+      "bytes": 579385
+    },
+    {
+      "file": "magnetization_0_50_0.2_0.0_claude-3-haiku-20240307.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/fully_connected_50/magnetization_0_50_0.2_0.0_claude-3-haiku-20240307.txt",
+      "git_blob_sha": "03fb6299f1c50445f7fffb2efb50c391973b2d36",
+      "sha256": "daa22bd9ac499bcba69a0d3b6b0fe1fc170ac5c21d7cfc0a5c182ea9bd8f62a7",
+      "bytes": 9411
+    },
+    {
+      "file": "magnetization_0_50_0.2_0.0_claude-3-opus-20240229.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/fully_connected_50/magnetization_0_50_0.2_0.0_claude-3-opus-20240229.txt",
+      "git_blob_sha": "501d735756655947c2fc5f6aee465c3891d4e412",
+      "sha256": "227986ff7702de2515568afcf09567e3e64a65857376489e3a4299e862ed7495",
+      "bytes": 2088
+    },
+    {
+      "file": "magnetization_0_50_0.2_0.0_gpt-3.5-turbo-1106.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/fully_connected_50/magnetization_0_50_0.2_0.0_gpt-3.5-turbo-1106.txt",
+      "git_blob_sha": "6d5fb2a27ec73583293e93a3b34b20103db10e94",
+      "sha256": "6a088e4f6953b6bf49d8db76b988850687aaec5c35ce2c1e8a6e5e9753fb5d44",
+      "bytes": 9102
+    },
+    {
+      "file": "magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/fully_connected_50/magnetization_0_50_0.2_0.0_gpt-4-turbo-2024-04-09.txt",
+      "git_blob_sha": "9f68683135301b30b5e009646feb6fed80c3ee7f",
+      "sha256": "602e8f8d77a4f951c1a8b61d49a7bf72d7e2751421395122d25f4df69a4dca41",
+      "bytes": 2863
+    },
+    {
+      "file": "magnetization_9_50_0.2_0.0_meta-llama-3-70b-instruct.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/fully_connected_50/magnetization_9_50_0.2_0.0_meta-llama-3-70b-instruct.txt",
+      "git_blob_sha": "9febeb704e812e124efbda52d4f187684374f496",
+      "sha256": "95a3eb11783d5d4e89428ef9ec31f0597bdf63f2053fdcac4b0d5e6ee13e60fb",
+      "bytes": 4466
+    },
+    {
+      "file": "transition_prob_50_0.2_claude-2.0_k_z.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_claude-2.0_k_z.txt",
+      "git_blob_sha": "e0b3a3f82fa3bdc418dd5cf4b351743e85059a6b",
+      "sha256": "1d31de3325e423f9190b7dc05c7cc4e9a9b538b73cd4c913c3ec4733581cbfa2",
+      "bytes": 289
+    },
+    {
+      "file": "transition_prob_50_0.2_claude-3-5-sonnet-20240620_k_z.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_claude-3-5-sonnet-20240620_k_z.txt",
+      "git_blob_sha": "7551c1538de857f6e8ad55a3a3de7cabf1c8381c",
+      "sha256": "47edf686ff1ae1e3de679825eab21517f6cb7f1283e05a8bbedb89100bcfc053",
+      "bytes": 262
+    },
+    {
+      "file": "transition_prob_50_0.2_claude-3-haiku-20240307_k_z.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_claude-3-haiku-20240307_k_z.txt",
+      "git_blob_sha": "0733efedc8a638a60b25c658a529be87ae9b8b82",
+      "sha256": "c11557f72c01d2679678729a3283fbe112e0db3e517eb22ae207c2cc41791511",
+      "bytes": 289
+    },
+    {
+      "file": "transition_prob_50_0.2_claude-3-opus-20240229.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_claude-3-opus-20240229.txt",
+      "git_blob_sha": "03f145376bb5e8bf7b5c6763d662c630326e1439",
+      "sha256": "b052a6af207e00506aea597417bd56ffc401d5d8366c2ec74a3aa5e758e36841",
+      "bytes": 265
+    },
+    {
+      "file": "transition_prob_50_0.2_claude-3-sonnet-20240229.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_claude-3-sonnet-20240229.txt",
+      "git_blob_sha": "b4147a775aee8b0e7e80e71b80959d5757b75075",
+      "sha256": "f1908247dc72d7ffff24fdf6d9c0c95c2d569d4946c61301c6cd497ba1dfdc08",
+      "bytes": 288
+    },
+    {
+      "file": "transition_prob_50_0.2_gpt-3.5-turbo-1106_k_z.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_gpt-3.5-turbo-1106_k_z.txt",
+      "git_blob_sha": "30c799be39715ece1fd4301651b46fd2224eab5b",
+      "sha256": "166dbbefcabbc00228ca4d22a66fe1f6517aed2b0c24eead44a84211768ebff8",
+      "bytes": 157
+    },
+    {
+      "file": "transition_prob_50_0.2_gpt-4-0613.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_gpt-4-0613.txt",
+      "git_blob_sha": "d1688739984d06ebdfbd0c2c400c009f9bd4a0bc",
+      "sha256": "91c130d00998cb9e3ed5d5953b19d073f52b7fb22f09383b67ec03d20ad34a1d",
+      "bytes": 148
+    },
+    {
+      "file": "transition_prob_50_0.2_gpt-4-turbo-2024-04-09.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_gpt-4-turbo-2024-04-09.txt",
+      "git_blob_sha": "f5c2960d3d437a1a9ae49691aaf61a3f90e432cf",
+      "sha256": "0e9abb363aa9ba7393fdfbfea685ca9e2c07964702714129296b73b9e8c0dbcf",
+      "bytes": 141
+    },
+    {
+      "file": "transition_prob_50_0.2_gpt-4o-2024-05-13_k_z.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_gpt-4o-2024-05-13_k_z.txt",
+      "git_blob_sha": "f9e4d5b00ca2b0090a21aff79842b308889a9b25",
+      "sha256": "19c9346bd4407b0225b7302fb2cff220aa51e29e0ec98656383830958022f3eb",
+      "bytes": 151
+    },
+    {
+      "file": "transition_prob_50_0.2_meta-llama-3-70b-instruct_k_z.txt",
+      "url": "https://raw.githubusercontent.com/giordano-demarzo/LLMs-Opinion-Dynamics/master/transition_prob_various_models_kz/50_kz/transition_prob_50_0.2_meta-llama-3-70b-instruct_k_z.txt",
+      "git_blob_sha": "3434803c445702039ce3e18a732adba1951a93d7",
+      "sha256": "fc5b746adec462026e1d45f19b0750a20f24a46f6266bb3c514ce7656dd7232b",
+      "bytes": 285
+    }
+  ]
+}

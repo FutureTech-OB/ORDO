@@ -1,0 +1,62 @@
+{
+  "uniform": {
+    "status": "complete",
+    "start_memory": {
+      "working_set_bytes": 93532160,
+      "process_cumulative_peak_working_set_bytes": 97423360
+    },
+    "decisions": 74693,
+    "elapsed_s": 7.411285699927248,
+    "cpu_s": 6.890625,
+    "end_memory": {
+      "working_set_bytes": 134520832,
+      "process_cumulative_peak_working_set_bytes": 217350144
+    },
+    "decisions_per_second": 10078.27832095762
+  },
+  "history": {
+    "status": "complete",
+    "start_memory": {
+      "working_set_bytes": 142868480,
+      "process_cumulative_peak_working_set_bytes": 217350144
+    },
+    "decisions": 74693,
+    "elapsed_s": 7.541967099998146,
+    "cpu_s": 7.390625,
+    "end_memory": {
+      "working_set_bytes": 169820160,
+      "process_cumulative_peak_working_set_bytes": 248659968
+    },
+    "decisions_per_second": 9903.649672512938
+  },
+  "notice": {
+    "status": "complete",
+    "start_memory": {
+      "working_set_bytes": 163205120,
+      "process_cumulative_peak_working_set_bytes": 248659968
+    },
+    "decisions": 74693,
+    "elapsed_s": 7.975024400046095,
+    "cpu_s": 7.65625,
+    "end_memory": {
+      "working_set_bytes": 166928384,
+      "process_cumulative_peak_working_set_bytes": 249671680
+    },
+    "decisions_per_second": 9365.864761438006
+  },
+  "jev": {
+    "status": "complete",
+    "start_memory": {
+      "working_set_bytes": 170999808,
+      "process_cumulative_peak_working_set_bytes": 249671680
+    },
+    "decisions": 74693,
+    "elapsed_s": 358.1384988001082,
+    "cpu_s": 24.28125,
+    "end_memory": {
+      "working_set_bytes": 176287744,
+      "process_cumulative_peak_working_set_bytes": 260825088
+    },
+    "decisions_per_second": 208.558979976317
+  }
+}

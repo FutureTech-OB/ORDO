@@ -1,0 +1,2296 @@
+{
+  "schema": "llm_wrr_original_v1",
+  "model": "typesafe/jev-1.14",
+  "seed": 20261030,
+  "rounds": 10,
+  "worlds": 50,
+  "maximum_fresh_decisions": 50000,
+  "max_cost_usd": 5,
+  "max_requests": 3500,
+  "batch_size": 64,
+  "concurrency": 4,
+  "source_hashes": {
+    "examples/llm_wrr_original/__init__.py": "e85d963e4fe7546da80786770addf24e4a65bb1b07cef799ca0727def8fc7f93",
+    "examples/llm_wrr_original/environment.py": "f28fae28631ff52c2c8a469ea0232f7f0d92eed943e6eade7270b601276dbbf7",
+    "examples/llm_wrr_original/offline_audit.py": "2dd8ba3209b6045d6ef84276df852c60643a5b10a046c512670fbda1aa19db8f",
+    "examples/llm_wrr_original/run.py": "7228dc8a56114a6c9fe40e7e7c9d88470f9dcbf20209a9b8c850a617500554a5",
+    "examples/llm_wrr_original/suite.py": "8db67bc3f0b4e5fea87ff5aa4fbe6134008620a57a88f340e4e3926d0d30eaa0",
+    "examples/llm_wrr_original/test_mechanics.py": "2e31dff981bb46a05d364e1ace3312962bababb5f16495112de0819964e52516",
+    "examples/llm_wrr_original/upstream/LICENSE": "0f744a6e544043f3477575311da8f92a0cb2d7304b5bc0c95860c0ea41238886",
+    "examples/llm_wrr_original/upstream/LLMABM-GitHub-WRR.py": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+    "examples/llm_wrr_original/upstream/README.md": "ea4735066d983ae9d51f1d5bce0dcd7e3a7c9a284bf27ba2c9b949105b19c103",
+    "examples/jev_validation/run.py": "54ea0a2078ecd3b2454fe76238b09c77170abef4ee9617c16f1d50974371b9d9",
+    "orgabm/__init__.py": "7078b1f563c8bc84e31e3007678f6f08268dab888534d137e0d7fb68f55ec01f",
+    "orgabm/__main__.py": "f227cf623a5d36fb84c57436f5ca173bdc2901e08b8203a9d8b4bcd426443ebf",
+    "orgabm/decision_journal.py": "52e1ca903f233d2b6ff39dbc7dd7fd7bbb0dad1559a9325c937a95b94c4644bf",
+    "orgabm/deepseek.py": "9e6a03908e9d98c9805a1e748ab0d820f960595a85a7cc06973ada221fab8557",
+    "orgabm/engines.py": "09b935f58fb9bd954fdda0aee5272524359294ff52554fba003288404df89215",
+    "orgabm/experiment.py": "fd3fbc7a256e3ce2ed0a6988af8aa4118ea312ecc92bacc878f69b2137e245a2",
+    "orgabm/kernel.py": "e6e6bffdfb813fac5256525c924b33ab855fff38b570225ccd2b4046a3c4ddd6",
+    "orgabm/mcp_server.py": "e24339e2de20c8a4f1aadb8d226864888663225e9809100cbc4f02a519f3c17c",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/mesa_bridge.py": "bbf22640031d48850afaaf8d9b5ea9976da5c41f575dbd4af76bb1981eee43c3",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a",
+    "orgabm/organization.py": "921001f1b4d6e31d80ba58cfab4858a7e15be2cff44b0993a8b652e8e6f06481",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/placement.py": "06bdff86772974743526a2aa70f1b995d453ee189a85c94cc755401d5778f060",
+    "orgabm/plans.py": "71738bb194bc2b4fdbbb255f90258040d094d2ca28b38756479bf3ea8975ad60",
+    "orgabm/randomness.py": "a8b74b3c59261135d0c79bcc96230bc0a227f56fbfc6e9ffa874ab879df696f6",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/server.py": "ed18f3e975bd67e17f7f44408479d4539d6fd08abe00dacd5b341b0fb48478d4",
+    "orgabm/staged.py": "e939295fdebf54434028853deb4832c2e32f910c5254fdec4b4c1b62e4a36e9a",
+    "orgabm/templates.py": "dcbe086a2df17effe616168fdd7f2e4707630adaf6b61ccbed6f995452d3d831",
+    "orgabm/workflow.py": "232b7ef8377b8b0c77f110475ae4e4ab21b7aa0f56df7bf99e9b3bfafbabca98",
+    "orgabm/workflow_mesa.py": "ae9b822050b4c4525993e647294684f1ccc6dbed10428fd1119196a4a4333fa5",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91"
+  },
+  "description": {
+    "scenario": "fresh_jev_paper_validation",
+    "cases": [
+      {
+        "id": "wrr_flood_r00",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261030,
+        "condition": {
+          "replicate": 0,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261030,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r01",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261031,
+        "condition": {
+          "replicate": 1,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261031,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r02",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261032,
+        "condition": {
+          "replicate": 2,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261032,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r03",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261033,
+        "condition": {
+          "replicate": 3,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261033,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r04",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261034,
+        "condition": {
+          "replicate": 4,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261034,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r05",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261035,
+        "condition": {
+          "replicate": 5,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261035,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r06",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261036,
+        "condition": {
+          "replicate": 6,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261036,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r07",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261037,
+        "condition": {
+          "replicate": 7,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261037,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r08",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261038,
+        "condition": {
+          "replicate": 8,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261038,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r09",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261039,
+        "condition": {
+          "replicate": 9,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261039,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r10",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261040,
+        "condition": {
+          "replicate": 10,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261040,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r11",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261041,
+        "condition": {
+          "replicate": 11,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261041,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r12",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261042,
+        "condition": {
+          "replicate": 12,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261042,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r13",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261043,
+        "condition": {
+          "replicate": 13,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261043,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r14",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261044,
+        "condition": {
+          "replicate": 14,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261044,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r15",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261045,
+        "condition": {
+          "replicate": 15,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261045,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r16",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261046,
+        "condition": {
+          "replicate": 16,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261046,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r17",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261047,
+        "condition": {
+          "replicate": 17,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261047,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r18",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261048,
+        "condition": {
+          "replicate": 18,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261048,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r19",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261049,
+        "condition": {
+          "replicate": 19,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261049,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r20",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261050,
+        "condition": {
+          "replicate": 20,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261050,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r21",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261051,
+        "condition": {
+          "replicate": 21,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261051,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r22",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261052,
+        "condition": {
+          "replicate": 22,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261052,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r23",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261053,
+        "condition": {
+          "replicate": 23,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261053,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r24",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261054,
+        "condition": {
+          "replicate": 24,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261054,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r25",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261055,
+        "condition": {
+          "replicate": 25,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261055,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r26",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261056,
+        "condition": {
+          "replicate": 26,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261056,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r27",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261057,
+        "condition": {
+          "replicate": 27,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261057,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r28",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261058,
+        "condition": {
+          "replicate": 28,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261058,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r29",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261059,
+        "condition": {
+          "replicate": 29,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261059,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r30",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261060,
+        "condition": {
+          "replicate": 30,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261060,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r31",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261061,
+        "condition": {
+          "replicate": 31,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261061,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r32",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261062,
+        "condition": {
+          "replicate": 32,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261062,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r33",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261063,
+        "condition": {
+          "replicate": 33,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261063,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r34",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261064,
+        "condition": {
+          "replicate": 34,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261064,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r35",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261065,
+        "condition": {
+          "replicate": 35,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261065,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r36",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261066,
+        "condition": {
+          "replicate": 36,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261066,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r37",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261067,
+        "condition": {
+          "replicate": 37,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261067,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r38",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261068,
+        "condition": {
+          "replicate": 38,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261068,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r39",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261069,
+        "condition": {
+          "replicate": 39,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261069,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r40",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261070,
+        "condition": {
+          "replicate": 40,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261070,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r41",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261071,
+        "condition": {
+          "replicate": 41,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261071,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r42",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261072,
+        "condition": {
+          "replicate": 42,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261072,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r43",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261073,
+        "condition": {
+          "replicate": 43,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261073,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r44",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261074,
+        "condition": {
+          "replicate": 44,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261074,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r45",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261075,
+        "condition": {
+          "replicate": 45,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261075,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r46",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261076,
+        "condition": {
+          "replicate": 46,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261076,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r47",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261077,
+        "condition": {
+          "replicate": 47,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261077,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r48",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261078,
+        "condition": {
+          "replicate": 48,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261078,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      },
+      {
+        "id": "wrr_flood_r49",
+        "paper_id": "yang_chiou_wrr_2026",
+        "rounds": 10,
+        "seed": 20261079,
+        "condition": {
+          "replicate": 49,
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "initialization": "source_generator_new_seed",
+          "source_paper_initialization_discrepancy": true
+        },
+        "environment": {
+          "model": "original_llm_flood_adaptation_external_decision",
+          "paper_id": "yang_chiou_wrr_2026",
+          "doi": "10.1029/2025WR042111",
+          "original_llm": "gemma3:4b",
+          "original_commit": "6952c793b3b3c0b0c0adfabc6e34062146d351da",
+          "source_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779",
+          "source_sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+          "agents": 100,
+          "years": 10,
+          "flood_years": [
+            3,
+            4,
+            9
+          ],
+          "seed": 20261079,
+          "grant_probability": 0.5,
+          "random_memory_recall_probability": 0.2,
+          "memory_window": 5,
+          "original_batch_size": 25,
+          "topology": "Complete-population neighborhood: all other 99 households, aggregate elevated/relocated shares.",
+          "initialization": "Author random-profile function; new declared seed, not archived original profiles.",
+          "replacement": "Only original llm.batch decisions become freshly sampled Jev categorical choices. Appraisal strings remain empty and are not fed back.",
+          "retained": "Original prompt including inaction prior, state-dependent 4/3 actions, annual task construction, ordered updates, trust, flood exposure, physical elevation risk reduction, grants, memory and terminal relocation.",
+          "scope": "Figure 2 LLM-arm protocol; not original Gemma outputs, traditional comparator, reasoning analysis, prompt/memory/model sensitivity figures or human validation."
+        }
+      }
+    ],
+    "batch_semantics": "independent ready decisions; each question embeds only its local context",
+    "action_sampling": "SDK stable seed with namespaced actor IDs; not paired common random numbers",
+    "probability_reuse": false
+  },
+  "profile": "paper_fixed_flood_scenario_with_public_source_initializer",
+  "exact_paper_configuration": false,
+  "paper_source_differences": {
+    "insurance_trust": {
+      "article": [
+        0.3,
+        0.6
+      ],
+      "code": [
+        0.2,
+        0.5
+      ]
+    },
+    "neighbor_trust": {
+      "article": [
+        0.4,
+        0.65
+      ],
+      "code": [
+        0.35,
+        0.55
+      ]
+    },
+    "initial_elevation": {
+      "article": "randomly assigned",
+      "code": false
+    }
+  },
+  "input_availability": "Complete source generator and synthetic event pool are available. Original CSV profiles, original seeds and numerical 50-run aggregate reference are not included in the public repository.",
+  "claim": "Complete original LLM-ABM integration with fresh decision-engine substitution; not claimed reproduction of author Gemma trajectories or Figure-2 numerical outcomes.",
+  "offline_payload_forecast": {
+    "offline_scripted_decisions": 50000,
+    "wire_bytes": 123016412,
+    "requests_without_retries": 790,
+    "heuristic_tokens_at_four_bytes_per_token": 30754103.0,
+    "price_reference_usd_per_million_input_tokens": 0.042,
+    "heuristic_input_cost_usd": 1.291672326,
+    "total_byte_based_reservation_analogue_usd": 5.166689304,
+    "caveat": "Offline all-inaction sizing only, not a forecast of Jev choices or an exact token count. Relocation reduces decisions; other action paths change prompt lengths. Provider cost is measured separately."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "scenario": "nk_organization",
+  "base": {"agents": 120, "rounds": 20, "departments": 4},
+  "vary": {"contact": ["siloed", "bridge"], "approval_gain": [0, 10]},
+  "seeds": [7, 8, 9],
+  "decision": {"provider": "rule", "rule": "best"}
+}

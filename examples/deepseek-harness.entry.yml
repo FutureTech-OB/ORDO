@@ -1,0 +1,19 @@
+# Entry for the official dsh-mcp-client plugin; edit executable and cwd.
+# Add this insertion to your active Harness profile patch.
+- insert:
+    - id: org-abm-foundation
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: orgabm
+        transport: stdio
+        command: /absolute/path/to/venv/python
+        args: ['-m', 'orgabm.mcp_server']
+        cwd: /absolute/path/to/org-abm-lab
+        failOnStartupError: true
+# Free simulation tools work while DeepSeek powers the research assistant.
+# For Jev decisions, explicitly configure the MCP server:
+# args: ['-m', 'orgabm.mcp_server', '--allow-paid', '--max-requests', '1000', '--max-cost-usd', '0.10']
+# env:
+#   TYPESAFE_API_KEY: !!js process.env.TYPESAFE_API_KEY
+# Harness scrubs ambient KEY variables; explicit forwarding is required.
+# Do not forward the research assistant's model key to the simulation server.

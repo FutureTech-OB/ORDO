@@ -1,0 +1,14 @@
+{
+  "asset": "ordo_architecture_paper.png",
+  "created": "2026-10-31",
+  "generation": "Built-in image_gen generation with a targeted accuracy edit",
+  "prompt_file": "ordo_architecture_paper_prompt.txt",
+  "sha256": "26d85ef0bc75d46e98932bf6f4f3db132fa2b7d3ab7e3113f2c8641cf7b3f8da",
+  "architecture_source_revision": "56d46efc8c381a4cca404e613c99bc0bfae15265",
+  "reviewed": [
+    "Question arrows point from runtime to decision engine; probabilities return to runtime.",
+    "Organizational information is permission-controlled.",
+    "The research assistant operates outside the simulation.",
+    "The figure is a schematic, with no empirical results."
+  ]
+}

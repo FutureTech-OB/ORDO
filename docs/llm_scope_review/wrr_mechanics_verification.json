@@ -1,0 +1,317 @@
+{
+  "status": "complete_offline_mechanics_check",
+  "author_source_unchanged": true,
+  "source_files": {
+    "LICENSE": {
+      "bytes": 1498,
+      "sha256": "0f744a6e544043f3477575311da8f92a0cb2d7304b5bc0c95860c0ea41238886",
+      "git_blob": "321111abb7d52f7271887b4b23ae94488e32b1e8"
+    },
+    "LLMABM-GitHub-WRR.py": {
+      "bytes": 22625,
+      "sha256": "3a9e811a43f0f89ea87616da441e3ba6482e911eb309d6cbd89126a445279147",
+      "git_blob": "099e1fc0c6328b5f9eb459bbee28b96cdb14d779"
+    },
+    "README.md": {
+      "bytes": 1949,
+      "sha256": "ea4735066d983ae9d51f1d5bce0dcd7e3a7c9a284bf27ba2c9b949105b19c103",
+      "git_blob": "cf86e41874d7726f20dbcfd9227e9ede049afbe2"
+    }
+  },
+  "protocol_comparisons": 36,
+  "records": [
+    {
+      "seed": 0,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 0,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 0,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 0,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 1,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 1,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 1,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 1,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 7,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 7,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 7,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 7,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 19,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 19,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 19,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 19,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261030,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261030,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 20261030,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261030,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261079,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261079,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 20261079,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261079,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261100,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261100,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 20261100,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 20261100,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 982,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 982,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 982,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 982,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 233,
+      "scripted_action_tape": "inaction",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 233,
+      "scripted_action_tape": "relocate",
+      "native_decisions": 100,
+      "sdk_decisions": 100,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 1
+    },
+    {
+      "seed": 233,
+      "scripted_action_tape": "elevate",
+      "native_decisions": 1000,
+      "sdk_decisions": 1000,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    },
+    {
+      "seed": 233,
+      "scripted_action_tape": "mixed",
+      "native_decisions": 346,
+      "sdk_decisions": 346,
+      "native_prompt_final_state_and_log_exact": true,
+      "actual_source_years": 10
+    }
+  ],
+  "total_native_scripted_decisions": 22014,
+  "total_sdk_scripted_decisions": 22014,
+  "actual_api_requests": 0,
+  "real_jev_decisions": 0,
+  "not_evidence_of": "Gemma/Jev behavioral agreement, full paper replication, or human fidelity"
+}

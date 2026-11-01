@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "default_model_api_calls": 0,
+  "publication_status": "local_unpublished",
+  "entries": [
+    {
+      "id": "llm-published-archives",
+      "title": "Science Advances: convention and majority-opinion archives",
+      "study_ids": [
+        "ashery2025",
+        "demarzo2026"
+      ],
+      "kind": "archive_replay_and_macro_checks",
+      "module": "examples.llm_abm_cookbook.run",
+      "args": [],
+      "download_flag": "--download",
+      "docs": "docs/llm_abm_cookbook/README.md",
+      "evidence": "docs/llm_abm_cookbook/verification.json",
+      "scope": "Replay 39 convention experiments and check aggregate opinion trajectories and probability tables."
+    },
+    {
+      "id": "organizational-conventions",
+      "title": "Thousand-member organization: positions, reporting contacts, and publishing permissions",
+      "study_ids": [
+        "ashery2025"
+      ],
+      "kind": "organizational_extension_rule_controls",
+      "module": "examples.organizational_conventions.reliable_run",
+      "args": [],
+      "docs": "docs/organizational_conventions/README.md",
+      "evidence": "docs/organizational_conventions/results/results.json",
+      "scope": "This entry point runs three rule controls; results also record 92,058 completed Jev judgments."
+    },
+    {
+      "id": "nc-evolutionary-games",
+      "title": "NC: repeated games and population strategy evolution",
+      "study_ids": [
+        "su2026"
+      ],
+      "kind": "author_strategy_and_population_loop",
+      "module": "examples.nc_evolutionary_games.run",
+      "args": [],
+      "docs": "docs/nc_evolutionary_games/README.md",
+      "evidence": "docs/nc_evolutionary_games/results/verification.json",
+      "scope": "972 strategy matches and twelve 64-member Fermi worlds using archived Q tables."
+    },
+    {
+      "id": "nc-social-rewarding",
+      "title": "NC: reputation, social rewards, and cooperation",
+      "study_ids": [
+        "pal2022"
+      ],
+      "kind": "author_individual_update_loop",
+      "module": "examples.nc_additional_games.run",
+      "args": [],
+      "docs": "docs/nc_additional_games/README.md",
+      "evidence": "docs/nc_additional_games/results/verification.json",
+      "scope": "Eighteen 100-member worlds with 3,000 updates each; 54,000 rule updates checked step by step."
+    },
+    {
+      "id": "nc-social-cascades",
+      "title": "NC: social pressure and information cascades",
+      "study_ids": [
+        "notarmuzi2022"
+      ],
+      "kind": "author_native_kernel_comparison",
+      "module": "examples.nc_social_sweep.run",
+      "args": [],
+      "download_flag": "--download",
+      "docs": "docs/nc_social_sweep/README.md",
+      "evidence": "docs/nc_social_sweep/results/verification.json",
+      "scope": "Twenty-seven RFIM worlds with 128 to 1,024 members, compared with the author C propagation kernel; requires a C compiler."
+    },
+    {
+      "id": "nc-collective-foraging",
+      "title": "NC: collective foraging, local observations, and social learning",
+      "study_ids": [
+        "foraging2025"
+      ],
+      "kind": "author_policy_and_state_loop",
+      "module": "examples.nc_social_sweep.run_foraging",
+      "args": [],
+      "download_flag": "--download",
+      "docs": "docs/nc_social_sweep/foraging.md",
+      "evidence": "docs/nc_social_sweep/foraging_results/verification.json",
+      "scope": "Eighteen four-member, 400-step worlds; 2,096 native destination choices with full-state and private-observation checks."
+    },
+    {
+      "id": "ncs-urban-mobility",
+      "title": "NCS: collective mobility, exploration, and personal memory",
+      "study_ids": [
+        "xu2021"
+      ],
+      "kind": "author_native_kernel_scheduling",
+      "module": "examples.ncs_mobility.run",
+      "args": [],
+      "prepare": [
+        {
+          "module": "examples.ncs_mobility.build",
+          "args": [],
+          "download_flag": "--download"
+        }
+      ],
+      "platforms": [
+        "win32"
+      ],
+      "docs": "docs/ncs_mobility/README.md",
+      "evidence": "docs/ncs_mobility/results.json",
+      "scope": "Fifteen 128/1,000-member worlds and 181,440 native updates; period scheduling requires Windows MSVC/PPL."
+    },
+    {
+      "id": "nc-polarization-archive",
+      "title": "NC: state and network replay of thousand-member LLM polarization",
+      "study_ids": [
+        "piao2026"
+      ],
+      "kind": "state_and_network_archive_replay",
+      "module": "examples.nc_polarization.run",
+      "args": [
+        "--export",
+        "{output}/export"
+      ],
+      "download_flag": "--download",
+      "docs": "docs/nc_polarization/README.md",
+      "evidence": "docs/nc_polarization/results/verification.json",
+      "scope": "123 snapshots and 491,474 contact records; 120,000 archived state assignments."
+    },
+    {
+      "id": "traditional-wealth",
+      "title": "Wealth exchange",
+      "study_ids": [],
+      "kind": "upstream_mesa_state_comparison",
+      "module": "examples.abm_cookbook.run",
+      "args": [
+        "--model",
+        "wealth"
+      ],
+      "docs": "docs/abm_cookbook/README.md",
+      "evidence": "docs/abm_cookbook/verification.json",
+      "scope": "Preserve Mesa 3.5.1 rules and compare agent, clock, and RNG states."
+    },
+    {
+      "id": "traditional-cooperation",
+      "title": "Spatial cooperation",
+      "study_ids": [],
+      "kind": "upstream_mesa_state_comparison",
+      "module": "examples.abm_cookbook.run",
+      "args": [
+        "--model",
+        "cooperation"
+      ],
+      "docs": "docs/abm_cookbook/README.md",
+      "evidence": "docs/abm_cookbook/verification.json",
+      "scope": "Preserve Mesa 3.5.1 rules and compare agent, clock, and RNG states."
+    },
+    {
+      "id": "traditional-schelling",
+      "title": "Residential segregation",
+      "study_ids": [],
+      "kind": "upstream_mesa_state_comparison",
+      "module": "examples.abm_cookbook.run",
+      "args": [
+        "--model",
+        "schelling"
+      ],
+      "docs": "docs/abm_cookbook/README.md",
+      "evidence": "docs/abm_cookbook/verification.json",
+      "scope": "Preserve Mesa 3.5.1 rules and compare agent, clock, and RNG states."
+    },
+    {
+      "id": "traditional-organization",
+      "title": "Organizational social learning",
+      "study_ids": [
+        "barkoczi2016"
+      ],
+      "kind": "published_mechanism_adaptation",
+      "module": "examples.abm_cookbook.run",
+      "args": [
+        "--model",
+        "organization"
+      ],
+      "docs": "docs/abm_cookbook/README.md",
+      "evidence": "docs/abm_cookbook/verification.json",
+      "scope": "Python adaptation of a published organizational social-learning mechanism."
+    },
+    {
+      "id": "organizational-mechanisms",
+      "title": "Organizational experiments: approval, information, Personas, and scale",
+      "study_ids": [],
+      "kind": "organizational_mechanism_examples",
+      "module": "examples.cookbook.run",
+      "args": [
+        "--recipe",
+        "all"
+      ],
+      "docs": "docs/cookbook/README.md",
+      "evidence": "docs/cookbook/verified_results.md",
+      "scope": "Fifty rule worlds and three population builds for mechanism demonstrations."
+    }
+  ],
+  "studies": [
+    {
+      "id": "ashery2025",
+      "title": "Emergent social conventions and collective bias in LLM populations",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adu9368"
+    },
+    {
+      "id": "demarzo2026",
+      "title": "AI agents can coordinate via majority-following beyond human scale",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.aea6091"
+    },
+    {
+      "id": "barkoczi2016",
+      "title": "Social learning strategies modify the effect of network structure on group performance",
+      "journal": "Nature Communications",
+      "doi": "10.1038/ncomms13109"
+    },
+    {
+      "id": "su2026",
+      "title": "A multi-agent reinforcement learning framework for exploring dominant strategies in iterated and evolutionary games",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-025-67178-6"
+    },
+    {
+      "id": "notarmuzi2022",
+      "title": "Universality, criticality and complexity of information propagation in social media",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-022-28964-8"
+    },
+    {
+      "id": "xu2021",
+      "title": "Emergence of urban growth patterns from human mobility behavior",
+      "journal": "Nature Computational Science",
+      "doi": "10.1038/s43588-021-00160-6"
+    },
+    {
+      "id": "piao2026",
+      "title": "Emergence of polarization in networks of large language model agents",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-026-78228-y"
+    },
+    {
+      "id": "foraging2025",
+      "title": "Adaptive mechanisms of social and asocial learning in immersive collective foraging",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-025-58365-6"
+    },
+    {
+      "id": "pal2022",
+      "title": "Reputation effects drive the joint evolution of cooperation and social rewarding",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-022-33551-y"
+    }
+  ]
+}

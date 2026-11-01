@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "actual_model_api_calls": 0,
+  "elapsed_s": 29.773421499994583,
+  "engines": {
+    "uniform": {
+      "periods": 32,
+      "decisions": 74693,
+      "all_inputs_exact": true,
+      "all_metrics_exact": true,
+      "full_final_states_exact": true,
+      "actual_model_api_calls": 0
+    },
+    "history": {
+      "periods": 32,
+      "decisions": 74693,
+      "all_inputs_exact": true,
+      "all_metrics_exact": true,
+      "full_final_states_exact": true,
+      "actual_model_api_calls": 0
+    },
+    "notice": {
+      "periods": 32,
+      "decisions": 74693,
+      "all_inputs_exact": true,
+      "all_metrics_exact": true,
+      "full_final_states_exact": true,
+      "actual_model_api_calls": 0
+    },
+    "jev": {
+      "periods": 32,
+      "decisions": 74693,
+      "all_inputs_exact": true,
+      "all_metrics_exact": true,
+      "full_final_states_exact": true,
+      "actual_model_api_calls": 0
+    }
+  }
+}

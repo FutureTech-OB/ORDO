@@ -1,0 +1,23 @@
+[
+  {
+    "file": "author_payoff.py",
+    "url": "https://github.com/YuzukiWang/multiagent_q_learning_for_evolutionary_games/blob/3e3c3bf2bc50761acabd7a42a785dac0e15f3f84/simulation_code/Fig2/generate_payoff_heatmap.py",
+    "git_blob_sha": "32637461a04ee1d513f8b1c8e8246a32f3dfaaa7",
+    "sha256": "88b56f34ca8520d7e0a3a8d37ad4184507e758cea332ff65b5d07fffd39470ff",
+    "bytes": 31744
+  },
+  {
+    "file": "author_well_mixed.py",
+    "url": "https://github.com/YuzukiWang/multiagent_q_learning_for_evolutionary_games/blob/3e3c3bf2bc50761acabd7a42a785dac0e15f3f84/simulation_code/Fig4&FigS5&FigS6/Well-mixed.py",
+    "git_blob_sha": "9c24ef29b7dc019e320dac46d417943acff555d8",
+    "sha256": "16b456b136979da3a4e971f5ead6ccddabe9785d7eb4b3bc863100b121d420f0",
+    "bytes": 15519
+  },
+  {
+    "file": "strategy0729.json",
+    "url": "https://github.com/YuzukiWang/multiagent_q_learning_for_evolutionary_games/blob/3e3c3bf2bc50761acabd7a42a785dac0e15f3f84/Fig2&FigS2/strategy0729.txt",
+    "git_blob_sha": "bdf32c9080214edeb58a35a124b5857a36fd7edf",
+    "sha256": "c743d19ad33948e4e76769ed4a0154153fa6dc9dc443c11963a773b301de072d",
+    "bytes": 1279
+  }
+]

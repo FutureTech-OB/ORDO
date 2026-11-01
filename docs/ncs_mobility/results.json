@@ -1,0 +1,559 @@
+{
+  "status": "complete",
+  "source_doi": "10.1038/s43588-021-00160-6",
+  "python": "3.12.14",
+  "cases": [
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 7,
+        "memory": false,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 2.038953599985689,
+      "ordo_elapsed_s": 1.9301551000680774,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 3,
+        "mean_memory_locations": 1.0,
+        "mean_toroidal_radius": 1.1488579989778311,
+        "spatial_concentration": 0.33447265625,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "f5ac017b1008fb3270ffded7049410e9741469e4512ad1813060527d4d1915b8"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 7,
+        "memory": false,
+        "rho0": 10.0
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 7.36404389992822,
+      "ordo_elapsed_s": 8.361470100004226,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 128,
+        "mean_memory_locations": 1.0,
+        "mean_toroidal_radius": 87.85960033724753,
+        "spatial_concentration": 0.0078125,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "d2e176b0f9013fe73186b3e0bf31009f723d8f5b9ce68347573acb72f5f9394b"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 7,
+        "memory": true,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 5.786978099960834,
+      "ordo_elapsed_s": 4.304049300029874,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 35,
+        "mean_memory_locations": 25.515625,
+        "mean_toroidal_radius": 3.1449879141820043,
+        "spatial_concentration": 0.0396728515625,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "bf8d7b4dfe0d1fd518f3dd12e7acdb349621a5d0b537cd0700bd778698cd4430"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 7,
+        "memory": true,
+        "rho0": 10.0
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 3.9779286000411958,
+      "ordo_elapsed_s": 3.9762279000133276,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 117,
+        "mean_memory_locations": 25.515625,
+        "mean_toroidal_radius": 27.060216559064543,
+        "spatial_concentration": 0.0098876953125,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "c8526731ea4885798defa710257cb209a6512e820d2bee69ebea737dcc72aa92"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 11,
+        "memory": false,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 2.3034168999874964,
+      "ordo_elapsed_s": 2.3801384000107646,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 3,
+        "mean_memory_locations": 1.0,
+        "mean_toroidal_radius": 1.1294417382415922,
+        "spatial_concentration": 0.3341064453125,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "0cf054408190e8427faba2357c5978f076ee9744bb75bfc542390627661c5724"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 11,
+        "memory": false,
+        "rho0": 10.0
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 7.147523100022227,
+      "ordo_elapsed_s": 6.969562300015241,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 128,
+        "mean_memory_locations": 1.0,
+        "mean_toroidal_radius": 100.39871703321765,
+        "spatial_concentration": 0.0078125,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "1b7b9fcaff4b0db28ff1398fe7d4428819f4cb46521e992991374b6da755a7c2"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 11,
+        "memory": true,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 5.425506600062363,
+      "ordo_elapsed_s": 4.0101378000108525,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 28,
+        "mean_memory_locations": 25.203125,
+        "mean_toroidal_radius": 4.1113621310128385,
+        "spatial_concentration": 0.06396484375,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "41929cad2b16ddda93d8259fd22f29206c9cdcc2472dd281b3aa1c83d6c4af21"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 11,
+        "memory": true,
+        "rho0": 10.0
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 3.8788545000134036,
+      "ordo_elapsed_s": 4.704771499964409,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 114,
+        "mean_memory_locations": 25.203125,
+        "mean_toroidal_radius": 29.499482001589516,
+        "spatial_concentration": 0.0101318359375,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "b9e2fa4d1800b013ef1f7be83fc9ce3de324978b9935cc3eec20bb67c5785a33"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 17,
+        "memory": false,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 2.6024219000246376,
+      "ordo_elapsed_s": 2.870295300032012,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 4,
+        "mean_memory_locations": 1.0,
+        "mean_toroidal_radius": 1.412673083556026,
+        "spatial_concentration": 0.2803955078125,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "a7120ebe4d086c43a95f82bff3ee470436de77a2991a4d60661fc4ae2812d336"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 17,
+        "memory": false,
+        "rho0": 10.0
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 5.640680899959989,
+      "ordo_elapsed_s": 6.069788799970411,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 128,
+        "mean_memory_locations": 1.0,
+        "mean_toroidal_radius": 92.75805974668961,
+        "spatial_concentration": 0.0078125,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "0063f1fe4e6159b62be4b645a4dd8d97c8804761aab795e4030de388e83ab518"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 17,
+        "memory": true,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 3.5324420999968424,
+      "ordo_elapsed_s": 4.356009200098924,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 33,
+        "mean_memory_locations": 25.625,
+        "mean_toroidal_radius": 3.8425164953144657,
+        "spatial_concentration": 0.0528564453125,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "a2d432a3457386005af52884189f9a3f1445b59cc6ce91f1cfd475542143ea32"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 128,
+        "rounds": 40,
+        "seed": 17,
+        "memory": true,
+        "rho0": 10.0
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 5120,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 3.2879619000013918,
+      "ordo_elapsed_s": 4.885019299923442,
+      "final": {
+        "period": 40,
+        "population": 128,
+        "native_agent_updates": 128,
+        "occupied_sites": 111,
+        "mean_memory_locations": 25.5234375,
+        "mean_toroidal_radius": 23.17706455320831,
+        "spatial_concentration": 0.0111083984375,
+        "population_mass": 128,
+        "pending_flow_mass": 0,
+        "state_sha256": "463699f6afe49b1ad206cda6a432e2b9eeac7eecf23254e0b7694c1b48cfd730"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 1000,
+        "rounds": 40,
+        "seed": 7,
+        "memory": true,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 40000,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 12.629443199955858,
+      "ordo_elapsed_s": 12.148784399963915,
+      "final": {
+        "period": 40,
+        "population": 1000,
+        "native_agent_updates": 1000,
+        "occupied_sites": 66,
+        "mean_memory_locations": 25.351,
+        "mean_toroidal_radius": 2.4934084605123896,
+        "spatial_concentration": 0.024244,
+        "population_mass": 1000,
+        "pending_flow_mass": 0,
+        "state_sha256": "f214bc17610f470cb58b1167edbec81a68ab7102be774195fb132b560575bcb5"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 1000,
+        "rounds": 40,
+        "seed": 11,
+        "memory": true,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 40000,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 11.652233300032094,
+      "ordo_elapsed_s": 11.676639500074089,
+      "final": {
+        "period": 40,
+        "population": 1000,
+        "native_agent_updates": 1000,
+        "occupied_sites": 64,
+        "mean_memory_locations": 25.434,
+        "mean_toroidal_radius": 2.573494083312271,
+        "spatial_concentration": 0.024166,
+        "population_mass": 1000,
+        "pending_flow_mass": 0,
+        "state_sha256": "21f2b6ea135806927cb803c1caed761b7ad5988ab409939bdce54bd7a1b3e071"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    },
+    {
+      "config": {
+        "agents": 1000,
+        "rounds": 40,
+        "seed": 17,
+        "memory": true,
+        "rho0": 1e-12
+      },
+      "periods": 40,
+      "sdk_control_actions": 40,
+      "native_agent_updates": 40000,
+      "all_period_metrics_and_state_hashes_exact": true,
+      "full_final_state_exact": true,
+      "native_reference_elapsed_s": 12.511953000095673,
+      "ordo_elapsed_s": 611.7206443999894,
+      "final": {
+        "period": 40,
+        "population": 1000,
+        "native_agent_updates": 1000,
+        "occupied_sites": 70,
+        "mean_memory_locations": 25.441,
+        "mean_toroidal_radius": 2.708034956053379,
+        "spatial_concentration": 0.023698,
+        "population_mass": 1000,
+        "pending_flow_mass": 0,
+        "state_sha256": "afba6df5f348ed38c852696882cea71ea629241eea11d8ca0599e5e73fdd3ef4"
+      },
+      "actual_model_api_calls": 0,
+      "recorded_api_cost_usd": 0
+    }
+  ],
+  "actual_model_api_calls": 0,
+  "recorded_api_cost_usd": 0,
+  "source_hashes": {
+    "examples/ncs_mobility/bridge_tail.cpp": "14bfb33f87f1efcebf6e327955dd04b169872ef7577ddfb0ce2b0864be606dab",
+    "examples/ncs_mobility/build.py": "7321c1e93396491088ed30e0c36a873896473b1f342da1acf913cc0bafe9f8aa",
+    "examples/ncs_mobility/export.py": "737469a8d0515ded0b557862113ab355c218dbd1a3a657aecb130e223823aaae",
+    "examples/ncs_mobility/model.py": "bd2759200f0cfadb0812e9564c552843caefb106d583ad3ca31ca8e4e9660f51",
+    "examples/ncs_mobility/run.py": "6bf7bdd5f7dc289bf224bbd023637713b2d8f5b22abf1db43a53b17f063ca450",
+    "examples/ncs_mobility/__init__.py": "9c2c817e38ac4f8cf2dc54d7eb12fd8a7933658b79581141c8b4d42452a2c98c"
+  },
+  "claim": "Reduced author-kernel portability via ORDO; not published 30,000-agent,20,000-period urban-scaling validation.",
+  "elapsed_s": 781.9954354999354,
+  "native_agent_updates": 181440,
+  "sdk_control_actions": 600,
+  "build": {
+    "commit": "21be090028a0b090c6d32675b73ef821893dfaf9",
+    "source_sha256": "046f1e7f91b9b226a0caf6ea3ab9cd0c3d4fd9d528a3e1b9f687d3e8c8f5a5c0",
+    "generated_sha256": "ab46baa32df9912ffbf7eba8dea4f1154499c76f68e3de673694c32e9d16672b",
+    "patches": [
+      "Use source prefix through t_user plus unchanged update function; omit original main/run/output routines.",
+      "Omit unused deprecated hash_map include.",
+      "Check index_temp>0 before frequency[index_temp-1] in SortedArray.add to avoid out-of-bounds read.",
+      "Add read-only state getters and explicit loc_freq cleanup.",
+      "Use new[]/delete[] in bridge initialization; deterministic explicit seeds instead of time().",
+      "Run agents serially under the unchanged frozen-population period update, retaining per-agent RNG."
+    ],
+    "platform": "Windows x64 MSVC/PPL",
+    "algorithms": "Author t_user exploration/return, SortedArray, AliasTable and update; source quirks retained except bounds guard.",
+    "cmm_bridge.dll": "bac8d1121d9f4c4f1f7f3e6ad4a91ca0eb9d685b8fa13f87ba5c1b722b71474e",
+    "cmm_reference.exe": "e6cd38b1c1f3ea0cca8bdbcdb572b70112145b249c7620cfd6a98da5abbd2ecb"
+  },
+  "upstream": {
+    "repository": "https://github.com/tsinghua-fib-lab/Collective-Mobility-Model",
+    "commit": "21be090028a0b090c6d32675b73ef821893dfaf9",
+    "files": {
+      "main.cpp": {
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/Collective-Mobility-Model/21be090028a0b090c6d32675b73ef821893dfaf9/main.cpp",
+        "git_blob_sha": "306e9b8dd06640920f098e3a72ef8456ab144c2b",
+        "sha256": "046f1e7f91b9b226a0caf6ea3ab9cd0c3d4fd9d528a3e1b9f687d3e8c8f5a5c0",
+        "bytes": 20563
+      },
+      "drand48.h": {
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/Collective-Mobility-Model/21be090028a0b090c6d32675b73ef821893dfaf9/drand48.h",
+        "git_blob_sha": "46d86e880af91f6a7ba7abad2151d484969342b9",
+        "sha256": "643f01cb16edfa464a00b6e24df20441dddecdb6ce34c9ddd0c0d3a9cf327223",
+        "bytes": 876
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/Collective-Mobility-Model/21be090028a0b090c6d32675b73ef821893dfaf9/LICENSE",
+        "git_blob_sha": "6c603710c5d0bc0dae1b362812b3cbfacbe46867",
+        "sha256": "734927d863c4ba8841e2b709b324c3753e3229bc8e0aa0cd4ca41e352e2416a6",
+        "bytes": 1062
+      }
+    }
+  },
+  "summary": [
+    {
+      "agents": 128,
+      "memory": false,
+      "rho0": 1e-12,
+      "seeds": 3,
+      "occupied_sites_mean": 3.3333333333333335,
+      "radius_mean": 1.2303242735918165,
+      "spatial_concentration_mean": 0.3163248697916667
+    },
+    {
+      "agents": 128,
+      "memory": false,
+      "rho0": 10.0,
+      "seeds": 3,
+      "occupied_sites_mean": 128,
+      "radius_mean": 93.67212570571826,
+      "spatial_concentration_mean": 0.0078125
+    },
+    {
+      "agents": 128,
+      "memory": true,
+      "rho0": 1e-12,
+      "seeds": 3,
+      "occupied_sites_mean": 32,
+      "radius_mean": 3.6996221801697695,
+      "spatial_concentration_mean": 0.052164713541666664
+    },
+    {
+      "agents": 128,
+      "memory": true,
+      "rho0": 10.0,
+      "seeds": 3,
+      "occupied_sites_mean": 114,
+      "radius_mean": 26.578921037954125,
+      "spatial_concentration_mean": 0.0103759765625
+    },
+    {
+      "agents": 1000,
+      "memory": true,
+      "rho0": 1e-12,
+      "seeds": 3,
+      "occupied_sites_mean": 66.66666666666667,
+      "radius_mean": 2.59164583329268,
+      "spatial_concentration_mean": 0.024036000000000002
+    }
+  ]
+}

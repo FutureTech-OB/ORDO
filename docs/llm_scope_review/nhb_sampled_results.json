@@ -1,0 +1,171 @@
+{
+  "action_policy": "Raw categorical sampling; application probability temperature=1, no rescaling",
+  "original_llm_temperature": 0,
+  "jev_api_temperature": null,
+  "fresh_decisions": 320,
+  "cooperative_actions": 81,
+  "defective_actions": 239,
+  "cooperation_rate": 0.253125,
+  "pJ_min": 0.04,
+  "pJ_max": 0.98,
+  "pJ_mean": 0.25028125,
+  "author_archive_cooperation_rate": 0.6375,
+  "historical_argmax_cooperation_rate": 0.0,
+  "provider_reported_cost_usd": 0.011114753999999992,
+  "successful_requests": 300,
+  "elapsed_seconds": 341.0315668999683,
+  "per_model_perspective": [
+    {
+      "match": 0,
+      "side": 1,
+      "opponent": "act_gpt4",
+      "cooperative_actions": 4,
+      "cooperation_rate": 0.2,
+      "author_archived_cooperative_actions": 20,
+      "score": 85
+    },
+    {
+      "match": 0,
+      "side": 2,
+      "opponent": "act_gpt4",
+      "cooperative_actions": 1,
+      "cooperation_rate": 0.05,
+      "author_archived_cooperative_actions": 20,
+      "score": 115
+    },
+    {
+      "match": 1,
+      "side": 1,
+      "opponent": "act_tft",
+      "cooperative_actions": 2,
+      "cooperation_rate": 0.1,
+      "author_archived_cooperative_actions": 20,
+      "score": 108
+    },
+    {
+      "match": 2,
+      "side": 1,
+      "opponent": "act_tftt",
+      "cooperative_actions": 5,
+      "cooperation_rate": 0.25,
+      "author_archived_cooperative_actions": 20,
+      "score": 116
+    },
+    {
+      "match": 3,
+      "side": 1,
+      "opponent": "act_stft",
+      "cooperative_actions": 16,
+      "cooperation_rate": 0.8,
+      "author_archived_cooperative_actions": 10,
+      "score": 134
+    },
+    {
+      "match": 4,
+      "side": 1,
+      "opponent": "act_rtft",
+      "cooperative_actions": 8,
+      "cooperation_rate": 0.4,
+      "author_archived_cooperative_actions": 10,
+      "score": 132
+    },
+    {
+      "match": 5,
+      "side": 1,
+      "opponent": "act_htft",
+      "cooperative_actions": 3,
+      "cooperation_rate": 0.15,
+      "author_archived_cooperative_actions": 1,
+      "score": 85
+    },
+    {
+      "match": 6,
+      "side": 1,
+      "opponent": "act_np10",
+      "cooperative_actions": 1,
+      "cooperation_rate": 0.05,
+      "author_archived_cooperative_actions": 11,
+      "score": 105
+    },
+    {
+      "match": 7,
+      "side": 1,
+      "opponent": "act_np20",
+      "cooperative_actions": 5,
+      "cooperation_rate": 0.25,
+      "author_archived_cooperative_actions": 10,
+      "score": 98
+    },
+    {
+      "match": 8,
+      "side": 2,
+      "opponent": "act_tft",
+      "cooperative_actions": 2,
+      "cooperation_rate": 0.1,
+      "author_archived_cooperative_actions": 20,
+      "score": 105
+    },
+    {
+      "match": 16,
+      "side": 2,
+      "opponent": "act_tftt",
+      "cooperative_actions": 4,
+      "cooperation_rate": 0.2,
+      "author_archived_cooperative_actions": 20,
+      "score": 125
+    },
+    {
+      "match": 24,
+      "side": 2,
+      "opponent": "act_stft",
+      "cooperative_actions": 18,
+      "cooperation_rate": 0.9,
+      "author_archived_cooperative_actions": 7,
+      "score": 146
+    },
+    {
+      "match": 32,
+      "side": 2,
+      "opponent": "act_rtft",
+      "cooperative_actions": 5,
+      "cooperation_rate": 0.25,
+      "author_archived_cooperative_actions": 10,
+      "score": 151
+    },
+    {
+      "match": 40,
+      "side": 2,
+      "opponent": "act_htft",
+      "cooperative_actions": 2,
+      "cooperation_rate": 0.1,
+      "author_archived_cooperative_actions": 2,
+      "score": 90
+    },
+    {
+      "match": 48,
+      "side": 2,
+      "opponent": "act_np10",
+      "cooperative_actions": 2,
+      "cooperation_rate": 0.1,
+      "author_archived_cooperative_actions": 12,
+      "score": 105
+    },
+    {
+      "match": 56,
+      "side": 2,
+      "opponent": "act_np20",
+      "cooperative_actions": 3,
+      "cooperation_rate": 0.15,
+      "author_archived_cooperative_actions": 11,
+      "score": 100
+    }
+  ],
+  "full_inputs_feedback_and_offline_replay_exact": true,
+  "all_sdk_probabilities_equal_raw_provider": true,
+  "limitations": [
+    "New interactive trajectories, not resampling probabilities on old histories",
+    "One tournament, no robustness claim",
+    "Original GPT4 temperature0 and Jev action sampling are distinct",
+    "No automatic human fidelity or successful behavioral replication claim"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "paper_doi": "10.1126/sciadv.adu9368",
+  "scope": "Fig.1 spontaneous-emergence condition, new Jev model arm; not all four original models, collective-bias Fig.2, minority Fig.3 or paper-wide replication",
+  "source_commit": "e57aeef151a46108fd1521c66e345e557e57dbf6",
+  "agents": 24,
+  "worlds": 40,
+  "network": "complete random pair encounters",
+  "names": ["Q", "M", "X", "Y", "F", "J", "P", "R", "C", "D"],
+  "memory": 5,
+  "reward_match": 100,
+  "payoff_mismatch": -50,
+  "initial_history": "empty",
+  "stop": "72 consecutive matched pairings, exactly the source has_tracker_converged; no added 95% name criterion",
+  "interaction_horizon": null,
+  "upper_fresh_decisions": null,
+  "reason_no_finite_upper_bound": "Author population() runs until convergence and does not use total_interactions=1000; a client spending interruption must remain incomplete, not count as a short completed experiment",
+  "source_llm_temperature": 0.5,
+  "source_top_k": 10,
+  "source_prompt_context_rounds": 100,
+  "prompt_information": "Only own last five choices, coplayer choices, their payoffs and local-window score; randomized option order per individual; neither population state nor current counterpart choice",
+  "publication_repetition_discrepancy": "Fig.1 caption says40 each; current archive/plotter has40 Llama3,40 Llama3.1,27 Claude,20 Llama2. New Jev plan conservatively keeps the full40 rather than choosing the smaller archives",
+  "execution_status": "audited plan only; priority executable is DeMarzo Fig.2. Do not substitute the existing4-world/1000-cap pilot for this plan"
+}

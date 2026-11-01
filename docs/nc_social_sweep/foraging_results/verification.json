@@ -1,0 +1,531 @@
+{
+  "status": "complete",
+  "paper": "Adaptive mechanisms of social and asocial learning in immersive collective foraging",
+  "doi": "10.1038/s41467-025-58365-6",
+  "upstream_repository": "https://github.com/charleywu/minecraftforaging",
+  "upstream_commit": "93d4984cac10171acb14ccdae5bc68a9e4d76e20",
+  "sources": [
+    {
+      "file": "simulations/simulation.py",
+      "url": "https://raw.githubusercontent.com/charleywu/minecraftforaging/93d4984cac10171acb14ccdae5bc68a9e4d76e20/simulations/simulation.py",
+      "git_blob_sha": "e1ad06cae6bc931e8ef5be6f6c48b89385c4afd6",
+      "sha256": "9b24dfd2089ff8ee88fda3256137ea39e0e4857fb27f96f6f44f1c78eed39632",
+      "bytes": 12519
+    },
+    {
+      "file": "simulations/task.py",
+      "url": "https://raw.githubusercontent.com/charleywu/minecraftforaging/93d4984cac10171acb14ccdae5bc68a9e4d76e20/simulations/task.py",
+      "git_blob_sha": "35ce19a0e511bdc371dd1e75583c716c61e1be42",
+      "sha256": "8eeb98c194bbfa7d0b1af291ebd48b4769c2e1b309fe2eb5b9f49da127abd92c",
+      "bytes": 9226
+    },
+    {
+      "file": "simulations/spatial_gp.py",
+      "url": "https://raw.githubusercontent.com/charleywu/minecraftforaging/93d4984cac10171acb14ccdae5bc68a9e4d76e20/simulations/spatial_gp.py",
+      "git_blob_sha": "f7521e698c47434c9ef72ef4910f791a39c6808b",
+      "sha256": "5f8eee1af259e5d2f07f93673602b771af3dc37707adc1cd122079e5963a63cf",
+      "bytes": 3681
+    },
+    {
+      "file": "simulations/runSimulations.py",
+      "url": "https://raw.githubusercontent.com/charleywu/minecraftforaging/93d4984cac10171acb14ccdae5bc68a9e4d76e20/simulations/runSimulations.py",
+      "git_blob_sha": "56eec9e9b659a8ca9f1783e8d789ce76a8ea32dc",
+      "sha256": "4e9bad536f2c4585c43374cc715292827b59309818b87d2e21e61927a76bb65f",
+      "bytes": 4722
+    },
+    {
+      "file": "environments/smooth.1.csv",
+      "url": "https://raw.githubusercontent.com/charleywu/minecraftforaging/93d4984cac10171acb14ccdae5bc68a9e4d76e20/environments/smooth.1.csv",
+      "git_blob_sha": "a1b44f6a14ca8177314ddf230139cd1137a01302",
+      "sha256": "8928fb3c07d556895667f7365ec23fea883779b63eb096a3be1941b4f4d812f8",
+      "bytes": 1040
+    },
+    {
+      "file": "environments/random.1.csv",
+      "url": "https://raw.githubusercontent.com/charleywu/minecraftforaging/93d4984cac10171acb14ccdae5bc68a9e4d76e20/environments/random.1.csv",
+      "git_blob_sha": "5574b4e57843427a6ff06b58d9d2e1fdb933e9e0",
+      "sha256": "f53d9c0ece405196415b406d40b55b1b632d9e15bfc391be5039e52ebc9091f4",
+      "bytes": 1080
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/charleywu/minecraftforaging/93d4984cac10171acb14ccdae5bc68a9e4d76e20/LICENSE",
+      "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    }
+  ],
+  "transformation": {
+    "replaced_calls": 1,
+    "transformed_ast_sha256": "61b453eeab0e285fe789450ddf9deb25a9b0947ca317f7722fd5367330f89701",
+    "transformation": "Replace goal_cell = policy.sample_next_cell(...) with yield(step, agent_i, agent_view, state, policy, rng); remaining author run AST unchanged."
+  },
+  "plan": {
+    "environments": [
+      "smooth",
+      "random"
+    ],
+    "policies": [
+      "asocial",
+      "unbiased_social",
+      "success_biased_social"
+    ],
+    "seeds": [
+      7,
+      11,
+      19
+    ],
+    "agents": 4,
+    "steps": 400,
+    "mining_steps": 9
+  },
+  "worlds": [
+    {
+      "world": 0,
+      "environment": "smooth",
+      "policy": "asocial",
+      "seed": 7,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 118,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 34,
+      "rewards_by_agent": [
+        10,
+        5,
+        8,
+        11
+      ],
+      "revealed_blocks": 114,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.883989299996756
+    },
+    {
+      "world": 1,
+      "environment": "smooth",
+      "policy": "asocial",
+      "seed": 11,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 118,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 28,
+      "rewards_by_agent": [
+        10,
+        8,
+        5,
+        5
+      ],
+      "revealed_blocks": 112,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.7885704999789596
+    },
+    {
+      "world": 2,
+      "environment": "smooth",
+      "policy": "asocial",
+      "seed": 19,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 120,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 31,
+      "rewards_by_agent": [
+        10,
+        8,
+        4,
+        9
+      ],
+      "revealed_blocks": 116,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.7329921999480575
+    },
+    {
+      "world": 3,
+      "environment": "smooth",
+      "policy": "unbiased_social",
+      "seed": 7,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 113,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 34,
+      "rewards_by_agent": [
+        7,
+        6,
+        8,
+        13
+      ],
+      "revealed_blocks": 107,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.5779658999526873
+    },
+    {
+      "world": 4,
+      "environment": "smooth",
+      "policy": "unbiased_social",
+      "seed": 11,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 118,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 37,
+      "rewards_by_agent": [
+        9,
+        7,
+        14,
+        7
+      ],
+      "revealed_blocks": 108,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.6582086000125855
+    },
+    {
+      "world": 5,
+      "environment": "smooth",
+      "policy": "unbiased_social",
+      "seed": 19,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 115,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 29,
+      "rewards_by_agent": [
+        5,
+        11,
+        4,
+        9
+      ],
+      "revealed_blocks": 107,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.593597999890335
+    },
+    {
+      "world": 6,
+      "environment": "smooth",
+      "policy": "success_biased_social",
+      "seed": 7,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 117,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 34,
+      "rewards_by_agent": [
+        7,
+        7,
+        10,
+        10
+      ],
+      "revealed_blocks": 108,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.9588304000208154
+    },
+    {
+      "world": 7,
+      "environment": "smooth",
+      "policy": "success_biased_social",
+      "seed": 11,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 116,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 31,
+      "rewards_by_agent": [
+        13,
+        2,
+        8,
+        8
+      ],
+      "revealed_blocks": 108,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.9162244000472128
+    },
+    {
+      "world": 8,
+      "environment": "smooth",
+      "policy": "success_biased_social",
+      "seed": 19,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 114,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 36,
+      "rewards_by_agent": [
+        13,
+        5,
+        5,
+        13
+      ],
+      "revealed_blocks": 104,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.6090239000041038
+    },
+    {
+      "world": 9,
+      "environment": "random",
+      "policy": "asocial",
+      "seed": 7,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 118,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 26,
+      "rewards_by_agent": [
+        7,
+        4,
+        7,
+        8
+      ],
+      "revealed_blocks": 114,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.5880196000216529
+    },
+    {
+      "world": 10,
+      "environment": "random",
+      "policy": "asocial",
+      "seed": 11,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 119,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 25,
+      "rewards_by_agent": [
+        7,
+        6,
+        6,
+        6
+      ],
+      "revealed_blocks": 112,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.542250300059095
+    },
+    {
+      "world": 11,
+      "environment": "random",
+      "policy": "asocial",
+      "seed": 19,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 118,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 34,
+      "rewards_by_agent": [
+        9,
+        9,
+        9,
+        7
+      ],
+      "revealed_blocks": 114,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.7523520000977442
+    },
+    {
+      "world": 12,
+      "environment": "random",
+      "policy": "unbiased_social",
+      "seed": 7,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 115,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 34,
+      "rewards_by_agent": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "revealed_blocks": 108,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.5817324999952689
+    },
+    {
+      "world": 13,
+      "environment": "random",
+      "policy": "unbiased_social",
+      "seed": 11,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 115,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 21,
+      "rewards_by_agent": [
+        3,
+        5,
+        7,
+        6
+      ],
+      "revealed_blocks": 103,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.6592761999927461
+    },
+    {
+      "world": 14,
+      "environment": "random",
+      "policy": "unbiased_social",
+      "seed": 19,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 111,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 24,
+      "rewards_by_agent": [
+        5,
+        7,
+        7,
+        5
+      ],
+      "revealed_blocks": 100,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.7168879000237212
+    },
+    {
+      "world": 15,
+      "environment": "random",
+      "policy": "success_biased_social",
+      "seed": 7,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 114,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 22,
+      "rewards_by_agent": [
+        5,
+        7,
+        4,
+        6
+      ],
+      "revealed_blocks": 109,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.6349739999277517
+    },
+    {
+      "world": 16,
+      "environment": "random",
+      "policy": "success_biased_social",
+      "seed": 11,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 116,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 28,
+      "rewards_by_agent": [
+        3,
+        11,
+        6,
+        8
+      ],
+      "revealed_blocks": 105,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.6491057000821456
+    },
+    {
+      "world": 17,
+      "environment": "random",
+      "policy": "success_biased_social",
+      "seed": 19,
+      "agents": 4,
+      "steps": 400,
+      "mining_steps": 9,
+      "goal_decisions": 121,
+      "sdk_rounds": 1600,
+      "physical_steps": 400,
+      "total_rewards": 27,
+      "rewards_by_agent": [
+        4,
+        5,
+        10,
+        8
+      ],
+      "revealed_blocks": 109,
+      "exact_author_step_statistics": true,
+      "exact_author_full_states": true,
+      "exact_local_observation_replay": true,
+      "elapsed_s": 1.6615141000365838
+    }
+  ],
+  "actual_api_calls": 0,
+  "recorded_cost_usd": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_hashes": {
+    "examples/nc_social_sweep/run_foraging.py": "312f069b64e859e8a2be24272d377441c8db5a4703b3c7cdd64ba72222044279",
+    "examples/nc_social_sweep/foraging.py": "8597864308c9582172d615da5c80a1288d636777174fa9383d4836200ccf502e",
+    "examples/nc_social_sweep/foraging_sources.py": "6646254410a80c1bd2bdac7fcbacd392a3677b540aac4dd8489c548524f00342",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/randomness.py": "a8b74b3c59261135d0c79bcc96230bc0a227f56fbfc6e9ffa874ab879df696f6"
+  },
+  "evidence_scope": "Original author State/AgentView/Policy and original run-loop mechanics; exact seeded native stochastic parity. Two selected published maps and reduced repetition grid, not full empirical fit or 12,000-world study.",
+  "native_decision_records": "one-hot choices from original author Policy.sample_next_cell and PCG64; no fresh LLM decisions",
+  "elapsed_s": 90.64197730005253,
+  "decisions": 2096
+}

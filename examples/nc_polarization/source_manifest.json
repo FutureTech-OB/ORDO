@@ -1,0 +1,657 @@
+{
+  "repo": "tsinghua-fib-lab/LLM_for_Polarization",
+  "commit": "7bc447f6d470aa232f93de5dabaa4c87fc4414d9",
+  "doi": "10.1038/s41467-026-78228-y",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "63b4b681cb65bcf92db3d26bc3664a1298cbeea8",
+      "size": 1068
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "3112a8acfa396471174551435c1ea302c2292a48",
+      "size": 3945
+    },
+    {
+      "path": "figures/figure1/data/figure1_node_state_proportions.csv",
+      "git_blob_sha": "e78fb766d73719ec94064dc6c2d89da9463a3a14",
+      "size": 36941
+    },
+    {
+      "path": "figures/figure2/data/figure2d_debiased_node_state_proportions.csv",
+      "git_blob_sha": "6f51d12d68cd73c0ea522c6174d4c7d35dce747d",
+      "size": 38799
+    },
+    {
+      "path": "simulate.py",
+      "git_blob_sha": "97b94ba58d319fdee6ba40fc31871232bfc5a1c7",
+      "size": 20910
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run0.pkl",
+      "git_blob_sha": "526d3198a3ed469c80c257ef836350ac6a4973c9",
+      "size": 70994
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run1.pkl",
+      "git_blob_sha": "f4d597a1d26260f2d02d1595d960bc2dc5e19f63",
+      "size": 72002
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run10.pkl",
+      "git_blob_sha": "a4e4b86b1578e3e9686246484ba9cb0dec869885",
+      "size": 71088
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run11.pkl",
+      "git_blob_sha": "458dc2c02c13fd620bbe8f46ce2ff2af3b94e705",
+      "size": 71176
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run12.pkl",
+      "git_blob_sha": "d7fbd9570901ee0b49c7151694d55e46c1f95e5f",
+      "size": 71244
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run13.pkl",
+      "git_blob_sha": "83a50e4ed5c2a2bdca171a66e32015303f6d70b6",
+      "size": 71200
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run14.pkl",
+      "git_blob_sha": "1f1591668640a75c6bb2e42a6b1b7f4daa8adda4",
+      "size": 71246
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run15.pkl",
+      "git_blob_sha": "8609b1a538673d73e7f9aaa2b63e0ca11be515a1",
+      "size": 71231
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run16.pkl",
+      "git_blob_sha": "578da084dd86a382d77691475a2efa0d51677ae6",
+      "size": 71219
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run17.pkl",
+      "git_blob_sha": "983bd2fe8a28a565c3ac5a21d42cd80ed4392ff4",
+      "size": 71276
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run18.pkl",
+      "git_blob_sha": "20368d469948480b3ee7b50fb9edea55876bef5f",
+      "size": 71330
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run19.pkl",
+      "git_blob_sha": "660727259506f65a711d365f9d7044a72c41ce01",
+      "size": 71369
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run2.pkl",
+      "git_blob_sha": "3b929d02420d404321f34669379bfff4f03ee08a",
+      "size": 72110
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run20.pkl",
+      "git_blob_sha": "822ec72f2bea37c01b1bdaea1f69a3ec3e9b2daa",
+      "size": 71488
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run21.pkl",
+      "git_blob_sha": "036ab1110845a07aa598620886df123c7668d7a8",
+      "size": 71553
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run22.pkl",
+      "git_blob_sha": "7593c4043920654ff843c93d4393ac159e986d2f",
+      "size": 71626
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run23.pkl",
+      "git_blob_sha": "9a9057b6d0413bdb3548156fed4b49df67ff22eb",
+      "size": 71645
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run24.pkl",
+      "git_blob_sha": "d7c49612d98890c230253673b209624b5df23198",
+      "size": 71789
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run25.pkl",
+      "git_blob_sha": "fecc39f8bf8f56e44b5b5d1445a1d055019d5258",
+      "size": 71838
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run26.pkl",
+      "git_blob_sha": "ed1e92b62d015b14333de4cf32101bef3e655696",
+      "size": 71868
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run27.pkl",
+      "git_blob_sha": "5b6a2cb55213e1e125561e624e22edc91f184113",
+      "size": 71997
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run28.pkl",
+      "git_blob_sha": "318c8764d7f0fa6bf5823720accdf29de8ecac34",
+      "size": 72034
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run29.pkl",
+      "git_blob_sha": "dd1e108dce08fdf278d75eba6c7c055193e6fb86",
+      "size": 72240
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run3.pkl",
+      "git_blob_sha": "e09b5fdce19588005f6451f5781f613b7bc3206d",
+      "size": 71877
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run30.pkl",
+      "git_blob_sha": "1bf111773414052ed5616a5ef6ae97103a41cfca",
+      "size": 72288
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run31.pkl",
+      "git_blob_sha": "1f7f8fd2699daf3f4c4157244fe5c07def90e4bd",
+      "size": 72343
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run32.pkl",
+      "git_blob_sha": "683211ef532f2a01caa5ef39092e2acd75da6e06",
+      "size": 72376
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run33.pkl",
+      "git_blob_sha": "9829f86ee934df1f9e0c8115637ae4184966e09f",
+      "size": 72445
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run34.pkl",
+      "git_blob_sha": "92b650326538a731c61390cb0f40cf3f25a06779",
+      "size": 72475
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run35.pkl",
+      "git_blob_sha": "3d568e015274efc811e6cf9ad0dfbcb1e80db130",
+      "size": 72537
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run36.pkl",
+      "git_blob_sha": "d7e4708c9c45a9e083498486210592ccd8fa3596",
+      "size": 72565
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run37.pkl",
+      "git_blob_sha": "aba293306cf20ed106ba48703314a198cc9cff56",
+      "size": 72605
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run38.pkl",
+      "git_blob_sha": "8eaa110bcdc2ceac9a5a78cd751170014cadc4ad",
+      "size": 72645
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run39.pkl",
+      "git_blob_sha": "cb4c4df0d4b2e246f31cb43a01f8da68ebc31d15",
+      "size": 72663
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run4.pkl",
+      "git_blob_sha": "314f71cefd0e6fd538d5695ea8c19898bdc27083",
+      "size": 71781
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run40.pkl",
+      "git_blob_sha": "6bf17d3096d6c1215b847269d87a3a1f27129cb1",
+      "size": 72565
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run5.pkl",
+      "git_blob_sha": "532da81594bc9b8012ff90c35a534af9ba963c63",
+      "size": 71387
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run6.pkl",
+      "git_blob_sha": "4e87f0cc530f5239471a6937651ea04e3180d0b7",
+      "size": 71299
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run7.pkl",
+      "git_blob_sha": "59abb7f042aa10bc6e78fee2a4e5bc369bb1f09e",
+      "size": 71194
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run8.pkl",
+      "git_blob_sha": "8dd5cb50e48adad15b1e92c69a0abce8bb311995",
+      "size": 71083
+    },
+    {
+      "path": "source_data/Abortion Ban/epoch_run9.pkl",
+      "git_blob_sha": "a43c20849d415396956dae8b9b0caba0529c9a2a",
+      "size": 70974
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run0.pkl",
+      "git_blob_sha": "1389068e0d75dea3e3b5d4fbbbaaa7edd829698f",
+      "size": 70970
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run1.pkl",
+      "git_blob_sha": "afd3ae924d0e6d2965781f5bd950081416f80bd6",
+      "size": 72860
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run10.pkl",
+      "git_blob_sha": "45880c28d0b324448b19db7d9ebb420a3838d370",
+      "size": 71794
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run11.pkl",
+      "git_blob_sha": "533653f88aaea56706cfc8b4ae7b8c0f7a8c748b",
+      "size": 71710
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run12.pkl",
+      "git_blob_sha": "ccf922afe442df621fbd1430bb972c339013f885",
+      "size": 71637
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run13.pkl",
+      "git_blob_sha": "2d22a6950a90ae402a36307c11843854e18d9194",
+      "size": 71460
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run14.pkl",
+      "git_blob_sha": "7506497518b9f8605ab2a0f5189cc182e0ab5f67",
+      "size": 71398
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run15.pkl",
+      "git_blob_sha": "e5a5f9036c06e283ac89247708d26da0d8fd7e97",
+      "size": 71352
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run16.pkl",
+      "git_blob_sha": "533430c4d7f35d853038e9526f2ae9f6c69f825d",
+      "size": 71270
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run17.pkl",
+      "git_blob_sha": "98144fc5ee3ddac4c56d81f47959d4753549ae64",
+      "size": 71217
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run18.pkl",
+      "git_blob_sha": "9f8c576b7dc069c3f19ea3ae4203cfb4c8a76e57",
+      "size": 71081
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run19.pkl",
+      "git_blob_sha": "f3debc3f81e830e2a2a1f94e5123622a7d2c009c",
+      "size": 71090
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run2.pkl",
+      "git_blob_sha": "06e249ab1694b024f2ce87190a778695c7c33f60",
+      "size": 73739
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run20.pkl",
+      "git_blob_sha": "c3f7f8987ac561a6a2ce5645a992c9bb5cfd71cf",
+      "size": 71004
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run21.pkl",
+      "git_blob_sha": "eb029677e4d2a369c4af2ec1423ad78d9c1e0319",
+      "size": 70852
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run22.pkl",
+      "git_blob_sha": "a95588b204a7e71fb81d2881fcd691ca8a808a5c",
+      "size": 70747
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run23.pkl",
+      "git_blob_sha": "badf3c6f92d8ba2678be036abb44948f91c2a922",
+      "size": 70751
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run24.pkl",
+      "git_blob_sha": "6d3b137fe34fef77a05186a3963119de076ecc7e",
+      "size": 70681
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run25.pkl",
+      "git_blob_sha": "cbf50b030cd4ff2af4698973cb4ffc3fc117e670",
+      "size": 70670
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run26.pkl",
+      "git_blob_sha": "1e4dbb1fcaae75f992cfb07da3db802b39ee5d61",
+      "size": 70550
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run27.pkl",
+      "git_blob_sha": "97e8f6fd0f1098bb7ded775dd3ce8a1c5122dfad",
+      "size": 70506
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run28.pkl",
+      "git_blob_sha": "b418b1f523218c2243efc02d2de0ca1b9d393226",
+      "size": 70389
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run29.pkl",
+      "git_blob_sha": "5856b15d512d1b90e2b823e6eea2d811df52fd48",
+      "size": 70270
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run3.pkl",
+      "git_blob_sha": "3b7bba2b31446ed5d9a460dc6350af92a43c1172",
+      "size": 73766
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run30.pkl",
+      "git_blob_sha": "18e223ac2d7b6e917e8186980007b6e0e05ab22b",
+      "size": 70282
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run31.pkl",
+      "git_blob_sha": "c31c07cc6ea008855f19cbfa4c9d5daa17eef73e",
+      "size": 70248
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run32.pkl",
+      "git_blob_sha": "b0e2eda3771c029fb34826fe9169756a2e6be9f4",
+      "size": 70248
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run33.pkl",
+      "git_blob_sha": "a0b40ae528842bc7cfa469a5fec21467b5f93a0a",
+      "size": 70184
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run34.pkl",
+      "git_blob_sha": "4d8653aa878c3e5de6b6653b027aa162dcd89357",
+      "size": 70106
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run35.pkl",
+      "git_blob_sha": "667ada1de569dbb42f5a12202c9f8056ad4ffb00",
+      "size": 70179
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run36.pkl",
+      "git_blob_sha": "cc5a6b3503f550598ab77e58ba881cb72c6d213f",
+      "size": 70087
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run37.pkl",
+      "git_blob_sha": "9f9b701852fead8d6c1119d1c82ef65b5ae9559f",
+      "size": 70180
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run38.pkl",
+      "git_blob_sha": "0ff77c8fc830edccec4af3dc85d0bc666df31b28",
+      "size": 70129
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run39.pkl",
+      "git_blob_sha": "b557f58c16195b08cb07c368770b6f84fdfd66f4",
+      "size": 70096
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run4.pkl",
+      "git_blob_sha": "279294be548d0e24356ebfeddf80355dee5e4384",
+      "size": 73354
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run40.pkl",
+      "git_blob_sha": "e52f7994a7a90e8b7e6a46a1f8aac6ea4bfd0655",
+      "size": 70108
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run5.pkl",
+      "git_blob_sha": "50156ac1960b77794cc374350e988fb2c3230aee",
+      "size": 72942
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run6.pkl",
+      "git_blob_sha": "4f6d01573ecd03038a62ca8ac0f6ce6ee6b31eed",
+      "size": 72596
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run7.pkl",
+      "git_blob_sha": "87879e2ad23662bfd141963f2b10f1b531c82013",
+      "size": 72367
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run8.pkl",
+      "git_blob_sha": "2f988ffcd5d41875a1586e65617fe4a9d9b16b8c",
+      "size": 72078
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run9.pkl",
+      "git_blob_sha": "ad0ec98254153298065f72dd306c580a72b6a74d",
+      "size": 72018
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run0.pkl",
+      "git_blob_sha": "53e2e2ffd29913219a93ee90a3475bc2e53e36b3",
+      "size": 70934
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run1.pkl",
+      "git_blob_sha": "e87e535004f3ee64cecd8df195a9622aab9b99d6",
+      "size": 70766
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run10.pkl",
+      "git_blob_sha": "377beb2b9d28da097fd7830a61e306f417b65108",
+      "size": 69073
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run11.pkl",
+      "git_blob_sha": "9c56c8881b7e0ce6f708a74055f9470919a9ca18",
+      "size": 68825
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run12.pkl",
+      "git_blob_sha": "9989d47c8e8cb374122f7f4f5e69f6930384e910",
+      "size": 68628
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run13.pkl",
+      "git_blob_sha": "8ec42adaeb437f68b17275e1cdea69dea46a2444",
+      "size": 68472
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run14.pkl",
+      "git_blob_sha": "13094943fbe2e95659e1b9edf326c65d4f679a03",
+      "size": 68304
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run15.pkl",
+      "git_blob_sha": "42270879a95ca8c610be58ab411562335389509a",
+      "size": 68155
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run16.pkl",
+      "git_blob_sha": "321c8210a6e2bb016cf3935349aed8165f76c1a8",
+      "size": 68062
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run17.pkl",
+      "git_blob_sha": "b60f80857734835ab91767b20150788ff3957559",
+      "size": 67914
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run18.pkl",
+      "git_blob_sha": "c114b6533cc53380cc022a6d1ed30400606abcb2",
+      "size": 67758
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run19.pkl",
+      "git_blob_sha": "cc78f90abfe96e4d381de735620ade8faeb20ec7",
+      "size": 67649
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run2.pkl",
+      "git_blob_sha": "6e32f66126dee409287adce707686d255c10ee52",
+      "size": 70756
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run20.pkl",
+      "git_blob_sha": "5315ea0008f40d9f0c7261eb0259e9347e063f09",
+      "size": 67670
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run21.pkl",
+      "git_blob_sha": "3da6b9a18096ced8b05e6c33ef0f396d939cb858",
+      "size": 67539
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run22.pkl",
+      "git_blob_sha": "9d3fe3c18ac7c8abd242a56511419663c841e8e3",
+      "size": 67527
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run23.pkl",
+      "git_blob_sha": "4b78e0d5649b2129dc26e88efb563099dd3e550f",
+      "size": 67611
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run24.pkl",
+      "git_blob_sha": "e3d5c5bf5095335853724ead3455123baca48ffc",
+      "size": 67500
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run25.pkl",
+      "git_blob_sha": "f7546c5ea47a1c34a11b915ec77d9553155da6fe",
+      "size": 67531
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run26.pkl",
+      "git_blob_sha": "a363b8dae5c023693955389ab066b29869d8c0f0",
+      "size": 67554
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run27.pkl",
+      "git_blob_sha": "d77a0c40386322eded87deb89fa3b93a2cc27f27",
+      "size": 67542
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run28.pkl",
+      "git_blob_sha": "511be619017d3378b338d321376465b02b7cccc7",
+      "size": 67525
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run29.pkl",
+      "git_blob_sha": "019269464acffa30908ee643b14a1861f2a0dd16",
+      "size": 67499
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run3.pkl",
+      "git_blob_sha": "f8eab78023e556c424ecf3c264df080f2e8b1d76",
+      "size": 70596
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run30.pkl",
+      "git_blob_sha": "bf662144b124b22297246061a051fe223f1090e6",
+      "size": 67463
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run31.pkl",
+      "git_blob_sha": "f582dea21760a6e5442647c3c9e898a5560891db",
+      "size": 67459
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run32.pkl",
+      "git_blob_sha": "ddc76412fedbfdb8993bc2ec1ce1f281ba4e53ea",
+      "size": 67520
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run33.pkl",
+      "git_blob_sha": "e2996f994ab2b3d29918f71d8c1b5a2a90c3f0b9",
+      "size": 67333
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run34.pkl",
+      "git_blob_sha": "62564647eec9448c0c3c29919e03491154acaa81",
+      "size": 67281
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run35.pkl",
+      "git_blob_sha": "200e39b77efa55651c38bcec7762c87299f02d42",
+      "size": 67247
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run36.pkl",
+      "git_blob_sha": "6e7aad02d5f9b88501de94121f02477251eead1d",
+      "size": 67179
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run37.pkl",
+      "git_blob_sha": "c65da413c96f0b93cc8af61e0bda92f238e4801f",
+      "size": 67068
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run38.pkl",
+      "git_blob_sha": "b2c62a1f34f725bdc6842b4409358383ffa1fe43",
+      "size": 67044
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run39.pkl",
+      "git_blob_sha": "2b6cd369d4ee641cbab3f4c50802f90a67fcdfe2",
+      "size": 67027
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run4.pkl",
+      "git_blob_sha": "57f5fd689c22f4be9c5bc7da591fa4a19077790c",
+      "size": 70289
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run40.pkl",
+      "git_blob_sha": "b173ea07d60c6e9c4d949fa5d967c3b57274d6ad",
+      "size": 67003
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run5.pkl",
+      "git_blob_sha": "00103c65e62eba4bcb3d9bf7f151631cb3e7b89c",
+      "size": 69995
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run6.pkl",
+      "git_blob_sha": "e7c52376d8d252897336abb2dfdb802d11b47ad8",
+      "size": 69839
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run7.pkl",
+      "git_blob_sha": "1206e57c7f5889ef427ea7a6fa065d8cc2d74c95",
+      "size": 69593
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run8.pkl",
+      "git_blob_sha": "80da41cb1640ca492d404f042ed6ed7cb93ca503",
+      "size": 69532
+    },
+    {
+      "path": "source_data/Partisan Alignment/epoch_run9.pkl",
+      "git_blob_sha": "f2ff7d5235daf726bc4067abdda1ec8cc34548ed",
+      "size": 69277
+    },
+    {
+      "path": "source_data/README.md",
+      "git_blob_sha": "c5709df6f71810cdaa903719ae067f9f3f7021db",
+      "size": 1371
+    },
+    {
+      "path": "source_data/metadata.csv",
+      "git_blob_sha": "d456a9e44837eeae985c7631eda3aee0dfde15ca",
+      "size": 9369
+    }
+  ]
+}

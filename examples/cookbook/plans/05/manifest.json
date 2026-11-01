@@ -1,0 +1,34 @@
+[
+  {
+    "case": "n100_reviewed",
+    "offline_engine": "registered",
+    "worlds": 1,
+    "decisions_upper_bound": 1200,
+    "requires_sdk": false,
+    "live_executed": false
+  },
+  {
+    "case": "n100_delegated",
+    "offline_engine": "registered",
+    "worlds": 1,
+    "decisions_upper_bound": 1200,
+    "requires_sdk": false,
+    "live_executed": false
+  },
+  {
+    "case": "n1000_reviewed",
+    "offline_engine": "registered",
+    "worlds": 1,
+    "decisions_upper_bound": 12000,
+    "requires_sdk": false,
+    "live_executed": false
+  },
+  {
+    "case": "n1000_delegated",
+    "offline_engine": "registered",
+    "worlds": 1,
+    "decisions_upper_bound": 12000,
+    "requires_sdk": false,
+    "live_executed": false
+  }
+]

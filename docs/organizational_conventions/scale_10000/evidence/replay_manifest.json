@@ -1,0 +1,115 @@
+{
+  "format": "ordo-organizational-replay-v1",
+  "sampling_seed": 202610,
+  "frozen_plan": {
+    "plan": {
+      "base": {
+        "agents": 10000,
+        "departments": 500,
+        "committed": 200,
+        "rounds": 32,
+        "pairs_per_round": 1250,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1
+      },
+      "vary": {
+        "placement": [
+          "manager"
+        ],
+        "message_mode": [
+          "official"
+        ]
+      },
+      "seeds": [
+        7
+      ]
+    },
+    "configs": {
+      "w0": {
+        "agents": 10000,
+        "departments": 500,
+        "committed": 200,
+        "rounds": 32,
+        "pairs_per_round": 1250,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "manager",
+        "message_mode": "official",
+        "seed": 7
+      }
+    },
+    "preview": {
+      "worlds": 1,
+      "members_per_world": [
+        10000
+      ],
+      "periods": 32,
+      "maximum_jev_decisions": 80000,
+      "max_retries": 3,
+      "timeout_s": 45.0,
+      "concurrency": 8
+    }
+  },
+  "source_hashes": {
+    "examples/organizational_conventions/reliable_run.py": "630fbcbcd7f5e3b22443fa5bb7fb51e8f6c6a77dde04a6f39499693ed1d66600",
+    "examples/organizational_conventions/run.py": "5ac73d2ff8f97588c97a8f59678b2130784100d49f1750671860af6d6ea53cdf",
+    "examples/organizational_conventions/model.py": "9acd467ba16ae26a3f2f00660dad249add563306d4427b99cf8008ed37a62a51",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a"
+  },
+  "engines": {
+    "uniform": {
+      "file": "uniform-replay.jsonl.gz",
+      "sha256": "28d3138b798a7cceeb7088463bc285dc244b6fa6be4fe480b1285776ebd7b0d2",
+      "periods": 32,
+      "decisions": 74693,
+      "final_states_sha256": {
+        "w0": "b3d4c4ff51414f3e46b9e86aee6d98c6f399983aaf97c960296b31f468818e7e"
+      }
+    },
+    "history": {
+      "file": "history-replay.jsonl.gz",
+      "sha256": "77e30fdf65ac8a0e7d87d392d7a0600306e34e63b324240026e2f3fd0d43d551",
+      "periods": 32,
+      "decisions": 74693,
+      "final_states_sha256": {
+        "w0": "607184108230c691903105857a125a93e70f22bd2f31cdbf41f565e626c5da50"
+      }
+    },
+    "notice": {
+      "file": "notice-replay.jsonl.gz",
+      "sha256": "15fea4012c98daf6f1e7ee91b3111a3b24ecacc7fdb268e453177d01713681c6",
+      "periods": 32,
+      "decisions": 74693,
+      "final_states_sha256": {
+        "w0": "21f67d45ad407312321fc7aa5dfaa5c4e141dfb81604aafc0acb64dbc5f3d80b"
+      }
+    },
+    "jev": {
+      "file": "jev-replay.jsonl.gz",
+      "sha256": "3488d92680fbf282b9fa6f44c02c906d434dbf36206fee5218a94415125439c7",
+      "periods": 32,
+      "decisions": 74693,
+      "final_states_sha256": {
+        "w0": "c92985ea515e759ae1ca22cb082943ddfe9b37dac0d8cbb51c1fdb26a15d1a8c"
+      }
+    }
+  },
+  "source_lf_sha256": {
+    "examples/organizational_conventions/reliable_run.py": "630fbcbcd7f5e3b22443fa5bb7fb51e8f6c6a77dde04a6f39499693ed1d66600",
+    "examples/organizational_conventions/run.py": "5ac73d2ff8f97588c97a8f59678b2130784100d49f1750671860af6d6ea53cdf",
+    "examples/organizational_conventions/model.py": "9acd467ba16ae26a3f2f00660dad249add563306d4427b99cf8008ed37a62a51",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a"
+  }
+}

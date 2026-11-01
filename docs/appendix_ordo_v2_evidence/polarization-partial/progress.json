@@ -1,0 +1,52 @@
+{
+  "step": 34,
+  "total_stages": 121,
+  "metrics": {
+    "epoch": 11,
+    "phase": "speak",
+    "population": 1000,
+    "edges": 4000,
+    "unique_edges": 3997,
+    "duplicate_edge_rows": 3,
+    "self_edge_rows": 0,
+    "counts": {
+      "-2": 91,
+      "-1": 230,
+      "0": 275,
+      "1": 323,
+      "2": 81
+    },
+    "neutral_share": 0.275,
+    "mean_opinion": 0.073,
+    "polarization": 0.897,
+    "exact_opinion_homophily": 0.381,
+    "same_sign_homophily": 0.5045,
+    "counts_cumulative": {
+      "seed_posts": 111,
+      "opinion_updates": 7578,
+      "relationship_decisions": 29873,
+      "speaking_decisions": 29858,
+      "generated_posts": 16938,
+      "rewired_edges": 1470,
+      "delivered_messages": 15346
+    },
+    "state_sha256": "674c97703323d593a8612598a90f7a5f985c98ec120f53bf3fe006d92c5cd659",
+    "stage_decisions": 3404
+  },
+  "content_usage": {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "reasoning": "low",
+    "attempted_requests": 24633,
+    "successful_responses": 24627,
+    "recorded_input_cost_usd": 4.945734673824998,
+    "outstanding_or_uncertain_cost_reserve_usd": 0.004696800000001006,
+    "input_tokens": 12412344,
+    "output_tokens": 5664380,
+    "recovered_exact_original_events": 0,
+    "retries": 6,
+    "transport_failures": 6,
+    "offline": false,
+    "cost_source": "provider usage.cost, no headers/credentials in journals",
+    "role": "Fresh conditional reasons and persuasive posts; Jev owns the sampled discrete actions."
+  }
+}

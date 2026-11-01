@@ -1,0 +1,42 @@
+[
+  {
+    "population": 200,
+    "policy": "continuous_colocation",
+    "seeds": 3,
+    "phase_weak_ties": [
+      43.82222222222222,
+      44.77333333333333,
+      44.17777777777778
+    ]
+  },
+  {
+    "population": 200,
+    "policy": "remote_then_return",
+    "seeds": 3,
+    "phase_weak_ties": [
+      43.82222222222222,
+      42.013333333333335,
+      43.422222222222224
+    ]
+  },
+  {
+    "population": 501,
+    "policy": "continuous_colocation",
+    "seeds": 3,
+    "phase_weak_ties": [
+      66.33333333333333,
+      66.25333333333333,
+      68.08888888888889
+    ]
+  },
+  {
+    "population": 501,
+    "policy": "remote_then_return",
+    "seeds": 3,
+    "phase_weak_ties": [
+      66.33333333333333,
+      65.61333333333333,
+      67.22222222222221
+    ]
+  }
+]

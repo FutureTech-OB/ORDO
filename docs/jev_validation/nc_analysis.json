@@ -1,0 +1,418 @@
+{
+  "scope": "Fresh behavioral substitution on paper-derived worlds; not original exact trajectories, fitted human data, or full-paper replication.",
+  "inference": "Two seeds per condition; exploratory directional checks, no significance or general fidelity claim.",
+  "papers": {
+    "nc_repeated_games": {
+      "worlds": [
+        {
+          "id": "nc_pd_CC_s7",
+          "seed": 7,
+          "condition": {
+            "initial": "CC"
+          },
+          "status": "complete",
+          "decisions": 96,
+          "early_cooperation": 0.3333333333333333,
+          "late_cooperation": 0.2916666666666667,
+          "late_mutual_cooperation": 0.0,
+          "final_mean_points": 23.0
+        },
+        {
+          "id": "nc_pd_CC_s11",
+          "seed": 11,
+          "condition": {
+            "initial": "CC"
+          },
+          "status": "complete",
+          "decisions": 96,
+          "early_cooperation": 0.6666666666666666,
+          "late_cooperation": 0.5,
+          "late_mutual_cooperation": 0.3333333333333333,
+          "final_mean_points": 26.25
+        },
+        {
+          "id": "nc_pd_CD_s7",
+          "seed": 7,
+          "condition": {
+            "initial": "CD"
+          },
+          "status": "complete",
+          "decisions": 96,
+          "early_cooperation": 0.20833333333333334,
+          "late_cooperation": 0.0,
+          "late_mutual_cooperation": 0.0,
+          "final_mean_points": 17.5
+        },
+        {
+          "id": "nc_pd_CD_s11",
+          "seed": 11,
+          "condition": {
+            "initial": "CD"
+          },
+          "status": "complete",
+          "decisions": 96,
+          "early_cooperation": 0.5,
+          "late_cooperation": 0.4166666666666667,
+          "late_mutual_cooperation": 0.0,
+          "final_mean_points": 26.25
+        },
+        {
+          "id": "nc_pd_DD_s7",
+          "seed": 7,
+          "condition": {
+            "initial": "DD"
+          },
+          "status": "complete",
+          "decisions": 96,
+          "early_cooperation": 0.3333333333333333,
+          "late_cooperation": 0.3333333333333333,
+          "late_mutual_cooperation": 0.25,
+          "final_mean_points": 22.25
+        },
+        {
+          "id": "nc_pd_DD_s11",
+          "seed": 11,
+          "condition": {
+            "initial": "DD"
+          },
+          "status": "complete",
+          "decisions": 96,
+          "early_cooperation": 0.2916666666666667,
+          "late_cooperation": 0.25,
+          "late_mutual_cooperation": 0.0,
+          "final_mean_points": 19.375
+        }
+      ],
+      "late_mutual_cooperation_by_incident": {
+        "CC": 0.16666666666666666,
+        "CD": 0.0,
+        "DD": 0.125
+      },
+      "paper_expectation": "The learned reciprocal strategy can sustain cooperation and resolve initial conflict; this rerun tests fresh Jev instead of that trained strategy.",
+      "supports_exploratory_recovery_pattern": false,
+      "threshold": "Exploratory majority of pairs mutually cooperating over final three rounds in all initial-incident conditions; not a paper effect-size estimate."
+    },
+    "nc_social_rewarding": {
+      "worlds": [
+        {
+          "id": "nc_reward_l0_s7",
+          "seed": 7,
+          "condition": {
+            "information": 0
+          },
+          "status": "complete",
+          "decisions": 96,
+          "late_cooperation": 0.0,
+          "late_social_rewarding": 0.0625,
+          "final_strategy_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 16,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          }
+        },
+        {
+          "id": "nc_reward_l0_s11",
+          "seed": 11,
+          "condition": {
+            "information": 0
+          },
+          "status": "complete",
+          "decisions": 96,
+          "late_cooperation": 0.0,
+          "late_social_rewarding": 0.0625,
+          "final_strategy_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 6,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 9,
+            "13": 1,
+            "14": 0,
+            "15": 0
+          }
+        },
+        {
+          "id": "nc_reward_l0.5_s7",
+          "seed": 7,
+          "condition": {
+            "information": 0.5
+          },
+          "status": "complete",
+          "decisions": 96,
+          "late_cooperation": 0.890625,
+          "late_social_rewarding": 0.96875,
+          "final_strategy_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 15,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          }
+        },
+        {
+          "id": "nc_reward_l0.5_s11",
+          "seed": 11,
+          "condition": {
+            "information": 0.5
+          },
+          "status": "complete",
+          "decisions": 96,
+          "late_cooperation": 0.9739583333333333,
+          "late_social_rewarding": 0.96875,
+          "final_strategy_counts": {
+            "0": 0,
+            "1": 3,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 13,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          }
+        },
+        {
+          "id": "nc_reward_l1_s7",
+          "seed": 7,
+          "condition": {
+            "information": 1
+          },
+          "status": "complete",
+          "decisions": 96,
+          "late_cooperation": 0.96875,
+          "late_social_rewarding": 1.0,
+          "final_strategy_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 10,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 6,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          }
+        },
+        {
+          "id": "nc_reward_l1_s11",
+          "seed": 11,
+          "condition": {
+            "information": 1
+          },
+          "status": "complete",
+          "decisions": 96,
+          "late_cooperation": 1.0,
+          "late_social_rewarding": 1.0,
+          "final_strategy_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 11,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 5,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          }
+        }
+      ],
+      "late_means_by_information": {
+        "0": {
+          "cooperation": 0.0,
+          "social_rewarding": 0.0625
+        },
+        "0.5": {
+          "cooperation": 0.9322916666666666,
+          "social_rewarding": 0.96875
+        },
+        "1": {
+          "cooperation": 0.984375,
+          "social_rewarding": 1.0
+        }
+      },
+      "paper_expectation": "Greater transmissibility of reward reputations promotes cooperation and social rewarding in the original evolutionary setting.",
+      "cooperation_high_minus_low": 0.984375,
+      "social_rewarding_high_minus_low": 0.9375,
+      "supports_both_directional_predictions": true
+    },
+    "nc_collective_foraging": {
+      "worlds": [
+        {
+          "id": "nc_forage_smooth_cues0_s7",
+          "seed": 7,
+          "condition": {
+            "pattern": "smooth",
+            "social_cues": false
+          },
+          "status": "complete",
+          "decisions": 40,
+          "physical_complete": true,
+          "rewards": 11,
+          "revealed": 36,
+          "goal_decisions": 40
+        },
+        {
+          "id": "nc_forage_smooth_cues0_s11",
+          "seed": 11,
+          "condition": {
+            "pattern": "smooth",
+            "social_cues": false
+          },
+          "status": "complete",
+          "decisions": 39,
+          "physical_complete": true,
+          "rewards": 13,
+          "revealed": 37,
+          "goal_decisions": 39
+        },
+        {
+          "id": "nc_forage_smooth_cues1_s7",
+          "seed": 7,
+          "condition": {
+            "pattern": "smooth",
+            "social_cues": true
+          },
+          "status": "complete",
+          "decisions": 41,
+          "physical_complete": true,
+          "rewards": 5,
+          "revealed": 36,
+          "goal_decisions": 41
+        },
+        {
+          "id": "nc_forage_smooth_cues1_s11",
+          "seed": 11,
+          "condition": {
+            "pattern": "smooth",
+            "social_cues": true
+          },
+          "status": "complete",
+          "decisions": 40,
+          "physical_complete": true,
+          "rewards": 10,
+          "revealed": 36,
+          "goal_decisions": 40
+        },
+        {
+          "id": "nc_forage_random_cues0_s7",
+          "seed": 7,
+          "condition": {
+            "pattern": "random",
+            "social_cues": false
+          },
+          "status": "complete",
+          "decisions": 40,
+          "physical_complete": true,
+          "rewards": 10,
+          "revealed": 38,
+          "goal_decisions": 40
+        },
+        {
+          "id": "nc_forage_random_cues0_s11",
+          "seed": 11,
+          "condition": {
+            "pattern": "random",
+            "social_cues": false
+          },
+          "status": "complete",
+          "decisions": 40,
+          "physical_complete": true,
+          "rewards": 9,
+          "revealed": 31,
+          "goal_decisions": 40
+        },
+        {
+          "id": "nc_forage_random_cues1_s7",
+          "seed": 7,
+          "condition": {
+            "pattern": "random",
+            "social_cues": true
+          },
+          "status": "complete",
+          "decisions": 39,
+          "physical_complete": true,
+          "rewards": 11,
+          "revealed": 36,
+          "goal_decisions": 39
+        },
+        {
+          "id": "nc_forage_random_cues1_s11",
+          "seed": 11,
+          "condition": {
+            "pattern": "random",
+            "social_cues": true
+          },
+          "status": "complete",
+          "decisions": 40,
+          "physical_complete": true,
+          "rewards": 5,
+          "revealed": 38,
+          "goal_decisions": 40
+        }
+      ],
+      "mean_group_rewards": {
+        "smooth_cues0": 12,
+        "smooth_cues1": 7.5,
+        "random_cues0": 9.5,
+        "random_cues1": 8
+      },
+      "paper_expectation": "Social success cues are more useful for clustered smooth resources than random resources; original selective-policy superiority need not transfer to an untrained Jev policy.",
+      "cue_benefit_smooth_minus_random": -3.0,
+      "supports_directional_interaction": false,
+      "boundary": "Ablates explicit social cues only; observed revealed rewards remain, and 24-cell shortlist differs from original full-grid policy."
+    }
+  }
+}

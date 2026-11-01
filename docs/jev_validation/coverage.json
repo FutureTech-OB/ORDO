@@ -1,0 +1,95 @@
+{
+  "status": "complete",
+  "scope": "Fresh Jev execution of nine paper-derived ABM protocols; not nine successful full-paper replications.",
+  "groups": [
+    {
+      "group": "nc",
+      "papers": [
+        "nc_collective_foraging",
+        "nc_repeated_games",
+        "nc_social_rewarding"
+      ],
+      "worlds": 20,
+      "fresh_choice_distributions": 1471,
+      "successful_http_requests": 53,
+      "attempted_http_requests": 53,
+      "provider_reported_cost_usd": 0.027672287999999996,
+      "models_returned": [
+        "typesafe/jev-1.14-20261014"
+      ],
+      "elapsed_s_final_attempt_including_analysis_and_replay": 61.97015339997597,
+      "summed_attempt_elapsed_s_including_failures_and_replay": 61.97015339997597,
+      "choices_by_paper": {
+        "nc_repeated_games": 576,
+        "nc_social_rewarding": 576,
+        "nc_collective_foraging": 319
+      },
+      "exact_offline_input_and_metric_replay": true,
+      "uncertainty_reserve_usd": 4.336808689942018e-19,
+      "source_verification": "runs/jev-nc-20261030/verification.json"
+    },
+    {
+      "group": "ncs",
+      "papers": [
+        "ncs_cmm_2021",
+        "ncs_colocation_2022",
+        "ncs_dynamic_2026"
+      ],
+      "worlds": 14,
+      "fresh_choice_distributions": 1839,
+      "successful_http_requests": 122,
+      "attempted_http_requests": 126,
+      "provider_reported_cost_usd": 0.026123076,
+      "models_returned": [
+        "typesafe/jev-1.14-20261014"
+      ],
+      "elapsed_s_final_attempt_including_analysis_and_replay": 77.3929833000293,
+      "summed_attempt_elapsed_s_including_failures_and_replay": 202.56015280005522,
+      "choices_by_paper": {
+        "ncs_cmm_2021": 640,
+        "ncs_colocation_2022": 768,
+        "ncs_dynamic_2026": 431
+      },
+      "exact_offline_input_and_metric_replay": true,
+      "uncertainty_reserve_usd": 0.0008423519999999997,
+      "source_verification": "runs/jev-ncs-20261030/verification.json"
+    },
+    {
+      "group": "sa",
+      "papers": [
+        "sa_ashery_2025",
+        "sa_demarzo_2026",
+        "sa_wang_su_2026"
+      ],
+      "worlds": 16,
+      "fresh_choice_distributions": 1676,
+      "successful_http_requests": 200,
+      "attempted_http_requests": 205,
+      "provider_reported_cost_usd": 0.020841449999999984,
+      "models_returned": [
+        "typesafe/jev-1.14-20261014"
+      ],
+      "elapsed_s_final_attempt_including_analysis_and_replay": 67.67298989999108,
+      "summed_attempt_elapsed_s_including_failures_and_replay": 318.79464490001556,
+      "choices_by_paper": {
+        "sa_ashery_2025": 1021,
+        "sa_demarzo_2026": 560,
+        "sa_wang_su_2026": 95
+      },
+      "exact_offline_input_and_metric_replay": true,
+      "uncertainty_reserve_usd": 0.00031017,
+      "source_verification": "runs/jev-sa-20261030/verification.json"
+    }
+  ],
+  "papers": 9,
+  "worlds": 50,
+  "fresh_choice_distributions": 4986,
+  "successful_http_requests": 375,
+  "attempted_http_requests": 384,
+  "provider_reported_cost_usd": 0.07463681399999998,
+  "costs_exclude": "Connectivity probe, prior experiments, and any unreported charges for failed attempts.",
+  "units": "Cases can contain independent colonies/pairs; fresh questions need not be distinct behavioral opportunities when alternatives coincide.",
+  "native_batch": true,
+  "probability_reuse": false,
+  "all_offline_replays_exact": true
+}

@@ -1,0 +1,48 @@
+{
+  "checked_date": "2026-10-30",
+  "journal": "Nature Computational Science",
+  "status": "candidate_audit_only",
+  "completed_new_simulation_runs": 0,
+  "ordo_decisions": 0,
+  "actual_model_api_calls": 0,
+  "recorded_api_cost_usd": 0,
+  "candidates": [
+    {
+      "title": "Evolution of cooperation through cumulative reciprocity",
+      "year": 2022,
+      "doi": "10.1038/s43588-022-00334-w",
+      "type": "original research article",
+      "volume": 2,
+      "pages": "677-686",
+      "official_url": "https://www.nature.com/articles/s43588-022-00334-w",
+      "code_doi": "10.24433/CO.6894248.v1",
+      "archive_url_from_datacite": "https://codeocean.com/capsule/0187833/tree/v1",
+      "metadata_url": "https://api.datacite.org/dois/10.24433/CO.6894248.v1",
+      "archive_metadata_licenses": ["MIT", "CC0"],
+      "code_languages_reported_in_paper": ["Java", "MATLAB", "Python/oTree"],
+      "status": "source_not_obtained_http_403",
+      "source_hashes": null,
+      "executed": false
+    },
+    {
+      "title": "Strategy evolution on dynamic networks",
+      "year": 2023,
+      "doi": "10.1038/s43588-023-00509-z",
+      "type": "original research article",
+      "volume": 3,
+      "pages": "763-776",
+      "official_url": "https://www.nature.com/articles/s43588-023-00509-z",
+      "code_url": "https://github.com/qisu1991/DynamicNetworks",
+      "code_archive_doi": "10.5281/zenodo.8215243",
+      "commit": "65bc8a85996bcdd5211845518cf65022d4fe15b1",
+      "license": "MIT",
+      "tree_files": ["DynamicNetworks.jl", "LICENSE", "README.md"],
+      "source_path": "DynamicNetworks.jl",
+      "source_git_blob_sha": "700bdb9bc46894cbdddf0d3db790819a32ab764c",
+      "source_bytes": 11538,
+      "status": "analytical_source_only_no_individual_simulation_loop",
+      "executed": false
+    }
+  ],
+  "scope": "Public original-research and source audit only; not an additional completed ABM replication."
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "model": "wealth",
+    "config": {
+      "n": 12,
+      "width": 3,
+      "height": 3,
+      "rounds": 2,
+      "seed": 7
+    }
+  },
+  {
+    "model": "schelling",
+    "config": {
+      "width": 6,
+      "height": 6,
+      "density": 0.7,
+      "homophily": 0.4,
+      "rounds": 2,
+      "seed": 7
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 6,
+      "height": 6,
+      "activation_order": "Simultaneous",
+      "defection_bonus": 1.6,
+      "rounds": 3,
+      "seed": 7
+    }
+  },
+  {
+    "model": "organization",
+    "config": {
+      "agents": 16,
+      "departments": 4,
+      "contact": "bridge",
+      "rounds": 3,
+      "seed": 7,
+      "engine": "best"
+    }
+  }
+]

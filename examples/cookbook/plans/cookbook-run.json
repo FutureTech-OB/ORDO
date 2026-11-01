@@ -1,0 +1,60 @@
+{
+  "status": "exported",
+  "offline": true,
+  "live_api_calls": 0,
+  "python": "3.12.14",
+  "recipes": [
+    {
+      "id": "01",
+      "title": "Knowledge sharing and adoption rights",
+      "rows": 0
+    },
+    {
+      "id": "02",
+      "title": "Approval bottlenecks and delegation",
+      "rows": 0
+    },
+    {
+      "id": "03",
+      "title": "Risk-information disclosure",
+      "rows": 0
+    },
+    {
+      "id": "04",
+      "title": "Build an organization from a Persona pool",
+      "rows": 0
+    },
+    {
+      "id": "05",
+      "title": "Scale the same workflow to 1,000 members",
+      "rows": 0
+    }
+  ],
+  "source_hashes": {
+    "examples\\cookbook\\recipes.py": "4910dcdf7aff409c110f943d3c2a0e4339bfaa808e291aa70ce1564e903d8bfd",
+    "examples\\cookbook\\run.py": "37a71f51d89a264834dc721592eb65fe25ce27875b4d51fe635021c53470edc6",
+    "examples\\cookbook\\__init__.py": "c8eb5cd2fe3e11fbe6645da9180ffabb302a83dad1c5ca367f319882c6dd80e0",
+    "orgabm\\deepseek.py": "9e6a03908e9d98c9805a1e748ab0d820f960595a85a7cc06973ada221fab8557",
+    "orgabm\\engines.py": "09b935f58fb9bd954fdda0aee5272524359294ff52554fba003288404df89215",
+    "orgabm\\experiment.py": "fd3fbc7a256e3ce2ed0a6988af8aa4118ea312ecc92bacc878f69b2137e245a2",
+    "orgabm\\kernel.py": "e6e6bffdfb813fac5256525c924b33ab855fff38b570225ccd2b4046a3c4ddd6",
+    "orgabm\\mcp_server.py": "e24339e2de20c8a4f1aadb8d226864888663225e9809100cbc4f02a519f3c17c",
+    "orgabm\\memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm\\mesa_bridge.py": "bbf22640031d48850afaaf8d9b5ea9976da5c41f575dbd4af76bb1981eee43c3",
+    "orgabm\\organization.py": "921001f1b4d6e31d80ba58cfab4858a7e15be2cff44b0993a8b652e8e6f06481",
+    "orgabm\\personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm\\placement.py": "06bdff86772974743526a2aa70f1b995d453ee189a85c94cc755401d5778f060",
+    "orgabm\\plans.py": "71738bb194bc2b4fdbbb255f90258040d094d2ca28b38756479bf3ea8975ad60",
+    "orgabm\\randomness.py": "a8b74b3c59261135d0c79bcc96230bc0a227f56fbfc6e9ffa874ab879df696f6",
+    "orgabm\\sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm\\server.py": "ed18f3e975bd67e17f7f44408479d4539d6fd08abe00dacd5b341b0fb48478d4",
+    "orgabm\\staged.py": "e939295fdebf54434028853deb4832c2e32f910c5254fdec4b4c1b62e4a36e9a",
+    "orgabm\\templates.py": "dcbe086a2df17effe616168fdd7f2e4707630adaf6b61ccbed6f995452d3d831",
+    "orgabm\\workflow.py": "232b7ef8377b8b0c77f110475ae4e4ab21b7aa0f56df7bf99e9b3bfafbabca98",
+    "orgabm\\workflow_mesa.py": "ae9b822050b4c4525993e647294684f1ccc6dbed10428fd1119196a4a4333fa5",
+    "orgabm\\workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91",
+    "orgabm\\__init__.py": "7078b1f563c8bc84e31e3007678f6f08268dab888534d137e0d7fb68f55ec01f",
+    "orgabm\\__main__.py": "f227cf623a5d36fb84c57436f5ca173bdc2901e08b8203a9d8b4bcd426443ebf"
+  },
+  "elapsed_s": 0.6726136999786831
+}

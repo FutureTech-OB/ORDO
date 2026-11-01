@@ -1,0 +1,14 @@
+{
+  "scenario": "task_workflow",
+  "decision": {
+    "provider": "jev",
+    "batch_size": 64,
+    "concurrency": 4,
+    "rule": "threshold"
+  },
+  "worlds": 1,
+  "decisions": 12000,
+  "counts_are_upper_bounds": true,
+  "provider_requests": 204,
+  "batching": "Fresh questions, synchronized within each stage; later stages use earlier decisions."
+}

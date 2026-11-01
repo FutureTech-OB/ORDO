@@ -1,0 +1,17 @@
+match,side,opponent,cooperative_actions,cooperation_rate,author_archived_cooperative_actions,score
+0,1,act_gpt4,4,0.2,20,85
+0,2,act_gpt4,1,0.05,20,115
+1,1,act_tft,2,0.1,20,108
+2,1,act_tftt,5,0.25,20,116
+3,1,act_stft,16,0.8,10,134
+4,1,act_rtft,8,0.4,10,132
+5,1,act_htft,3,0.15,1,85
+6,1,act_np10,1,0.05,11,105
+7,1,act_np20,5,0.25,10,98
+8,2,act_tft,2,0.1,20,105
+16,2,act_tftt,4,0.2,20,125
+24,2,act_stft,18,0.9,7,146
+32,2,act_rtft,5,0.25,10,151
+40,2,act_htft,2,0.1,2,90
+48,2,act_np10,2,0.1,12,105
+56,2,act_np20,3,0.15,11,100

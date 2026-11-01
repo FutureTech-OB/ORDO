@@ -1,0 +1,315 @@
+{
+  "format": "ordo-organizational-replay-v1",
+  "sampling_seed": 202610,
+  "frozen_plan": {
+    "plan": {
+      "base": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1
+      },
+      "vary": {
+        "placement": [
+          "employee",
+          "manager"
+        ],
+        "message_mode": [
+          "none",
+          "peer",
+          "official"
+        ]
+      },
+      "seeds": [
+        7,
+        11
+      ]
+    },
+    "configs": {
+      "w0": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "employee",
+        "message_mode": "none",
+        "seed": 7
+      },
+      "w1": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "employee",
+        "message_mode": "none",
+        "seed": 11
+      },
+      "w2": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "employee",
+        "message_mode": "peer",
+        "seed": 7
+      },
+      "w3": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "employee",
+        "message_mode": "peer",
+        "seed": 11
+      },
+      "w4": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "employee",
+        "message_mode": "official",
+        "seed": 7
+      },
+      "w5": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "employee",
+        "message_mode": "official",
+        "seed": 11
+      },
+      "w6": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "manager",
+        "message_mode": "none",
+        "seed": 7
+      },
+      "w7": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "manager",
+        "message_mode": "none",
+        "seed": 11
+      },
+      "w8": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "manager",
+        "message_mode": "peer",
+        "seed": 7
+      },
+      "w9": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "manager",
+        "message_mode": "peer",
+        "seed": 11
+      },
+      "w10": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "manager",
+        "message_mode": "official",
+        "seed": 7
+      },
+      "w11": {
+        "agents": 1000,
+        "departments": 50,
+        "committed": 20,
+        "rounds": 32,
+        "pairs_per_round": 125,
+        "hierarchy_bias": 0.6,
+        "cross_probability": 0.1,
+        "release_round": 1,
+        "placement": "manager",
+        "message_mode": "official",
+        "seed": 11
+      }
+    },
+    "preview": {
+      "worlds": 12,
+      "members_per_world": [
+        1000
+      ],
+      "periods": 32,
+      "pairs_per_world_period": [
+        125
+      ],
+      "maximum_jev_decisions": 96000,
+      "tested_factors": [
+        "minority position",
+        "none / same-audience peer note / delegated official guidance"
+      ],
+      "authority_scope": "permission to issue guidance; no forced adoption or extra penalty",
+      "source_protocol_change": "disjoint synchronous pairs within organizational periods",
+      "max_first_period_request_bytes": 20627
+    }
+  },
+  "source_hashes": {
+    "examples/organizational_conventions/run.py": "5ac73d2ff8f97588c97a8f59678b2130784100d49f1750671860af6d6ea53cdf",
+    "examples/organizational_conventions/model.py": "9acd467ba16ae26a3f2f00660dad249add563306d4427b99cf8008ed37a62a51",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "examples/organizational_conventions/resume.py": "8a4c56f74aeaba37b035ab38a0a38f3d03c8d12f1ce4efe075091cba2d1d8c10",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a",
+    "orgabm/decision_journal.py": "52e1ca903f233d2b6ff39dbc7dd7fd7bbb0dad1559a9325c937a95b94c4644bf"
+  },
+  "engines": {
+    "uniform": {
+      "file": "uniform-replay.jsonl.gz",
+      "sha256": "40fba7eadaf6afbbf01e94ce5fb9e6bb1495e47b1be68bb7001ba3e58683f60a",
+      "periods": 32,
+      "decisions": 92058,
+      "final_states_sha256": {
+        "w0": "75f4728357e82803e21e1167b99d56f3b5170d4baab77d48854b090ec2b44df8",
+        "w1": "80ea425cf431cc60cd0e93a0eb8d0ff369d14c8bc9c1346c8fec610634b108f9",
+        "w2": "e9c1fbe799d53674fce3053baf7dfbc432ea912183d4d4fc68995b71e54ee67f",
+        "w3": "7d74d7ae91d5a81509a812f888fcbeee0a7cb80ed40b513370924e1cbf8c30e5",
+        "w4": "d12173227db2feb01a349f24aed84667f611a14f66f30dbff3e7daeb5f1762ec",
+        "w5": "5a125cbcf0d29b9361393837434e346951926c41f2ed51922e228c3225ba3b15",
+        "w6": "01ae26f189109852de7b1ab8f33c6e861c659c98a1e04e4f24ad54816c50f431",
+        "w7": "212c956a2ce57d231f9ea819ff38f0a0285ffed8d2c1d944b111c1180363597e",
+        "w8": "57e649927a4b458fb2d299b4527c21e0d7c2839f925f8557e6233bf69d3e2edd",
+        "w9": "ea8a9dc3273d240e21e09fe68303f971f07f5fef8561c914247719ba85591a49",
+        "w10": "c589152c45158cb79eccddd5a25e68ba216678fa4ccd588268eddb30a321d11a",
+        "w11": "8e8c4e2e747333a48802624849192dc30e682ad8195c99901bfbe368850f216f"
+      }
+    },
+    "history": {
+      "file": "history-replay.jsonl.gz",
+      "sha256": "2f2d1f7e2eaa36be52d980fddf9acc14a8e4b89ce14c48903dca134d5bf3a54a",
+      "periods": 32,
+      "decisions": 92058,
+      "final_states_sha256": {
+        "w0": "2fe82bd5463a58960207d0aefbebe3742990bc7b63f44323f8b3c7dc4bf80d63",
+        "w1": "f78f51a1144c65180aabb65f3c3bd759e3ac0c24b78657fc42b9772793b407dd",
+        "w2": "4b214faf4bc6eae794744beb07ae188b856d4cc1998bc1d45dd3c0ec1571097f",
+        "w3": "e2a57dea9e55850f32db79f4ee0ba9540ebd91274963821d24f41c835eba8429",
+        "w4": "8682fca582a2ca8eb104122bd8e2c4ac936cc1a13a0c3f37eac0dc72d593141d",
+        "w5": "1598794d55da2334cb21602cc123bed389c7d38c0a9c0791643ab96eb9786d61",
+        "w6": "a7d8fd3cf9adff2f02b7bb70d7835be32a00b5f9c355734a2542a15864be4815",
+        "w7": "7a83712e54113af0c0672ff8061a86ea5c17e56a858d98ab51e3dde2d4a00822",
+        "w8": "8cd14602b19132e13389e223f0f53bc21a39228df5eacea36289362314f32caf",
+        "w9": "0c293fe47854b37cb292820f87ef772ec386ef36f854446d8da6ce6a2b47d494",
+        "w10": "66469347641421ced41e17902c33dff6667afff622fdce2e9659f20f8fd2e2dd",
+        "w11": "ec4a9473791c5d5504cd19c6da2c7494097764ae512fc9dfb86966a791c0e972"
+      }
+    },
+    "notice": {
+      "file": "notice-replay.jsonl.gz",
+      "sha256": "095fd81c6ca3c0495950c513f84b611036ad5588b86de06498acb7187cfe7df3",
+      "periods": 32,
+      "decisions": 92058,
+      "final_states_sha256": {
+        "w0": "2fe82bd5463a58960207d0aefbebe3742990bc7b63f44323f8b3c7dc4bf80d63",
+        "w1": "f78f51a1144c65180aabb65f3c3bd759e3ac0c24b78657fc42b9772793b407dd",
+        "w2": "4b214faf4bc6eae794744beb07ae188b856d4cc1998bc1d45dd3c0ec1571097f",
+        "w3": "e2a57dea9e55850f32db79f4ee0ba9540ebd91274963821d24f41c835eba8429",
+        "w4": "3e492ec4bf5b98cf2afd216675039a0dc8e66eb8770d5da7572eb90aab350b20",
+        "w5": "c727db2dbe598d6b9b618ac787953d47cb7435c45d2f7ba0eb4f5440e3734a68",
+        "w6": "a7d8fd3cf9adff2f02b7bb70d7835be32a00b5f9c355734a2542a15864be4815",
+        "w7": "7a83712e54113af0c0672ff8061a86ea5c17e56a858d98ab51e3dde2d4a00822",
+        "w8": "8cd14602b19132e13389e223f0f53bc21a39228df5eacea36289362314f32caf",
+        "w9": "0c293fe47854b37cb292820f87ef772ec386ef36f854446d8da6ce6a2b47d494",
+        "w10": "256aea7dfcd3479ea8f7e4882c5268125f22ae650e66cdd0819b23b9c3d9ea45",
+        "w11": "028971b98f7104940107343d4dc04b32047bd81b47b56760f848a80748c85f04"
+      }
+    },
+    "jev": {
+      "file": "jev-replay.jsonl.gz",
+      "sha256": "cc15e546d2720b34b079a06ab7cefb100a9f183e0256701b0eb05ac36e1a025c",
+      "periods": 32,
+      "decisions": 92058,
+      "final_states_sha256": {
+        "w0": "6c06f30279ef5d097353ec0fca47a46ed3639c6e5a4aaf1ae6381f29c1101fb8",
+        "w1": "579aca5c69c8961538260fd54254469bf1920e664ee0e36eaa14c137abad7013",
+        "w2": "1b4f0b845e0861b710b13b7d2cc32782b1aac3e27c275a341a42ad45ab37134d",
+        "w3": "dff283786161881fc2514d54680258ca15009c6851b4534f566ec5f26ace375a",
+        "w4": "7517d0c474bf54e4ce3ec24fd24ce221f8c764dbd0647c64e7b03a9bbceaddae",
+        "w5": "5656923cf61d05dda20f4e7bdc2f19db89478850e00ddfc5dc8f524b018d97b3",
+        "w6": "ebf3ea3a70ef10c5c308cbf356d0aa8f91293880322f6352b7c451a0664679e4",
+        "w7": "998526b1e18a27fd3de1fca091addbac01f65374a505a7753d82f30953cb3c3d",
+        "w8": "73e6a7315bfd17584b889837fe72b73353c283dd0c7787355ef69a8bd68bd571",
+        "w9": "708056fdc4a0986faa4e4568a59bdced0cbfee058f7271dfc1749e8d61346581",
+        "w10": "1c0888f7a3ee4181c26ae4171b739454877224b19b6be886524edb9c6afb427c",
+        "w11": "e3c26fd7044578c743872163ce7c107b04cb153d7734e6c5998b503a14e67075"
+      }
+    }
+  },
+  "source_lf_sha256": {
+    "examples/organizational_conventions/run.py": "5ac73d2ff8f97588c97a8f59678b2130784100d49f1750671860af6d6ea53cdf",
+    "examples/organizational_conventions/model.py": "9acd467ba16ae26a3f2f00660dad249add563306d4427b99cf8008ed37a62a51",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "examples/organizational_conventions/resume.py": "8a4c56f74aeaba37b035ab38a0a38f3d03c8d12f1ce4efe075091cba2d1d8c10",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a",
+    "orgabm/decision_journal.py": "52e1ca903f233d2b6ff39dbc7dd7fd7bbb0dad1559a9325c937a95b94c4644bf"
+  }
+}

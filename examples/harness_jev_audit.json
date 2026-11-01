@@ -1,0 +1,114 @@
+{
+  "job_id": "404cf55d8a02499b96e2664afc54d8f6",
+  "status": "complete",
+  "plan_matches_request": true,
+  "preview_equals_submission": true,
+  "all_six_report_rows_match": true,
+  "report_cost_and_requests_match": true,
+  "worlds": 6,
+  "decisions": 36000,
+  "jev_batch_requests": 576,
+  "batch_sizes": {
+    "40": 36,
+    "64": 540
+  },
+  "questions_and_probabilities_match_api": true,
+  "all_36_round_metrics_replay_exact": true,
+  "model": "jev-1.14.0",
+  "input_tokens": 18963055,
+  "recorded_jev_cost_usd": 0.79644831,
+  "cost_basis": "Returned Jev usage times configured $0.042 per million input tokens; not an account invoice.",
+  "summed_simulation_elapsed_s": 214.4765981999226,
+  "batch_latency_median_s": 1.3438768999185413,
+  "batch_latency_max_s": 2.4539403999224305,
+  "harness_steps": 20,
+  "harness_tool_calls": 19,
+  "harness_normalized_usage": {
+    "inputTokens": 63512,
+    "outputTokens": 4637,
+    "cacheReadTokens": 225664,
+    "totalTokens": 293813
+  },
+  "inspected_action": "copy_0",
+  "world_results": [
+    {
+      "world": 0,
+      "contact": "siloed",
+      "seed": 7,
+      "final_gross_performance": 49.70527259865849,
+      "whole_run_mean_exploration": 0.1415,
+      "cross_department_adoptions": 0,
+      "jev_recorded_cost_usd": 0.13279795200000005,
+      "successful_requests": 96,
+      "simulation_elapsed_s": 35.38894880004227
+    },
+    {
+      "world": 1,
+      "contact": "siloed",
+      "seed": 8,
+      "final_gross_performance": 54.410993609448006,
+      "whole_run_mean_exploration": 0.13316666666666668,
+      "cross_department_adoptions": 0,
+      "jev_recorded_cost_usd": 0.13271848800000002,
+      "successful_requests": 96,
+      "simulation_elapsed_s": 36.17735360004008
+    },
+    {
+      "world": 2,
+      "contact": "siloed",
+      "seed": 9,
+      "final_gross_performance": 65.88150531243129,
+      "whole_run_mean_exploration": 0.15266666666666667,
+      "cross_department_adoptions": 0,
+      "jev_recorded_cost_usd": 0.13259450399999997,
+      "successful_requests": 96,
+      "simulation_elapsed_s": 33.39519779989496
+    },
+    {
+      "world": 3,
+      "contact": "bridge",
+      "seed": 7,
+      "final_gross_performance": 54.4205001137614,
+      "whole_run_mean_exploration": 0.1125,
+      "cross_department_adoptions": 1108,
+      "jev_recorded_cost_usd": 0.132807024,
+      "successful_requests": 96,
+      "simulation_elapsed_s": 36.51335520017892
+    },
+    {
+      "world": 4,
+      "contact": "bridge",
+      "seed": 8,
+      "final_gross_performance": 66.62350514864127,
+      "whole_run_mean_exploration": 0.10516666666666667,
+      "cross_department_adoptions": 1125,
+      "jev_recorded_cost_usd": 0.1328208,
+      "successful_requests": 96,
+      "simulation_elapsed_s": 37.35611899988726
+    },
+    {
+      "world": 5,
+      "contact": "bridge",
+      "seed": 9,
+      "final_gross_performance": 76.54591237057454,
+      "whole_run_mean_exploration": 0.10183333333333333,
+      "cross_department_adoptions": 1125,
+      "jev_recorded_cost_usd": 0.13270954199999996,
+      "successful_requests": 96,
+      "simulation_elapsed_s": 35.645623799879104
+    }
+  ],
+  "condition_means": [
+    {
+      "contact": "siloed",
+      "mean_final_performance": 56.66592384017926,
+      "mean_whole_run_exploration": 0.14244444444444446
+    },
+    {
+      "contact": "bridge",
+      "mean_final_performance": 65.86330587765907,
+      "mean_whole_run_exploration": 0.1065
+    }
+  ],
+  "interpretation": "Integration/scaling evidence only; three seeds and no human-behavior validation."
+}

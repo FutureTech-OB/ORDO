@@ -1,0 +1,7 @@
+model,worlds_or_reference_rows,consensus_count,consensus_fraction,mean_C,median_C,q25_C,q75_C,min_C,max_C,source
+"Jev-1.14 (fresh, full original condition)",20,16,0.8,0.952,1.0,1.0,1.0,0.28,1.0,runs/llm-original-sa-demarzo-20261030/analysis.json
+Claude 3 Haiku,28,0,0.0,0.2671428571428571,0.28,0.16,0.4,0,0.48,final_values_fully_connected_50/list_magnetization_50_0.2_0.0_claude-3-haiku-20240307_MF.txt
+Claude 3 Opus,21,21,1.0,1,1.0,1.0,1.0,1,1,final_values_fully_connected_50/list_magnetization_50_0.2_0.0_claude-3-opus-20240229_MF.txt
+GPT-3.5 Turbo,25,0,0.0,0.0864,0.08,0.04,0.12,0,0.24,final_values_fully_connected_50/list_magnetization_50_0.2_0.0_gpt-3.5-turbo-1106_MF.txt
+GPT-4 Turbo,25,25,1.0,1,1.0,1.0,1.0,1,1,final_values_fully_connected_50/list_magnetization_50_0.2_0.0_gpt-4-turbo-2024-04-09_MF.txt
+Llama 3 70B,20,8,0.4,0.852,0.9,0.8300000000000001,1.0,0.24,1,final_values_fully_connected_50/list_magnetization_50_0.2_0.0_meta-llama-3-70b-instruct_MF.txt

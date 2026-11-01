@@ -1,0 +1,6 @@
+{
+  "populations": [200, 501],
+  "seeds": [7, 11, 19],
+  "policies": ["continuous_colocation", "remote_then_return"],
+  "phase_days": [15, 25, 15]
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "Separate completed model arms on originally LLM-driven interactive sources; old argmax and new sampling NHB arms are not separate papers or pooled cooperation estimates.",
+  "runs": [
+    {
+      "run": "llm-original-sa-demarzo-20261030",
+      "status": "complete",
+      "fresh_choices": 6279,
+      "successful_requests": 500,
+      "attempted_requests": 501,
+      "provider_cost_usd": 0.098290542,
+      "frozen_sources_verified": true
+    },
+    {
+      "run": "llm-nhb-original-20261030",
+      "status": "complete",
+      "fresh_choices": 320,
+      "successful_requests": 300,
+      "attempted_requests": 301,
+      "provider_cost_usd": 0.0110901,
+      "frozen_sources_verified": true
+    },
+    {
+      "run": "llm-nhb-sampled-20261030",
+      "status": "complete",
+      "action_policy": "raw_categorical_sampling_T1",
+      "fresh_choices": 320,
+      "successful_requests": 300,
+      "attempted_requests": 300,
+      "provider_cost_usd": 0.011114753999999992,
+      "frozen_sources_verified": true,
+      "cooperative_actions": 81
+    }
+  ],
+  "total_choices": 6919,
+  "total_reported_cost_usd": 0.12049539599999999
+}

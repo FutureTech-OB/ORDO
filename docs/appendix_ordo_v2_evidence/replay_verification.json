@@ -1,0 +1,24 @@
+{
+  "status": "verified",
+  "exported_files_checked": 25,
+  "cases": {
+    "naming-jev": {
+      "decisions": 28177,
+      "all_inputs_and_metrics_exact": true
+    },
+    "naming-uniform": {
+      "decisions": 35631,
+      "all_inputs_and_metrics_exact": true
+    },
+    "majority": {
+      "decisions": 6279,
+      "all_inputs_and_metrics_exact": true
+    },
+    "games": {
+      "decisions": 320,
+      "all_inputs_and_metrics_exact": true
+    }
+  },
+  "actual_model_api_calls": 0,
+  "polarization": "partial run only; no forty-epoch completion claimed"
+}

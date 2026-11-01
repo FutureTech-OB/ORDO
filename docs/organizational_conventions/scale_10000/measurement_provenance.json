@@ -1,0 +1,27 @@
+{
+  "script_sha256": "ef3f895cf647e5cb04531a30ad6db43d146d564d306904bb30205e79238b1bd9",
+  "plan_sha256": "425b0e494fa3c2411e2fcdc48d2fa0fe8b8aa79e81c61b968de14422975d1c0e",
+  "argv_without_credentials": [
+    "<run_directory>/run_measured.py",
+    "--plan",
+    "<run_directory>/plan.json",
+    "--engine",
+    "jev",
+    "--allow-paid",
+    "--output",
+    "<run_directory>/run",
+    "--max-cost-usd",
+    "2",
+    "--max-requests",
+    "4000",
+    "--max-retries",
+    "3",
+    "--timeout",
+    "45",
+    "--concurrency",
+    "8"
+  ],
+  "timing_scope": "Per-engine SDK run; excludes world initialization and snapshot export. Full pipeline elapsed time is in verification.json.",
+  "memory_scope": "Windows process working set; peak is cumulative across all engines, not reset per engine.",
+  "protocol_changes": []
+}

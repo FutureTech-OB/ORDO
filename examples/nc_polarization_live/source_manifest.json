@@ -1,0 +1,31 @@
+{
+  "repo": "tsinghua-fib-lab/LLM_for_Polarization",
+  "commit": "7bc447f6d470aa232f93de5dabaa4c87fc4414d9",
+  "files": [
+    {
+      "path": "simulate.py",
+      "bytes": 20910,
+      "sha256": "05147b487a98615efd2600e0e736966330721bed7f8f962b90138eab51d01a68"
+    },
+    {
+      "path": "utils.py",
+      "bytes": 58977,
+      "sha256": "0784c500283bd58057a4fb2fe9bb1d185187810af0b18eeadd25102908cb7b48"
+    },
+    {
+      "path": "run.py",
+      "bytes": 3299,
+      "sha256": "1384c8dc099e1b425f58bdc669974809a967e061ef3424aa0d33e5c0b3bbc090"
+    },
+    {
+      "path": "source_data/Gun Control/epoch_run0.pkl",
+      "bytes": 70970,
+      "sha256": "5148ba74fdc48a6f7cd6c43c0c0107da414d69410188afec8d64b2fda14459f5"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "a406579cd136771c705c521db86ca7d60a6f3de7c9b5460e6193a2df27861bde"
+    }
+  ]
+}

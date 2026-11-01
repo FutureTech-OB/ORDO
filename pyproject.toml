@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "org-abm-lab"
+version = "0.6.0"
+description = "ORDO: Decision models for large-scale organizational agent-based modeling"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+mesa = ["mesa[network]==3.5.1; python_version >= '3.12'"]
+harness = ["mcp==1.30.0"]
+cookbooks = ["pandas>=2,<4", "matplotlib>=3.7,<4", "scipy>=1.10,<2", "networkx>=3,<4"]
+
+[project.scripts]
+orgabm = "orgabm.__main__:main"
+
+[tool.setuptools]
+packages = ["orgabm"]

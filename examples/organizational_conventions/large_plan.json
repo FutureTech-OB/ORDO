@@ -1,0 +1,5 @@
+{
+  "base": {"agents": 1000, "departments": 50, "committed": 20, "rounds": 32, "pairs_per_round": 125, "hierarchy_bias": 0.6, "cross_probability": 0.1, "release_round": 1},
+  "vary": {"placement": ["employee", "manager"], "message_mode": ["none", "peer", "official"]},
+  "seeds": [7, 11]
+}

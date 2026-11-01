@@ -1,0 +1,8 @@
+{
+  "environments": ["smooth", "random"],
+  "policies": ["asocial", "unbiased_social", "success_biased_social"],
+  "seeds": [7, 11, 19],
+  "agents": 4,
+  "steps": 400,
+  "mining_steps": 9
+}

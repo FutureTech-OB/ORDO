@@ -1,0 +1,35 @@
+{
+  "scenario": "nk_organization",
+  "base": {
+    "agents": 120,
+    "rounds": 20,
+    "departments": 4,
+    "contact": "mixed",
+    "guidance": false,
+    "penalty": 0,
+    "anonymous": false,
+    "approval_gain": 0,
+    "intervention_round": 1
+  },
+  "vary": {
+    "contact": [
+      "siloed",
+      "bridge"
+    ],
+    "approval_gain": [
+      0,
+      10
+    ]
+  },
+  "seeds": [
+    7,
+    8,
+    9
+  ],
+  "decision": {
+    "provider": "rule",
+    "rule": "best",
+    "batch_size": 64,
+    "concurrency": 4
+  }
+}

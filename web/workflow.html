@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ORDO | Organization design workbench</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/workflow.css"><script src="/workflow.js" defer></script></head>
+<body><header class="top"><a class="brand" href="/" aria-label="ORDO home">ORDO</a><div class="top-meta">Organization design | v0.6</div></header>
+<main><section class="intro"><div><p class="eyebrow">ORGANIZATION DESIGN / TASK WORKFLOW</p><h1>Put organizational arrangements into action.</h1><p class="lead">Configure task dependencies, delegation, and review capacity. Observe queues, delivery, and resource use as Mesa executes tasks and institutions.</p></div></section>
+<div class="workflow-flow" aria-label="Execution flow"><span>Employee proposal</span><b>→</b><span>Manager review</span><b>→</b><span>Task execution</span><b>→</b><span>Payoffs and feedback</span></div>
+<p class="footnote">This page executes free rule experiments in a synthetic task organization.</p>
+<div id="workflow-error" class="error hidden" role="alert"></div>
+<div class="workflow-layout"><article class="panel"><p class="eyebrow">EXPERIMENT DESIGN</p><h2>Start with a template</h2>
+<label for="workflow-template">Organizational experiment template</label><select id="workflow-template"><option value="authority_comparison">Centralized approval × Delegation within limits</option><option value="functional_hierarchy">Functional hierarchy · Centralized approval</option><option value="delegated_teams">Functional hierarchy · Delegation within limits</option><option value="review_capacity_comparison">Manager review-capacity comparison</option><option value="memory_permissions">Organizational memory: permissions and information asymmetry</option></select>
+<button id="load-template" class="secondary" type="button">Load template</button>
+<label for="workflow-plan">Complete experiment plan (editable JSON)</label><textarea id="workflow-plan" rows="16" spellcheck="false"></textarea>
+<p class="help">delegation_limit sets the delegated cost limit; review_capacity sets reviews per manager per round. Tasks define owners, dependencies, costs, and deadlines; seeds provide paired repetitions.</p>
+<div class="workflow-actions"><button id="workflow-preview" class="secondary">Preview organization and workload</button><button id="workflow-run">Run rule comparisons →</button><button id="workflow-export" class="small-button">Export plan</button></div>
+<p id="workflow-status" role="status">Loading templates…</p></article>
+<article class="panel"><p class="eyebrow">ORGANIZATION & WORK</p><h2>Positions, reporting, and tasks</h2><p id="workflow-summary" class="muted">Preview the first experimental condition. Comparisons share the specified people and tasks.</p>
+<div class="table-wrap"><table><thead><tr><th>Member</th><th>Department / Position</th><th>Supervisor</th><th>Tasks</th></tr></thead><tbody id="workflow-roster"></tbody></table></div>
+<details><summary>Task dependencies and resources</summary><div class="table-wrap"><table><thead><tr><th>Task</th><th>Owner</th><th>Dependencies</th><th>Effort / Cost</th></tr></thead><tbody id="workflow-tasks"></tbody></table></div></details>
+</article></div>
+<article class="panel"><p class="eyebrow">INFORMATION ACCESS</p><h2>What this member can observe</h2><p class="muted">Select the memory template or configure memory in the plan. Organizational, departmental, and personal records are filtered by permissions.</p>
+<div class="field-grid"><label>Member ID<input id="memory-agent" type="number" min="0" value="1"></label><label>Round<input id="memory-round" type="number" min="1" value="1"></label></div>
+<button id="memory-preview" class="secondary">Preview visible memory</button><p id="memory-status" class="footnote">Preview the first condition and inspect records included in the member input.</p>
+<div id="memory-view"></div><details><summary>Inspect access records</summary><pre id="memory-audit">Preview shows permission versions and delivered nodes.</pre></details></article>
+<article class="panel workflow-results"><p class="eyebrow">MEASURED OUTPUT</p><h2>Compare execution results</h2><p class="muted">Each row is an independent world. Completed tasks include successful and failed deliveries. Net value is realized value minus spent costs; queue waits accumulate across request rounds.</p>
+<div class="table-wrap"><table><thead><tr><th>Delegation limit / Review capacity</th><th>Seed</th><th>Completed / Successful</th><th>Dependency blocks</th><th>Queue wait</th><th>Net value</th><th>Actual decisions</th></tr></thead><tbody id="workflow-results"></tbody></table></div><p id="workflow-evidence" class="footnote">No run yet.</p>
+<details><summary>Inspect member choices and institutional execution</summary><div class="field-grid"><label>World ID<input id="trace-world" type="number" min="0" value="0"></label><label>Round<input id="trace-round" type="number" min="1" value="1"></label><label>Member ID<input id="trace-agent" type="number" min="0" value="0"></label><label>Stage<input id="trace-stage" value="review_0"></label></div><button id="workflow-inspect" class="secondary">Read decision trace</button><pre id="workflow-trace">After execution, inspect task reports, probabilities, choices, and budget events.</pre></details>
+</article><p class="footnote">Current templates use functional hierarchies, explicit reporting, and task dependencies. Matrix structures, committees, informal communication, and reorganization are planned.<a href="/">Return to organizational learning</a></p>
+</main></body></html>

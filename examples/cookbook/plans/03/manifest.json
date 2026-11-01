@@ -1,0 +1,50 @@
+[
+  {
+    "case": "manager_only__information_rule",
+    "offline_engine": "information_rule",
+    "worlds": 3,
+    "decisions_upper_bound": 288,
+    "requires_sdk": true,
+    "live_executed": false
+  },
+  {
+    "case": "shared_now__information_rule",
+    "offline_engine": "information_rule",
+    "worlds": 3,
+    "decisions_upper_bound": 288,
+    "requires_sdk": true,
+    "live_executed": false
+  },
+  {
+    "case": "shared_round_3__information_rule",
+    "offline_engine": "information_rule",
+    "worlds": 3,
+    "decisions_upper_bound": 288,
+    "requires_sdk": true,
+    "live_executed": false
+  },
+  {
+    "case": "manager_only__memory_blind_control",
+    "offline_engine": "memory_blind_control",
+    "worlds": 3,
+    "decisions_upper_bound": 288,
+    "requires_sdk": false,
+    "live_executed": false
+  },
+  {
+    "case": "shared_now__memory_blind_control",
+    "offline_engine": "memory_blind_control",
+    "worlds": 3,
+    "decisions_upper_bound": 288,
+    "requires_sdk": false,
+    "live_executed": false
+  },
+  {
+    "case": "shared_round_3__memory_blind_control",
+    "offline_engine": "memory_blind_control",
+    "worlds": 3,
+    "decisions_upper_bound": 288,
+    "requires_sdk": false,
+    "live_executed": false
+  }
+]

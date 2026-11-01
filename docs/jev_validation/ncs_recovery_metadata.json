@@ -1,0 +1,6 @@
+{
+  "reason": "Tuple-valued descriptive metadata was serialized as JSON arrays; canonical JSON is equal.",
+  "change": "Only Ensemble.describe return representation normalized; no action, probability, protocol or allowance change.",
+  "helper_sha256": "f2218bd29283b58fbe1834ac5ef8ef2852f4487a8388c19cd24831e999ca1bd6",
+  "frozen_runner_sha256": "54ea0a2078ecd3b2454fe76238b09c77170abef4ee9617c16f1d50974371b9d9"
+}

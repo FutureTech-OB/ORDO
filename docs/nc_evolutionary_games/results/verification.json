@@ -1,0 +1,1079 @@
+{
+  "status": "complete",
+  "doi": "10.1038/s41467-025-67178-6",
+  "author_commit": "3e3c3bf2bc50761acabd7a42a785dac0e15f3f84",
+  "python": "3.12.14",
+  "pair_worlds": 972,
+  "evolution_worlds": 12,
+  "decisions": 77280,
+  "actual_model_api_calls": 0,
+  "recorded_cost_usd": 0,
+  "compatibility": "Action scalars normalized to Python int before history storage; restores NumPy 1.24 string-key behavior under NumPy 2.",
+  "source_hashes": {
+    "examples/nc_evolutionary_games/evolution.py": "b278afc007455d04d3e7a97f20b438bb69a2925e7d25568d3ea602bded72f19b",
+    "examples/nc_evolutionary_games/model.py": "b0164ea7ac69c3447b029f7b568c1c783e51f67a16a25c4b8008dbcdb0a23f10",
+    "examples/nc_evolutionary_games/run.py": "086acfdd24ae076c65b85f40b71d4898e53289011512e9b96117dfe20ef9b52b",
+    "examples/nc_evolutionary_games/__init__.py": "a4e235a4800039b42ead46b8346b1b863447f55f8fbd1d97cb5e56716c7afc00"
+  },
+  "comparisons": {
+    "pair_states_exact": true,
+    "pair_payoffs_exact": true,
+    "evolution_population_states_exact": true,
+    "evolution_payoff_atol": 1e-12
+  },
+  "scope": "Author-trained strategy evaluation and reduced Fermi population dynamics; not retraining, full published sweep or human fidelity.",
+  "figure1_cases": {
+    "MTBR_01": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "MTBR_11": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "TFT_01": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "TFT_11": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "GradualTFT_01": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "GradualTFT_11": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "payoff_table": [
+    [
+      2.9375,
+      2.675,
+      2.9541666666666666,
+      2.2375,
+      1.85,
+      1.9,
+      2.8875,
+      2.925,
+      0.6499999999999999
+    ],
+    [
+      2.7375,
+      2.25,
+      2.970833333333333,
+      2.25,
+      1.5625,
+      1.6375,
+      2.4625,
+      2.9625,
+      0.975
+    ],
+    [
+      2.9125,
+      2.845833333333333,
+      2.9208333333333334,
+      2.7375,
+      1.6083333333333334,
+      2.216666666666667,
+      2.8583333333333334,
+      2.9208333333333334,
+      0.5416666666666666
+    ],
+    [
+      2.3,
+      2.25,
+      2.966666666666667,
+      2.9125,
+      1.2375,
+      1.3,
+      1.525,
+      2.8625,
+      0.5
+    ],
+    [
+      2.6625,
+      1.625,
+      2.9,
+      2.925,
+      1.575,
+      1.625,
+      1.625,
+      2.275,
+      0.975
+    ],
+    [
+      2.65,
+      1.7,
+      2.904166666666667,
+      2.8625,
+      1.5625,
+      1.65,
+      1.9,
+      2.5375,
+      0.975
+    ],
+    [
+      2.8875,
+      2.4,
+      2.9625,
+      2.7125000000000004,
+      1.5625,
+      1.5875,
+      2.4375,
+      2.9625,
+      0.975
+    ],
+    [
+      2.925,
+      2.8375,
+      2.941666666666667,
+      2.8,
+      1.4,
+      1.9125,
+      2.8375,
+      2.9124999999999996,
+      0.775
+    ],
+    [
+      2.4000000000000004,
+      1.1,
+      2.8333333333333335,
+      3.0,
+      1.1,
+      1.1,
+      1.1,
+      1.9,
+      1.0
+    ]
+  ],
+  "strategies": [
+    "MTBR",
+    "TFT",
+    "GTFT",
+    "WSLS",
+    "Grudge",
+    "FoolMeOnce",
+    "OmegaTFT",
+    "GradualTFT",
+    "AllD"
+  ],
+  "evolution_final": [
+    {
+      "with_mtbr": false,
+      "selection": 0.05,
+      "seed": 7,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 0,
+        "TFT": 9,
+        "GTFT": 13,
+        "WSLS": 7,
+        "Grudge": 8,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 7,
+        "GradualTFT": 9,
+        "AllD": 6
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 64,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 2.920833333333334,
+        "mean_cooperation": 0.9625000000000001,
+        "source_population_payoff": 2.9671957671957676,
+        "state_sha256": "6a917f80b502f05927d8959ad1b558fad065e77078a19cdb69a42d6ff84825c7"
+      }
+    },
+    {
+      "with_mtbr": false,
+      "selection": 0.05,
+      "seed": 8,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 0,
+        "TFT": 5,
+        "GTFT": 10,
+        "WSLS": 7,
+        "Grudge": 11,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 6,
+        "GradualTFT": 9,
+        "AllD": 11
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 0,
+          "WSLS": 0,
+          "Grudge": 8,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 56,
+          "AllD": 0
+        },
+        "mean_payoff": 2.5359747023809525,
+        "mean_cooperation": 0.7378348214285715,
+        "source_population_payoff": 2.576228269085412,
+        "state_sha256": "f3b2fc168d19fc593d10fd64f0921e397fb0fe51924f279db5901d9e74f3fed2"
+      }
+    },
+    {
+      "with_mtbr": false,
+      "selection": 0.05,
+      "seed": 9,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 0,
+        "TFT": 10,
+        "GTFT": 11,
+        "WSLS": 9,
+        "Grudge": 10,
+        "FoolMeOnce": 4,
+        "OmegaTFT": 5,
+        "GradualTFT": 10,
+        "AllD": 5
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 50,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 14,
+          "AllD": 0
+        },
+        "mean_payoff": 2.924479166666667,
+        "mean_cooperation": 0.9546130952380953,
+        "source_population_payoff": 2.970899470899471,
+        "state_sha256": "9049cbba4c9792771bfd1dbe9a61f73bdb80a1d861329f754813b1b89e9ab46a"
+      }
+    },
+    {
+      "with_mtbr": false,
+      "selection": 1.0,
+      "seed": 7,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 0,
+        "TFT": 9,
+        "GTFT": 13,
+        "WSLS": 7,
+        "Grudge": 8,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 7,
+        "GradualTFT": 9,
+        "AllD": 6
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 57,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 7,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 2.9072544642857148,
+        "mean_cooperation": 0.9479910714285716,
+        "source_population_payoff": 2.953401360544218,
+        "state_sha256": "4498528bf70213483a35ddaf3e34538b2b013862344d13acd91b8a1b5f478070"
+      }
+    },
+    {
+      "with_mtbr": false,
+      "selection": 1.0,
+      "seed": 8,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 0,
+        "TFT": 5,
+        "GTFT": 10,
+        "WSLS": 7,
+        "Grudge": 11,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 6,
+        "GradualTFT": 9,
+        "AllD": 11
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 0,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 8,
+          "GradualTFT": 56,
+          "AllD": 0
+        },
+        "mean_payoff": 2.8930803571428574,
+        "mean_cooperation": 0.9254464285714286,
+        "source_population_payoff": 2.9390022675736964,
+        "state_sha256": "71503326d182cf30eccddfd0d36ebf921a7169dba7cac60a89b2248cad712905"
+      }
+    },
+    {
+      "with_mtbr": false,
+      "selection": 1.0,
+      "seed": 9,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 0,
+        "TFT": 10,
+        "GTFT": 11,
+        "WSLS": 9,
+        "Grudge": 10,
+        "FoolMeOnce": 4,
+        "OmegaTFT": 5,
+        "GradualTFT": 10,
+        "AllD": 5
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 32,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 32,
+          "AllD": 0
+        },
+        "mean_payoff": 2.9230324074074074,
+        "mean_cooperation": 0.9466352513227514,
+        "source_population_payoff": 2.969429747207525,
+        "state_sha256": "d9009bb4d3cb41244fa913d8591f89fbba589dfcd99dc55d27e3a74fe7f5e1f5"
+      }
+    },
+    {
+      "with_mtbr": true,
+      "selection": 0.05,
+      "seed": 7,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 8,
+        "TFT": 11,
+        "GTFT": 5,
+        "WSLS": 8,
+        "Grudge": 5,
+        "FoolMeOnce": 6,
+        "OmegaTFT": 7,
+        "GradualTFT": 5,
+        "AllD": 9
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 7,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 57,
+          "OmegaTFT": 0,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 1.9222284226190476,
+        "mean_cooperation": 0.4303013392857142,
+        "source_population_payoff": 1.952739984882842,
+        "state_sha256": "3c272a047bdca3d0b35f39d66b56f7816e872cf3a97368bf88e2ee7f2f1283f5"
+      }
+    },
+    {
+      "with_mtbr": true,
+      "selection": 0.05,
+      "seed": 8,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 5,
+        "TFT": 9,
+        "GTFT": 6,
+        "WSLS": 9,
+        "Grudge": 3,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 9,
+        "GradualTFT": 11,
+        "AllD": 7
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 64,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 2.920833333333334,
+        "mean_cooperation": 0.9625000000000001,
+        "source_population_payoff": 2.9671957671957676,
+        "state_sha256": "6a917f80b502f05927d8959ad1b558fad065e77078a19cdb69a42d6ff84825c7"
+      }
+    },
+    {
+      "with_mtbr": true,
+      "selection": 0.05,
+      "seed": 9,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 10,
+        "TFT": 9,
+        "GTFT": 8,
+        "WSLS": 9,
+        "Grudge": 4,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 8,
+        "GradualTFT": 5,
+        "AllD": 6
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 19,
+          "TFT": 0,
+          "GTFT": 45,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 2.9287719080687835,
+        "mean_cooperation": 0.9566530257936509,
+        "source_population_payoff": 2.9752603510540023,
+        "state_sha256": "58f5d8ef9d5cb38108b611dd8115b772f8739d60e65c02ebee5b156af7b75343"
+      }
+    },
+    {
+      "with_mtbr": true,
+      "selection": 1.0,
+      "seed": 7,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 8,
+        "TFT": 11,
+        "GTFT": 5,
+        "WSLS": 8,
+        "Grudge": 5,
+        "FoolMeOnce": 6,
+        "OmegaTFT": 7,
+        "GradualTFT": 5,
+        "AllD": 9
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 64,
+          "TFT": 0,
+          "GTFT": 0,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 2.9375,
+        "mean_cooperation": 0.9625000000000001,
+        "source_population_payoff": 2.984126984126984,
+        "state_sha256": "76b25cdd1535b0bb8a35e67db0fb144374b3f0efac1fe31b5f2dd32ed6a164d1"
+      }
+    },
+    {
+      "with_mtbr": true,
+      "selection": 1.0,
+      "seed": 8,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 5,
+        "TFT": 9,
+        "GTFT": 6,
+        "WSLS": 9,
+        "Grudge": 3,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 9,
+        "GradualTFT": 11,
+        "AllD": 7
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 0,
+          "TFT": 0,
+          "GTFT": 64,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 2.920833333333334,
+        "mean_cooperation": 0.9625000000000001,
+        "source_population_payoff": 2.9671957671957676,
+        "state_sha256": "6a917f80b502f05927d8959ad1b558fad065e77078a19cdb69a42d6ff84825c7"
+      }
+    },
+    {
+      "with_mtbr": true,
+      "selection": 1.0,
+      "seed": 9,
+      "agents": 64,
+      "rounds": 50,
+      "initial_counts": {
+        "MTBR": 10,
+        "TFT": 9,
+        "GTFT": 8,
+        "WSLS": 9,
+        "Grudge": 4,
+        "FoolMeOnce": 5,
+        "OmegaTFT": 8,
+        "GradualTFT": 5,
+        "AllD": 6
+      },
+      "final": {
+        "round": 50,
+        "population": 64,
+        "counts": {
+          "MTBR": 32,
+          "TFT": 0,
+          "GTFT": 32,
+          "WSLS": 0,
+          "Grudge": 0,
+          "FoolMeOnce": 0,
+          "OmegaTFT": 0,
+          "GradualTFT": 0,
+          "AllD": 0
+        },
+        "mean_payoff": 2.932771164021164,
+        "mean_cooperation": 0.956374007936508,
+        "source_population_payoff": 2.979323087259595,
+        "state_sha256": "bf0776d72fe627ede2f15e3acca9fd243a536d12096ee1dc914dd247a2fda2ef"
+      }
+    }
+  ],
+  "elapsed_s": 79.97736779996194,
+  "analysis_sha256": "f3ae268be60772a808ae391f1442894f99a8af2c7b1e1a5327d61fe64a1e43cf"
+}

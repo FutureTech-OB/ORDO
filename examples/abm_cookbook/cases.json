@@ -1,0 +1,362 @@
+[
+  {
+    "model": "wealth",
+    "config": {
+      "n": 60,
+      "width": 5,
+      "height": 5,
+      "rounds": 15,
+      "seed": 7
+    }
+  },
+  {
+    "model": "schelling",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "density": 0.75,
+      "homophily": 0.3,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "schelling",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "density": 0.75,
+      "homophily": 0.6,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Simultaneous",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Simultaneous",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Random",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Random",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Sequential",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Sequential",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 7
+    }
+  },
+  {
+    "model": "organization",
+    "config": {
+      "agents": 120,
+      "departments": 4,
+      "contact": "siloed",
+      "rounds": 20,
+      "seed": 7,
+      "engine": "best"
+    }
+  },
+  {
+    "model": "organization",
+    "config": {
+      "agents": 120,
+      "departments": 4,
+      "contact": "bridge",
+      "rounds": 20,
+      "seed": 7,
+      "engine": "best"
+    }
+  },
+  {
+    "model": "wealth",
+    "config": {
+      "n": 60,
+      "width": 5,
+      "height": 5,
+      "rounds": 15,
+      "seed": 8
+    }
+  },
+  {
+    "model": "schelling",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "density": 0.75,
+      "homophily": 0.3,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "schelling",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "density": 0.75,
+      "homophily": 0.6,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Simultaneous",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Simultaneous",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Random",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Random",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Sequential",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Sequential",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 8
+    }
+  },
+  {
+    "model": "organization",
+    "config": {
+      "agents": 120,
+      "departments": 4,
+      "contact": "siloed",
+      "rounds": 20,
+      "seed": 8,
+      "engine": "best"
+    }
+  },
+  {
+    "model": "organization",
+    "config": {
+      "agents": 120,
+      "departments": 4,
+      "contact": "bridge",
+      "rounds": 20,
+      "seed": 8,
+      "engine": "best"
+    }
+  },
+  {
+    "model": "wealth",
+    "config": {
+      "n": 60,
+      "width": 5,
+      "height": 5,
+      "rounds": 15,
+      "seed": 9
+    }
+  },
+  {
+    "model": "schelling",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "density": 0.75,
+      "homophily": 0.3,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "schelling",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "density": 0.75,
+      "homophily": 0.6,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Simultaneous",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Simultaneous",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Random",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Random",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Sequential",
+      "defection_bonus": 1.2,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "cooperation",
+    "config": {
+      "width": 12,
+      "height": 12,
+      "activation_order": "Sequential",
+      "defection_bonus": 1.8,
+      "rounds": 20,
+      "seed": 9
+    }
+  },
+  {
+    "model": "organization",
+    "config": {
+      "agents": 120,
+      "departments": 4,
+      "contact": "siloed",
+      "rounds": 20,
+      "seed": 9,
+      "engine": "best"
+    }
+  },
+  {
+    "model": "organization",
+    "config": {
+      "agents": 120,
+      "departments": 4,
+      "contact": "bridge",
+      "rounds": 20,
+      "seed": 9,
+      "engine": "best"
+    }
+  }
+]

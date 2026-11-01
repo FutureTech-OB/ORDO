@@ -1,0 +1,10 @@
+[
+  {
+    "case": "contact_x_permission",
+    "offline_engine": "registered",
+    "worlds": 12,
+    "decisions_upper_bound": 28800,
+    "requires_sdk": false,
+    "live_executed": false
+  }
+]

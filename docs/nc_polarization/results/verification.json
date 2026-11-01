@@ -1,0 +1,329 @@
+{
+  "status": "complete",
+  "source_commit": "7bc447f6d470aa232f93de5dabaa4c87fc4414d9",
+  "doi": "10.1038/s41467-026-78228-y",
+  "topics": {
+    "Partisan Alignment": {
+      "population": 1000,
+      "snapshots": 41,
+      "periods": 40,
+      "restored_member_states": 40000,
+      "directed_edge_rows": 163993,
+      "curated_condition": "debiased",
+      "all_205_figure_counts_exact": true,
+      "all_states_and_edge_rows_exact": true,
+      "independent_metrics_exact": true,
+      "duplicate_edge_rows_preserved": [
+        {
+          "epoch": 4,
+          "duplicate_edge_rows": 1
+        },
+        {
+          "epoch": 5,
+          "duplicate_edge_rows": 2
+        },
+        {
+          "epoch": 6,
+          "duplicate_edge_rows": 2
+        },
+        {
+          "epoch": 7,
+          "duplicate_edge_rows": 2
+        },
+        {
+          "epoch": 8,
+          "duplicate_edge_rows": 2
+        },
+        {
+          "epoch": 9,
+          "duplicate_edge_rows": 2
+        },
+        {
+          "epoch": 10,
+          "duplicate_edge_rows": 2
+        },
+        {
+          "epoch": 11,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 12,
+          "duplicate_edge_rows": 2
+        },
+        {
+          "epoch": 13,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 14,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 15,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 16,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 17,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 18,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 19,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 20,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 21,
+          "duplicate_edge_rows": 4
+        },
+        {
+          "epoch": 22,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 23,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 24,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 25,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 26,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 27,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 28,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 29,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 30,
+          "duplicate_edge_rows": 3
+        },
+        {
+          "epoch": 31,
+          "duplicate_edge_rows": 4
+        },
+        {
+          "epoch": 32,
+          "duplicate_edge_rows": 4
+        },
+        {
+          "epoch": 33,
+          "duplicate_edge_rows": 5
+        },
+        {
+          "epoch": 34,
+          "duplicate_edge_rows": 5
+        },
+        {
+          "epoch": 35,
+          "duplicate_edge_rows": 4
+        },
+        {
+          "epoch": 36,
+          "duplicate_edge_rows": 6
+        },
+        {
+          "epoch": 37,
+          "duplicate_edge_rows": 5
+        },
+        {
+          "epoch": 38,
+          "duplicate_edge_rows": 4
+        },
+        {
+          "epoch": 39,
+          "duplicate_edge_rows": 4
+        },
+        {
+          "epoch": 40,
+          "duplicate_edge_rows": 4
+        }
+      ],
+      "initial": {
+        "population": 1000,
+        "edges": 4000,
+        "unique_edges": 4000,
+        "duplicate_edge_rows": 0,
+        "self_edge_rows": 0,
+        "counts": {
+          "-2": 111,
+          "-1": 187,
+          "0": 402,
+          "1": 185,
+          "2": 115
+        },
+        "neutral_share": 0.402,
+        "mean_opinion": 0.006,
+        "polarization": 0.824,
+        "exact_opinion_homophily": 0.2695,
+        "same_sign_homophily": 0.3585
+      },
+      "final": {
+        "population": 1000,
+        "edges": 3999,
+        "unique_edges": 3995,
+        "duplicate_edge_rows": 4,
+        "self_edge_rows": 0,
+        "counts": {
+          "-2": 123,
+          "-1": 31,
+          "0": 328,
+          "1": 21,
+          "2": 497
+        },
+        "neutral_share": 0.328,
+        "mean_opinion": 0.738,
+        "polarization": 1.292,
+        "exact_opinion_homophily": 0.6011502875718929,
+        "same_sign_homophily": 0.6496624156039009
+      },
+      "elapsed_s": 3.2842054999200627
+    },
+    "Gun Control": {
+      "population": 1000,
+      "snapshots": 41,
+      "periods": 40,
+      "restored_member_states": 40000,
+      "directed_edge_rows": 163708,
+      "curated_condition": "baseline",
+      "all_205_figure_counts_exact": true,
+      "all_states_and_edge_rows_exact": true,
+      "independent_metrics_exact": true,
+      "duplicate_edge_rows_preserved": [],
+      "initial": {
+        "population": 1000,
+        "edges": 4000,
+        "unique_edges": 4000,
+        "duplicate_edge_rows": 0,
+        "self_edge_rows": 0,
+        "counts": {
+          "-2": 99,
+          "-1": 201,
+          "0": 396,
+          "1": 204,
+          "2": 100
+        },
+        "neutral_share": 0.396,
+        "mean_opinion": 0.005,
+        "polarization": 0.803,
+        "exact_opinion_homophily": 0.253,
+        "same_sign_homophily": 0.335
+      },
+      "final": {
+        "population": 1000,
+        "edges": 3990,
+        "unique_edges": 3990,
+        "duplicate_edge_rows": 0,
+        "self_edge_rows": 0,
+        "counts": {
+          "-2": 191,
+          "-1": 147,
+          "0": 4,
+          "1": 263,
+          "2": 395
+        },
+        "neutral_share": 0.004,
+        "mean_opinion": 0.524,
+        "polarization": 1.582,
+        "exact_opinion_homophily": 0.46516290726817044,
+        "same_sign_homophily": 0.8393483709273183
+      },
+      "elapsed_s": 3.504468100029044
+    },
+    "Abortion Ban": {
+      "population": 1000,
+      "snapshots": 41,
+      "periods": 40,
+      "restored_member_states": 40000,
+      "directed_edge_rows": 163773,
+      "curated_condition": "debiased",
+      "all_205_figure_counts_exact": true,
+      "all_states_and_edge_rows_exact": true,
+      "independent_metrics_exact": true,
+      "duplicate_edge_rows_preserved": [
+        {
+          "epoch": 40,
+          "duplicate_edge_rows": 1
+        }
+      ],
+      "initial": {
+        "population": 1000,
+        "edges": 4000,
+        "unique_edges": 4000,
+        "duplicate_edge_rows": 0,
+        "self_edge_rows": 0,
+        "counts": {
+          "-2": 122,
+          "-1": 179,
+          "0": 397,
+          "1": 184,
+          "2": 118
+        },
+        "neutral_share": 0.397,
+        "mean_opinion": -0.003,
+        "polarization": 0.843,
+        "exact_opinion_homophily": 0.247,
+        "same_sign_homophily": 0.3445
+      },
+      "final": {
+        "population": 1000,
+        "edges": 3993,
+        "unique_edges": 3992,
+        "duplicate_edge_rows": 1,
+        "self_edge_rows": 0,
+        "counts": {
+          "-2": 411,
+          "-1": 13,
+          "0": 113,
+          "1": 29,
+          "2": 434
+        },
+        "neutral_share": 0.113,
+        "mean_opinion": 0.062,
+        "polarization": 1.732,
+        "exact_opinion_homophily": 0.6994740796393689,
+        "same_sign_homophily": 0.763335837716003
+      },
+      "elapsed_s": 3.498766200034879
+    }
+  },
+  "actual_model_api_calls": 0,
+  "evidence": "state/network archive replay; no missing messages or original model probabilities reconstructed",
+  "source_hashes": {
+    "archive.py": "47283ff2a0ebb1e620005e0b27eef9492074756f5fba9b4250fadaaa60469ea7",
+    "model.py": "ad2ae3c24b6bdf9785e30f5917d1124a45d93c777c4d801fe4f92e16f8ebf0ef",
+    "replay.py": "0aac0509175aedcb56f80d16e515b8cc434a657684ece15076a4abef24b13bb7",
+    "run.py": "57ad136e82676bfc7a56af2c012c8e0a80bfc2ce5fbaadaf4385129cf2e4863f",
+    "sources.py": "3b132a999995571cc5eae236e7a0dd2ccc35eecff9b16832bd0358ee884f0fa4",
+    "__init__.py": "66bd8b2de5fc15a76ac80690cb1caa96e0ee4c715d7ad8a3e531479e86db84d4"
+  },
+  "metadata_discrepancies": [],
+  "elapsed_s": 17.509933299967088,
+  "total_snapshots": 123,
+  "total_restored_member_states": 120000,
+  "total_directed_edge_rows": 491474
+}

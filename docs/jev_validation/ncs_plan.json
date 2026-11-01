@@ -1,0 +1,522 @@
+{
+  "group": "ncs",
+  "model": "typesafe/jev-1.14",
+  "seed": 20261030,
+  "max_cost_usd": 2.0,
+  "max_requests": 2500,
+  "batch_size": 64,
+  "concurrency": 2,
+  "rounds": 100,
+  "source_hashes": {
+    "examples/jev_ncs/__init__.py": "14098393e7050a17d64d4d105e699b05ccb2942b7d58e4d8a9f0b5f3d215b88c",
+    "examples/jev_ncs/models.py": "5743fc9c9dc321c5c6dae10043ffac7cefc28b81f4a5ff30ee530670d8d1ccac",
+    "examples/jev_ncs/suite.py": "01bedfb20077901bc4a14aa0c4ea0778170593bf924d713418a9ba098c782381",
+    "examples/jev_validation/__init__.py": "fd209358c9621726eb721763d3a2cac65edf812a46ef669e97821f167143984a",
+    "examples/jev_validation/run.py": "54ea0a2078ecd3b2454fe76238b09c77170abef4ee9617c16f1d50974371b9d9",
+    "examples/ncs_colocation/__init__.py": "9b28c166bca4a05aa3e6788f4d391410c472a8c4972dfc951582b09b38e0847b",
+    "examples/ncs_colocation/sources.py": "276713a253cab5c03fe35ce12e00cd079aa4a9afadadcd03c640da7a89bb86a0",
+    "orgabm/__init__.py": "7078b1f563c8bc84e31e3007678f6f08268dab888534d137e0d7fb68f55ec01f",
+    "orgabm/__main__.py": "f227cf623a5d36fb84c57436f5ca173bdc2901e08b8203a9d8b4bcd426443ebf",
+    "orgabm/decision_journal.py": "52e1ca903f233d2b6ff39dbc7dd7fd7bbb0dad1559a9325c937a95b94c4644bf",
+    "orgabm/deepseek.py": "9e6a03908e9d98c9805a1e748ab0d820f960595a85a7cc06973ada221fab8557",
+    "orgabm/engines.py": "09b935f58fb9bd954fdda0aee5272524359294ff52554fba003288404df89215",
+    "orgabm/experiment.py": "fd3fbc7a256e3ce2ed0a6988af8aa4118ea312ecc92bacc878f69b2137e245a2",
+    "orgabm/kernel.py": "e6e6bffdfb813fac5256525c924b33ab855fff38b570225ccd2b4046a3c4ddd6",
+    "orgabm/mcp_server.py": "e24339e2de20c8a4f1aadb8d226864888663225e9809100cbc4f02a519f3c17c",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/mesa_bridge.py": "bbf22640031d48850afaaf8d9b5ea9976da5c41f575dbd4af76bb1981eee43c3",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a",
+    "orgabm/organization.py": "921001f1b4d6e31d80ba58cfab4858a7e15be2cff44b0993a8b652e8e6f06481",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/placement.py": "06bdff86772974743526a2aa70f1b995d453ee189a85c94cc755401d5778f060",
+    "orgabm/plans.py": "71738bb194bc2b4fdbbb255f90258040d094d2ca28b38756479bf3ea8975ad60",
+    "orgabm/randomness.py": "a8b74b3c59261135d0c79bcc96230bc0a227f56fbfc6e9ffa874ab879df696f6",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/server.py": "ed18f3e975bd67e17f7f44408479d4539d6fd08abe00dacd5b341b0fb48478d4",
+    "orgabm/staged.py": "e939295fdebf54434028853deb4832c2e32f910c5254fdec4b4c1b62e4a36e9a",
+    "orgabm/templates.py": "dcbe086a2df17effe616168fdd7f2e4707630adaf6b61ccbed6f995452d3d831",
+    "orgabm/workflow.py": "232b7ef8377b8b0c77f110475ae4e4ab21b7aa0f56df7bf99e9b3bfafbabca98",
+    "orgabm/workflow_mesa.py": "ae9b822050b4c4525993e647294684f1ccc6dbed10428fd1119196a4a4333fa5",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91"
+  },
+  "description": {
+    "scenario": "fresh_jev_paper_validation",
+    "cases": [
+      {
+        "id": "ncs-cmm-history_visible-7",
+        "paper_id": "ncs_cmm_2021",
+        "rounds": 10,
+        "seed": 7,
+        "condition": "history_visible",
+        "environment": {
+          "paper_id": "ncs_cmm_2021",
+          "doi": "10.1038/s43588-021-00160-6",
+          "population": 16,
+          "side": 12,
+          "seed": 7,
+          "memory_visible": true,
+          "source_sha256": "046f1e7f91b9b226a0caf6ea3ab9cd0c3d4fd9d528a3e1b9f687d3e8c8f5a5c0",
+          "scope": "Jev destination-choice transfer, not original 300x300 lattice or published urban-scaling validation.",
+          "retained": [
+            "Frozen prior-period population",
+            "Distance and occupancy feedback",
+            "Individual visit frequencies",
+            "Synchronous movement"
+          ],
+          "changed": [
+            "12x12 torus;16 residents",
+            "Six sampled destinations per person",
+            "Jev replaces exploration/return and gravity choices",
+            "No-memory condition hides personal history and uses exploration-only paired rule"
+          ],
+          "benchmark": "Paired rule uses original rho0=1e-12, alpha=-2.55, gamma=.21 normalized on each sampled menu."
+        }
+      },
+      {
+        "id": "ncs-cmm-history_hidden-7",
+        "paper_id": "ncs_cmm_2021",
+        "rounds": 10,
+        "seed": 7,
+        "condition": "history_hidden",
+        "environment": {
+          "paper_id": "ncs_cmm_2021",
+          "doi": "10.1038/s43588-021-00160-6",
+          "population": 16,
+          "side": 12,
+          "seed": 7,
+          "memory_visible": false,
+          "source_sha256": "046f1e7f91b9b226a0caf6ea3ab9cd0c3d4fd9d528a3e1b9f687d3e8c8f5a5c0",
+          "scope": "Jev destination-choice transfer, not original 300x300 lattice or published urban-scaling validation.",
+          "retained": [
+            "Frozen prior-period population",
+            "Distance and occupancy feedback",
+            "Individual visit frequencies",
+            "Synchronous movement"
+          ],
+          "changed": [
+            "12x12 torus;16 residents",
+            "Six sampled destinations per person",
+            "Jev replaces exploration/return and gravity choices",
+            "No-memory condition hides personal history and uses exploration-only paired rule"
+          ],
+          "benchmark": "Paired rule uses original rho0=1e-12, alpha=-2.55, gamma=.21 normalized on each sampled menu."
+        }
+      },
+      {
+        "id": "ncs-colocation-continuous-7",
+        "paper_id": "ncs_colocation_2022",
+        "rounds": 12,
+        "seed": 7,
+        "condition": "continuous",
+        "environment": {
+          "paper_id": "ncs_colocation_2022",
+          "doi": "10.1038/s43588-022-00296-z",
+          "seed": 7,
+          "policy": "continuous",
+          "population": 200,
+          "active_each_day": 16,
+          "phase_days": [
+            4,
+            4,
+            4
+          ],
+          "scope": "Decision-level communication transfer on author public data, not original two-stage edge protocol or MIT empirical estimate.",
+          "retained": [
+            "Author eligible tie pool and public distances/department-pair indicators",
+            "Five-day periodicity",
+            "Past contact history",
+            "Lagged shared-contact closure",
+            "Remote phase sets distances to2000;return restores source distances"
+          ],
+          "changed": [
+            "16 rotating researchers choose at most one contact/day",
+            "Up to six candidate contacts and no-contact",
+            "Jev replaces global 50+20 edge samples without replacement",
+            "Closure from prior day rather than within-day first-stage graph"
+          ],
+          "benchmark": "Original feature weights applied to the same reduced choices; no-contact baseline weight=2000 is new and declared."
+        }
+      },
+      {
+        "id": "ncs-colocation-remote_return-7",
+        "paper_id": "ncs_colocation_2022",
+        "rounds": 12,
+        "seed": 7,
+        "condition": "remote_return",
+        "environment": {
+          "paper_id": "ncs_colocation_2022",
+          "doi": "10.1038/s43588-022-00296-z",
+          "seed": 7,
+          "policy": "remote_return",
+          "population": 200,
+          "active_each_day": 16,
+          "phase_days": [
+            4,
+            4,
+            4
+          ],
+          "scope": "Decision-level communication transfer on author public data, not original two-stage edge protocol or MIT empirical estimate.",
+          "retained": [
+            "Author eligible tie pool and public distances/department-pair indicators",
+            "Five-day periodicity",
+            "Past contact history",
+            "Lagged shared-contact closure",
+            "Remote phase sets distances to2000;return restores source distances"
+          ],
+          "changed": [
+            "16 rotating researchers choose at most one contact/day",
+            "Up to six candidate contacts and no-contact",
+            "Jev replaces global 50+20 edge samples without replacement",
+            "Closure from prior day rather than within-day first-stage graph"
+          ],
+          "benchmark": "Original feature weights applied to the same reduced choices; no-contact baseline weight=2000 is new and declared."
+        }
+      },
+      {
+        "id": "ncs-dynamic-ring-7",
+        "paper_id": "ncs_dynamic_2026",
+        "rounds": 100,
+        "seed": 7,
+        "condition": "ring",
+        "environment": {
+          "paper_id": "ncs_dynamic_2026",
+          "doi": "10.1038/s43588-026-01068-9",
+          "code_doi": "10.5281/zenodo.22152088",
+          "archive_sha256": "ad5a642905a0a359e8eaed8614a4c665d4f33268c8b588a993ff11d9c27df34c",
+          "seed": 7,
+          "condition": "ring",
+          "population": 6,
+          "mutation": 0.01,
+          "selection_intensity": 0.1,
+          "scope": "Decision-level parent-selection transfer, not the structure-coefficient theorem or published stationary simulation.",
+          "retained": [
+            "One uniformly random death per iteration",
+            "Parent must be a current neighbor",
+            "Offspring copies parent strategy",
+            "Mutation uniformly redraws a strategy",
+            "Exogenous network transition after replacement",
+            "Accumulated donation payoff b4,c1;recomputed after transitions"
+          ],
+          "changed": [
+            "Jev replaces fitness-weighted parent draw",
+            "Reduced100iterations",
+            "delta=.1 strong-selection setting rather than demo.002",
+            "Python random stream, not Julia bitwise execution",
+            "Short-run mean includes initialization;not stationary estimate"
+          ],
+          "benchmark": "Same protocol with parent weights exp(delta*payoff);ring/star fixed or switching q=1/(10*N)."
+        }
+      },
+      {
+        "id": "ncs-dynamic-star-7",
+        "paper_id": "ncs_dynamic_2026",
+        "rounds": 100,
+        "seed": 7,
+        "condition": "star",
+        "environment": {
+          "paper_id": "ncs_dynamic_2026",
+          "doi": "10.1038/s43588-026-01068-9",
+          "code_doi": "10.5281/zenodo.22152088",
+          "archive_sha256": "ad5a642905a0a359e8eaed8614a4c665d4f33268c8b588a993ff11d9c27df34c",
+          "seed": 7,
+          "condition": "star",
+          "population": 6,
+          "mutation": 0.01,
+          "selection_intensity": 0.1,
+          "scope": "Decision-level parent-selection transfer, not the structure-coefficient theorem or published stationary simulation.",
+          "retained": [
+            "One uniformly random death per iteration",
+            "Parent must be a current neighbor",
+            "Offspring copies parent strategy",
+            "Mutation uniformly redraws a strategy",
+            "Exogenous network transition after replacement",
+            "Accumulated donation payoff b4,c1;recomputed after transitions"
+          ],
+          "changed": [
+            "Jev replaces fitness-weighted parent draw",
+            "Reduced100iterations",
+            "delta=.1 strong-selection setting rather than demo.002",
+            "Python random stream, not Julia bitwise execution",
+            "Short-run mean includes initialization;not stationary estimate"
+          ],
+          "benchmark": "Same protocol with parent weights exp(delta*payoff);ring/star fixed or switching q=1/(10*N)."
+        }
+      },
+      {
+        "id": "ncs-dynamic-switching-7",
+        "paper_id": "ncs_dynamic_2026",
+        "rounds": 100,
+        "seed": 7,
+        "condition": "switching",
+        "environment": {
+          "paper_id": "ncs_dynamic_2026",
+          "doi": "10.1038/s43588-026-01068-9",
+          "code_doi": "10.5281/zenodo.22152088",
+          "archive_sha256": "ad5a642905a0a359e8eaed8614a4c665d4f33268c8b588a993ff11d9c27df34c",
+          "seed": 7,
+          "condition": "switching",
+          "population": 6,
+          "mutation": 0.01,
+          "selection_intensity": 0.1,
+          "scope": "Decision-level parent-selection transfer, not the structure-coefficient theorem or published stationary simulation.",
+          "retained": [
+            "One uniformly random death per iteration",
+            "Parent must be a current neighbor",
+            "Offspring copies parent strategy",
+            "Mutation uniformly redraws a strategy",
+            "Exogenous network transition after replacement",
+            "Accumulated donation payoff b4,c1;recomputed after transitions"
+          ],
+          "changed": [
+            "Jev replaces fitness-weighted parent draw",
+            "Reduced100iterations",
+            "delta=.1 strong-selection setting rather than demo.002",
+            "Python random stream, not Julia bitwise execution",
+            "Short-run mean includes initialization;not stationary estimate"
+          ],
+          "benchmark": "Same protocol with parent weights exp(delta*payoff);ring/star fixed or switching q=1/(10*N)."
+        }
+      },
+      {
+        "id": "ncs-cmm-history_visible-11",
+        "paper_id": "ncs_cmm_2021",
+        "rounds": 10,
+        "seed": 11,
+        "condition": "history_visible",
+        "environment": {
+          "paper_id": "ncs_cmm_2021",
+          "doi": "10.1038/s43588-021-00160-6",
+          "population": 16,
+          "side": 12,
+          "seed": 11,
+          "memory_visible": true,
+          "source_sha256": "046f1e7f91b9b226a0caf6ea3ab9cd0c3d4fd9d528a3e1b9f687d3e8c8f5a5c0",
+          "scope": "Jev destination-choice transfer, not original 300x300 lattice or published urban-scaling validation.",
+          "retained": [
+            "Frozen prior-period population",
+            "Distance and occupancy feedback",
+            "Individual visit frequencies",
+            "Synchronous movement"
+          ],
+          "changed": [
+            "12x12 torus;16 residents",
+            "Six sampled destinations per person",
+            "Jev replaces exploration/return and gravity choices",
+            "No-memory condition hides personal history and uses exploration-only paired rule"
+          ],
+          "benchmark": "Paired rule uses original rho0=1e-12, alpha=-2.55, gamma=.21 normalized on each sampled menu."
+        }
+      },
+      {
+        "id": "ncs-cmm-history_hidden-11",
+        "paper_id": "ncs_cmm_2021",
+        "rounds": 10,
+        "seed": 11,
+        "condition": "history_hidden",
+        "environment": {
+          "paper_id": "ncs_cmm_2021",
+          "doi": "10.1038/s43588-021-00160-6",
+          "population": 16,
+          "side": 12,
+          "seed": 11,
+          "memory_visible": false,
+          "source_sha256": "046f1e7f91b9b226a0caf6ea3ab9cd0c3d4fd9d528a3e1b9f687d3e8c8f5a5c0",
+          "scope": "Jev destination-choice transfer, not original 300x300 lattice or published urban-scaling validation.",
+          "retained": [
+            "Frozen prior-period population",
+            "Distance and occupancy feedback",
+            "Individual visit frequencies",
+            "Synchronous movement"
+          ],
+          "changed": [
+            "12x12 torus;16 residents",
+            "Six sampled destinations per person",
+            "Jev replaces exploration/return and gravity choices",
+            "No-memory condition hides personal history and uses exploration-only paired rule"
+          ],
+          "benchmark": "Paired rule uses original rho0=1e-12, alpha=-2.55, gamma=.21 normalized on each sampled menu."
+        }
+      },
+      {
+        "id": "ncs-colocation-continuous-11",
+        "paper_id": "ncs_colocation_2022",
+        "rounds": 12,
+        "seed": 11,
+        "condition": "continuous",
+        "environment": {
+          "paper_id": "ncs_colocation_2022",
+          "doi": "10.1038/s43588-022-00296-z",
+          "seed": 11,
+          "policy": "continuous",
+          "population": 200,
+          "active_each_day": 16,
+          "phase_days": [
+            4,
+            4,
+            4
+          ],
+          "scope": "Decision-level communication transfer on author public data, not original two-stage edge protocol or MIT empirical estimate.",
+          "retained": [
+            "Author eligible tie pool and public distances/department-pair indicators",
+            "Five-day periodicity",
+            "Past contact history",
+            "Lagged shared-contact closure",
+            "Remote phase sets distances to2000;return restores source distances"
+          ],
+          "changed": [
+            "16 rotating researchers choose at most one contact/day",
+            "Up to six candidate contacts and no-contact",
+            "Jev replaces global 50+20 edge samples without replacement",
+            "Closure from prior day rather than within-day first-stage graph"
+          ],
+          "benchmark": "Original feature weights applied to the same reduced choices; no-contact baseline weight=2000 is new and declared."
+        }
+      },
+      {
+        "id": "ncs-colocation-remote_return-11",
+        "paper_id": "ncs_colocation_2022",
+        "rounds": 12,
+        "seed": 11,
+        "condition": "remote_return",
+        "environment": {
+          "paper_id": "ncs_colocation_2022",
+          "doi": "10.1038/s43588-022-00296-z",
+          "seed": 11,
+          "policy": "remote_return",
+          "population": 200,
+          "active_each_day": 16,
+          "phase_days": [
+            4,
+            4,
+            4
+          ],
+          "scope": "Decision-level communication transfer on author public data, not original two-stage edge protocol or MIT empirical estimate.",
+          "retained": [
+            "Author eligible tie pool and public distances/department-pair indicators",
+            "Five-day periodicity",
+            "Past contact history",
+            "Lagged shared-contact closure",
+            "Remote phase sets distances to2000;return restores source distances"
+          ],
+          "changed": [
+            "16 rotating researchers choose at most one contact/day",
+            "Up to six candidate contacts and no-contact",
+            "Jev replaces global 50+20 edge samples without replacement",
+            "Closure from prior day rather than within-day first-stage graph"
+          ],
+          "benchmark": "Original feature weights applied to the same reduced choices; no-contact baseline weight=2000 is new and declared."
+        }
+      },
+      {
+        "id": "ncs-dynamic-ring-11",
+        "paper_id": "ncs_dynamic_2026",
+        "rounds": 100,
+        "seed": 11,
+        "condition": "ring",
+        "environment": {
+          "paper_id": "ncs_dynamic_2026",
+          "doi": "10.1038/s43588-026-01068-9",
+          "code_doi": "10.5281/zenodo.22152088",
+          "archive_sha256": "ad5a642905a0a359e8eaed8614a4c665d4f33268c8b588a993ff11d9c27df34c",
+          "seed": 11,
+          "condition": "ring",
+          "population": 6,
+          "mutation": 0.01,
+          "selection_intensity": 0.1,
+          "scope": "Decision-level parent-selection transfer, not the structure-coefficient theorem or published stationary simulation.",
+          "retained": [
+            "One uniformly random death per iteration",
+            "Parent must be a current neighbor",
+            "Offspring copies parent strategy",
+            "Mutation uniformly redraws a strategy",
+            "Exogenous network transition after replacement",
+            "Accumulated donation payoff b4,c1;recomputed after transitions"
+          ],
+          "changed": [
+            "Jev replaces fitness-weighted parent draw",
+            "Reduced100iterations",
+            "delta=.1 strong-selection setting rather than demo.002",
+            "Python random stream, not Julia bitwise execution",
+            "Short-run mean includes initialization;not stationary estimate"
+          ],
+          "benchmark": "Same protocol with parent weights exp(delta*payoff);ring/star fixed or switching q=1/(10*N)."
+        }
+      },
+      {
+        "id": "ncs-dynamic-star-11",
+        "paper_id": "ncs_dynamic_2026",
+        "rounds": 100,
+        "seed": 11,
+        "condition": "star",
+        "environment": {
+          "paper_id": "ncs_dynamic_2026",
+          "doi": "10.1038/s43588-026-01068-9",
+          "code_doi": "10.5281/zenodo.22152088",
+          "archive_sha256": "ad5a642905a0a359e8eaed8614a4c665d4f33268c8b588a993ff11d9c27df34c",
+          "seed": 11,
+          "condition": "star",
+          "population": 6,
+          "mutation": 0.01,
+          "selection_intensity": 0.1,
+          "scope": "Decision-level parent-selection transfer, not the structure-coefficient theorem or published stationary simulation.",
+          "retained": [
+            "One uniformly random death per iteration",
+            "Parent must be a current neighbor",
+            "Offspring copies parent strategy",
+            "Mutation uniformly redraws a strategy",
+            "Exogenous network transition after replacement",
+            "Accumulated donation payoff b4,c1;recomputed after transitions"
+          ],
+          "changed": [
+            "Jev replaces fitness-weighted parent draw",
+            "Reduced100iterations",
+            "delta=.1 strong-selection setting rather than demo.002",
+            "Python random stream, not Julia bitwise execution",
+            "Short-run mean includes initialization;not stationary estimate"
+          ],
+          "benchmark": "Same protocol with parent weights exp(delta*payoff);ring/star fixed or switching q=1/(10*N)."
+        }
+      },
+      {
+        "id": "ncs-dynamic-switching-11",
+        "paper_id": "ncs_dynamic_2026",
+        "rounds": 100,
+        "seed": 11,
+        "condition": "switching",
+        "environment": {
+          "paper_id": "ncs_dynamic_2026",
+          "doi": "10.1038/s43588-026-01068-9",
+          "code_doi": "10.5281/zenodo.22152088",
+          "archive_sha256": "ad5a642905a0a359e8eaed8614a4c665d4f33268c8b588a993ff11d9c27df34c",
+          "seed": 11,
+          "condition": "switching",
+          "population": 6,
+          "mutation": 0.01,
+          "selection_intensity": 0.1,
+          "scope": "Decision-level parent-selection transfer, not the structure-coefficient theorem or published stationary simulation.",
+          "retained": [
+            "One uniformly random death per iteration",
+            "Parent must be a current neighbor",
+            "Offspring copies parent strategy",
+            "Mutation uniformly redraws a strategy",
+            "Exogenous network transition after replacement",
+            "Accumulated donation payoff b4,c1;recomputed after transitions"
+          ],
+          "changed": [
+            "Jev replaces fitness-weighted parent draw",
+            "Reduced100iterations",
+            "delta=.1 strong-selection setting rather than demo.002",
+            "Python random stream, not Julia bitwise execution",
+            "Short-run mean includes initialization;not stationary estimate"
+          ],
+          "benchmark": "Same protocol with parent weights exp(delta*payoff);ring/star fixed or switching q=1/(10*N)."
+        }
+      }
+    ],
+    "batch_semantics": "independent ready decisions; each question embeds only its local context",
+    "action_sampling": "SDK stable seed with namespaced actor IDs; not paired common random numbers",
+    "probability_reuse": false
+  },
+  "claim": "fresh decision-model substitution; phenomenon tests, not full-paper replication"
+}

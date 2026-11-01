@@ -1,0 +1,577 @@
+{
+  "scenario": "task_workflow",
+  "config": {
+    "agents": 12,
+    "departments": 3,
+    "rounds": 12,
+    "tasks": [
+      {
+        "id": "w0_task0",
+        "title": "Synthetic delivery task 1-1",
+        "owner": 1,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task1",
+        "title": "Synthetic delivery task 1-2",
+        "owner": 2,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task2",
+        "title": "Synthetic delivery task 1-3",
+        "owner": 3,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task3",
+        "title": "Synthetic delivery task 1-4",
+        "owner": 5,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task4",
+        "title": "Synthetic delivery task 1-5",
+        "owner": 6,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task5",
+        "title": "Synthetic delivery task 1-6",
+        "owner": 7,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task6",
+        "title": "Synthetic delivery task 1-7",
+        "owner": 9,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task7",
+        "title": "Synthetic delivery task 1-8",
+        "owner": 10,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 5
+      },
+      {
+        "id": "w0_task8",
+        "title": "Synthetic delivery task 1-9",
+        "owner": 11,
+        "dependencies": [],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 5
+      },
+      {
+        "id": "w1_task0",
+        "title": "Synthetic delivery task 2-1",
+        "owner": 1,
+        "dependencies": [
+          "w0_task0",
+          "w0_task3"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task1",
+        "title": "Synthetic delivery task 2-2",
+        "owner": 2,
+        "dependencies": [
+          "w0_task1",
+          "w0_task4"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task2",
+        "title": "Synthetic delivery task 2-3",
+        "owner": 3,
+        "dependencies": [
+          "w0_task2",
+          "w0_task5"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task3",
+        "title": "Synthetic delivery task 2-4",
+        "owner": 5,
+        "dependencies": [
+          "w0_task3",
+          "w0_task6"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task4",
+        "title": "Synthetic delivery task 2-5",
+        "owner": 6,
+        "dependencies": [
+          "w0_task4",
+          "w0_task7"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task5",
+        "title": "Synthetic delivery task 2-6",
+        "owner": 7,
+        "dependencies": [
+          "w0_task5",
+          "w0_task8"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task6",
+        "title": "Synthetic delivery task 2-7",
+        "owner": 9,
+        "dependencies": [
+          "w0_task6",
+          "w0_task0"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task7",
+        "title": "Synthetic delivery task 2-8",
+        "owner": 10,
+        "dependencies": [
+          "w0_task7",
+          "w0_task1"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.35,
+        "success_probability": 0.35,
+        "deadline": 10
+      },
+      {
+        "id": "w1_task8",
+        "title": "Synthetic delivery task 2-9",
+        "owner": 11,
+        "dependencies": [
+          "w0_task8",
+          "w0_task2"
+        ],
+        "effort": 2,
+        "revision_effort": 1,
+        "cost": 2,
+        "value": 8,
+        "signal": 0.8,
+        "success_probability": 0.8,
+        "deadline": 10
+      }
+    ],
+    "budget": 40,
+    "review_capacity": 1,
+    "delegation_limit": 0,
+    "population": {
+      "records": [
+        {
+          "id": "fictional-candidate-0",
+          "name": "Fictional candidate 0",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "team_lead"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-1",
+          "name": "Fictional candidate 1",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "team_lead"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-2",
+          "name": "Fictional candidate 2",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "team_lead"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-3",
+          "name": "Fictional candidate 3",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "team_lead"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-4",
+          "name": "Fictional candidate 4",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "team_lead"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-5",
+          "name": "Fictional candidate 5",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "team_lead"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-6",
+          "name": "Fictional candidate 6",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-7",
+          "name": "Fictional candidate 7",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-8",
+          "name": "Fictional candidate 8",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-9",
+          "name": "Fictional candidate 9",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-10",
+          "name": "Fictional candidate 10",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-11",
+          "name": "Fictional candidate 11",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-12",
+          "name": "Fictional candidate 12",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-13",
+          "name": "Fictional candidate 13",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-14",
+          "name": "Fictional candidate 14",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-15",
+          "name": "Fictional candidate 15",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-16",
+          "name": "Fictional candidate 16",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-17",
+          "name": "Fictional candidate 17",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-18",
+          "name": "Fictional candidate 18",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-19",
+          "name": "Fictional candidate 19",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-20",
+          "name": "Fictional candidate 20",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-21",
+          "name": "Fictional candidate 21",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-22",
+          "name": "Fictional candidate 22",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        },
+        {
+          "id": "fictional-candidate-23",
+          "name": "Fictional candidate 23",
+          "description": "Synthetic Persona for demonstrating population construction.",
+          "background": {
+            "occupation": "specialist"
+          },
+          "source": {
+            "dataset": "ORDO cookbook synthetic pool",
+            "synthetic": true
+          }
+        }
+      ],
+      "sampling": "without_replacement",
+      "seed": 2026
+    },
+    "structure": {
+      "template": "department_hierarchy"
+    }
+  },
+  "mode": "pool",
+  "seed": 2026,
+  "threshold": 0.5,
+  "batch_size": 4,
+  "max_evaluations": 48,
+  "context": "A fictional organization with department managers and specialists."
+}

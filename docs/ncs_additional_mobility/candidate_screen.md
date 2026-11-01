@@ -1,0 +1,14 @@
+# Additional Nature Computational Science screening, 2026-10-30
+
+This screen separates primary articles with usable generative behavior code from empirical analysis, reviews and archival plot reproduction. It is not an exhaustive census of the journal.
+
+| Primary source | Public code and feasibility | Current status |
+|---|---|---|
+| [Vector-based pedestrian navigation in cities](https://www.nature.com/articles/s43588-021-00130-y), 2021, DOI 10.1038/s43588-021-00130-y | [PedNav](https://github.com/cbongiorno/pednav), GPL-3.0. Python/igraph, released Boston graph and 100 human trips. | **Implemented and run** as independent route-generation component; 1,200 fresh paths, direct native equality. Not coupled social ABM. |
+| [Structure-coefficient theorem for evolutionary games on dynamic networks](https://www.nature.com/articles/s43588-026-01068-9), Article published 22 October 2026 | [Author release](https://doi.org/10.5281/zenodo.22152088), MIT, 5,042,368-byte v1.0.0 archive. Core `Simulation.jl` provides fresh death-birth/network-transition Monte Carlo; core theory requires IterativeSolvers. | **Not implemented or run here.** Strong future candidate for organizational network structure; Julia 1.10+ runtime absent from current PATH. Author README explicitly says the full large-scale data-generation workflows are not included. |
+| [Urban dynamics through the lens of human mobility](https://www.nature.com/articles/s43588-023-00484-5), 2023 | [Author repository](https://github.com/humnetlab/Urban_Dynamics). Mobility metrics and empirical urban-dynamics analysis. | Not selected as a generative social ABM. |
+| [Transferable human mobility network reconstruction with neuroGravity](https://www.nature.com/articles/s43588-026-01003-y), Article published 12 June 2026 | [Author repository](https://github.com/urbanmobility/NeuroGravity), network-flow reconstruction with released synthetic demonstration data. | Not selected: population-flow reconstruction is not itself interacting-agent simulation. |
+
+The dynamic-network archive was downloaded into ignored `.buildtmp/ncs-dynamic-games/author-release.zip` and its Zenodo checksum verified: MD5 `15d12d6f02aea003e4d37985059a9a31`. It contains a native six-member ring/star donation-game demo (mutation 0.01, benefit 4/cost 1, selection 0.002), plus core theoretical code and precomputed figure data. Those precomputed outputs have **not** been counted as ORDO simulations. No claim is made that its large-scale experiments were reproduced.
+
+Excluded article-type pitfalls: [A successful few drive urban scaling](https://www.nature.com/articles/s43588-023-00413-6) is a Research Highlight about a *Nature Human Behaviour* paper. [Large language models as human proxies](https://www.nature.com/articles/s43588-026-01060-3) is a Review. Neither should be counted as a fresh NCS primary-model replication. Biological/molecular simulations were not used to inflate social-model coverage.

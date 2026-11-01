@@ -1,0 +1,565 @@
+{
+  "group": "nc",
+  "model": "typesafe/jev-1.14",
+  "seed": 20261030,
+  "max_cost_usd": 2.0,
+  "max_requests": 2500,
+  "batch_size": 64,
+  "concurrency": 2,
+  "rounds": 480,
+  "source_hashes": {
+    "examples/jev_nc/__init__.py": "30ed3003ca845aca8f30e9d05b6b68c7d15a0ed3430386c2cc970f06541c4f8d",
+    "examples/jev_nc/environments.py": "23efa679d95971ed23652892180f0c448bc788f38f0fe0705aef4a75a8ddfde2",
+    "examples/jev_nc/suite.py": "3d97f1e46cd851a3c03aef3ea5b488753d258dd19bf6277d1fea0ca12630f43c",
+    "examples/jev_validation/__init__.py": "fd209358c9621726eb721763d3a2cac65edf812a46ef669e97821f167143984a",
+    "examples/jev_validation/run.py": "54ea0a2078ecd3b2454fe76238b09c77170abef4ee9617c16f1d50974371b9d9",
+    "examples/nc_additional_games/__init__.py": "0ff5b97831b7d65b610e781d3adc50c0efce1999be69ac385d86eca710b85022",
+    "examples/nc_additional_games/model.py": "0a8bbcdd371234fba6772f855e92a797d81ecd1b72b09203fa29833b1de2721b",
+    "examples/nc_evolutionary_games/__init__.py": "a4e235a4800039b42ead46b8346b1b863447f55f8fbd1d97cb5e56716c7afc00",
+    "examples/nc_evolutionary_games/model.py": "b0164ea7ac69c3447b029f7b568c1c783e51f67a16a25c4b8008dbcdb0a23f10",
+    "examples/nc_social_sweep/__init__.py": "e3689acb4eaadafa94b1aa48674fbd7faddb217f11d23ed266dbcac1399163bf",
+    "examples/nc_social_sweep/foraging.py": "8597864308c9582172d615da5c80a1288d636777174fa9383d4836200ccf502e",
+    "examples/nc_social_sweep/foraging_sources.py": "6646254410a80c1bd2bdac7fcbacd392a3677b540aac4dd8489c548524f00342",
+    "orgabm/__init__.py": "7078b1f563c8bc84e31e3007678f6f08268dab888534d137e0d7fb68f55ec01f",
+    "orgabm/__main__.py": "f227cf623a5d36fb84c57436f5ca173bdc2901e08b8203a9d8b4bcd426443ebf",
+    "orgabm/decision_journal.py": "52e1ca903f233d2b6ff39dbc7dd7fd7bbb0dad1559a9325c937a95b94c4644bf",
+    "orgabm/deepseek.py": "9e6a03908e9d98c9805a1e748ab0d820f960595a85a7cc06973ada221fab8557",
+    "orgabm/engines.py": "09b935f58fb9bd954fdda0aee5272524359294ff52554fba003288404df89215",
+    "orgabm/experiment.py": "fd3fbc7a256e3ce2ed0a6988af8aa4118ea312ecc92bacc878f69b2137e245a2",
+    "orgabm/kernel.py": "e6e6bffdfb813fac5256525c924b33ab855fff38b570225ccd2b4046a3c4ddd6",
+    "orgabm/mcp_server.py": "e24339e2de20c8a4f1aadb8d226864888663225e9809100cbc4f02a519f3c17c",
+    "orgabm/memory.py": "eace1591d1c43e817240d790ed9082a3f5e33236659a6e0c4a44b6d0654fa19b",
+    "orgabm/mesa_bridge.py": "bbf22640031d48850afaaf8d9b5ea9976da5c41f575dbd4af76bb1981eee43c3",
+    "orgabm/openrouter.py": "0707601a43515164913acac3aa4c2123ffcea6ba38878e7421e5b567cd7406ec",
+    "orgabm/openrouter_reliable.py": "42849815a324d35360e818c2a4fbd2f82ddc28613ba0d9d9c1a648fb1ecd636a",
+    "orgabm/organization.py": "921001f1b4d6e31d80ba58cfab4858a7e15be2cff44b0993a8b652e8e6f06481",
+    "orgabm/personas.py": "6dfc6ac5bb0b7bf6af05f839edc0139b0f84989ceacb561aef43ae8d5dc30fe6",
+    "orgabm/placement.py": "06bdff86772974743526a2aa70f1b995d453ee189a85c94cc755401d5778f060",
+    "orgabm/plans.py": "71738bb194bc2b4fdbbb255f90258040d094d2ca28b38756479bf3ea8975ad60",
+    "orgabm/randomness.py": "a8b74b3c59261135d0c79bcc96230bc0a227f56fbfc6e9ffa874ab879df696f6",
+    "orgabm/sdk.py": "e3716f5bb5a05d91164d264812c74b48e9a2f9c5c76ac47219f11e5b397afed4",
+    "orgabm/server.py": "ed18f3e975bd67e17f7f44408479d4539d6fd08abe00dacd5b341b0fb48478d4",
+    "orgabm/staged.py": "e939295fdebf54434028853deb4832c2e32f910c5254fdec4b4c1b62e4a36e9a",
+    "orgabm/templates.py": "dcbe086a2df17effe616168fdd7f2e4707630adaf6b61ccbed6f995452d3d831",
+    "orgabm/workflow.py": "232b7ef8377b8b0c77f110475ae4e4ab21b7aa0f56df7bf99e9b3bfafbabca98",
+    "orgabm/workflow_mesa.py": "ae9b822050b4c4525993e647294684f1ccc6dbed10428fd1119196a4a4333fa5",
+    "orgabm/workforce.py": "2fba4f5e73b49204ea92e31ae07bdd0d7305baa382278c60a9a73d0b638f2a91"
+  },
+  "description": {
+    "scenario": "fresh_jev_paper_validation",
+    "cases": [
+      {
+        "id": "nc_pd_CC_s7",
+        "paper_id": "nc_repeated_games",
+        "rounds": 12,
+        "seed": 7,
+        "condition": {
+          "initial": "CC"
+        },
+        "environment": {
+          "model": "fresh_jev_repeated_game",
+          "doi": "10.1038/s41467-025-67178-6",
+          "initial_observed_incident": "CC",
+          "pairs": 4,
+          "rounds": 12,
+          "reused": "Author simultaneous PD payoffs and private bilateral histories.",
+          "replaced": "Both players choose fresh C/D; no trained Q table, strategy label, first-action constraint, or author answer.",
+          "scope": "Paper-derived decision-model substitution; not MARL retraining or full evolutionary-competition replication."
+        }
+      },
+      {
+        "id": "nc_pd_CC_s11",
+        "paper_id": "nc_repeated_games",
+        "rounds": 12,
+        "seed": 11,
+        "condition": {
+          "initial": "CC"
+        },
+        "environment": {
+          "model": "fresh_jev_repeated_game",
+          "doi": "10.1038/s41467-025-67178-6",
+          "initial_observed_incident": "CC",
+          "pairs": 4,
+          "rounds": 12,
+          "reused": "Author simultaneous PD payoffs and private bilateral histories.",
+          "replaced": "Both players choose fresh C/D; no trained Q table, strategy label, first-action constraint, or author answer.",
+          "scope": "Paper-derived decision-model substitution; not MARL retraining or full evolutionary-competition replication."
+        }
+      },
+      {
+        "id": "nc_pd_CD_s7",
+        "paper_id": "nc_repeated_games",
+        "rounds": 12,
+        "seed": 7,
+        "condition": {
+          "initial": "CD"
+        },
+        "environment": {
+          "model": "fresh_jev_repeated_game",
+          "doi": "10.1038/s41467-025-67178-6",
+          "initial_observed_incident": "CD",
+          "pairs": 4,
+          "rounds": 12,
+          "reused": "Author simultaneous PD payoffs and private bilateral histories.",
+          "replaced": "Both players choose fresh C/D; no trained Q table, strategy label, first-action constraint, or author answer.",
+          "scope": "Paper-derived decision-model substitution; not MARL retraining or full evolutionary-competition replication."
+        }
+      },
+      {
+        "id": "nc_pd_CD_s11",
+        "paper_id": "nc_repeated_games",
+        "rounds": 12,
+        "seed": 11,
+        "condition": {
+          "initial": "CD"
+        },
+        "environment": {
+          "model": "fresh_jev_repeated_game",
+          "doi": "10.1038/s41467-025-67178-6",
+          "initial_observed_incident": "CD",
+          "pairs": 4,
+          "rounds": 12,
+          "reused": "Author simultaneous PD payoffs and private bilateral histories.",
+          "replaced": "Both players choose fresh C/D; no trained Q table, strategy label, first-action constraint, or author answer.",
+          "scope": "Paper-derived decision-model substitution; not MARL retraining or full evolutionary-competition replication."
+        }
+      },
+      {
+        "id": "nc_pd_DD_s7",
+        "paper_id": "nc_repeated_games",
+        "rounds": 12,
+        "seed": 7,
+        "condition": {
+          "initial": "DD"
+        },
+        "environment": {
+          "model": "fresh_jev_repeated_game",
+          "doi": "10.1038/s41467-025-67178-6",
+          "initial_observed_incident": "DD",
+          "pairs": 4,
+          "rounds": 12,
+          "reused": "Author simultaneous PD payoffs and private bilateral histories.",
+          "replaced": "Both players choose fresh C/D; no trained Q table, strategy label, first-action constraint, or author answer.",
+          "scope": "Paper-derived decision-model substitution; not MARL retraining or full evolutionary-competition replication."
+        }
+      },
+      {
+        "id": "nc_pd_DD_s11",
+        "paper_id": "nc_repeated_games",
+        "rounds": 12,
+        "seed": 11,
+        "condition": {
+          "initial": "DD"
+        },
+        "environment": {
+          "model": "fresh_jev_repeated_game",
+          "doi": "10.1038/s41467-025-67178-6",
+          "initial_observed_incident": "DD",
+          "pairs": 4,
+          "rounds": 12,
+          "reused": "Author simultaneous PD payoffs and private bilateral histories.",
+          "replaced": "Both players choose fresh C/D; no trained Q table, strategy label, first-action constraint, or author answer.",
+          "scope": "Paper-derived decision-model substitution; not MARL retraining or full evolutionary-competition replication."
+        }
+      },
+      {
+        "id": "nc_reward_l0_s7",
+        "paper_id": "nc_social_rewarding",
+        "rounds": 6,
+        "seed": 7,
+        "condition": {
+          "information": 0
+        },
+        "environment": {
+          "model": "fresh_jev_social_rewarding",
+          "doi": "10.1038/s41467-022-33551-y",
+          "agents": 16,
+          "rounds": 6,
+          "information": 0,
+          "mutation": 0.1,
+          "selection": 1,
+          "benefit": 4,
+          "cost": 1,
+          "reward": 3,
+          "reward_cost": 1,
+          "seed": 7,
+          "reused": "Original 16 donor/reward policies, balanced random initial traits, analytical well-mixed payoff and cooperation functions.",
+          "replaced": "Fresh keep/adopt decisions replace Fermi imitation; uniform novel proposals still require a decision.",
+          "timing": "All members observe start-of-sweep payoffs and revise synchronously; author code used single asynchronous updates.",
+          "scope": "Paper-derived behavioral mechanism test, not original stationary evolutionary distribution."
+        }
+      },
+      {
+        "id": "nc_reward_l0_s11",
+        "paper_id": "nc_social_rewarding",
+        "rounds": 6,
+        "seed": 11,
+        "condition": {
+          "information": 0
+        },
+        "environment": {
+          "model": "fresh_jev_social_rewarding",
+          "doi": "10.1038/s41467-022-33551-y",
+          "agents": 16,
+          "rounds": 6,
+          "information": 0,
+          "mutation": 0.1,
+          "selection": 1,
+          "benefit": 4,
+          "cost": 1,
+          "reward": 3,
+          "reward_cost": 1,
+          "seed": 11,
+          "reused": "Original 16 donor/reward policies, balanced random initial traits, analytical well-mixed payoff and cooperation functions.",
+          "replaced": "Fresh keep/adopt decisions replace Fermi imitation; uniform novel proposals still require a decision.",
+          "timing": "All members observe start-of-sweep payoffs and revise synchronously; author code used single asynchronous updates.",
+          "scope": "Paper-derived behavioral mechanism test, not original stationary evolutionary distribution."
+        }
+      },
+      {
+        "id": "nc_reward_l0.5_s7",
+        "paper_id": "nc_social_rewarding",
+        "rounds": 6,
+        "seed": 7,
+        "condition": {
+          "information": 0.5
+        },
+        "environment": {
+          "model": "fresh_jev_social_rewarding",
+          "doi": "10.1038/s41467-022-33551-y",
+          "agents": 16,
+          "rounds": 6,
+          "information": 0.5,
+          "mutation": 0.1,
+          "selection": 1,
+          "benefit": 4,
+          "cost": 1,
+          "reward": 3,
+          "reward_cost": 1,
+          "seed": 7,
+          "reused": "Original 16 donor/reward policies, balanced random initial traits, analytical well-mixed payoff and cooperation functions.",
+          "replaced": "Fresh keep/adopt decisions replace Fermi imitation; uniform novel proposals still require a decision.",
+          "timing": "All members observe start-of-sweep payoffs and revise synchronously; author code used single asynchronous updates.",
+          "scope": "Paper-derived behavioral mechanism test, not original stationary evolutionary distribution."
+        }
+      },
+      {
+        "id": "nc_reward_l0.5_s11",
+        "paper_id": "nc_social_rewarding",
+        "rounds": 6,
+        "seed": 11,
+        "condition": {
+          "information": 0.5
+        },
+        "environment": {
+          "model": "fresh_jev_social_rewarding",
+          "doi": "10.1038/s41467-022-33551-y",
+          "agents": 16,
+          "rounds": 6,
+          "information": 0.5,
+          "mutation": 0.1,
+          "selection": 1,
+          "benefit": 4,
+          "cost": 1,
+          "reward": 3,
+          "reward_cost": 1,
+          "seed": 11,
+          "reused": "Original 16 donor/reward policies, balanced random initial traits, analytical well-mixed payoff and cooperation functions.",
+          "replaced": "Fresh keep/adopt decisions replace Fermi imitation; uniform novel proposals still require a decision.",
+          "timing": "All members observe start-of-sweep payoffs and revise synchronously; author code used single asynchronous updates.",
+          "scope": "Paper-derived behavioral mechanism test, not original stationary evolutionary distribution."
+        }
+      },
+      {
+        "id": "nc_reward_l1_s7",
+        "paper_id": "nc_social_rewarding",
+        "rounds": 6,
+        "seed": 7,
+        "condition": {
+          "information": 1
+        },
+        "environment": {
+          "model": "fresh_jev_social_rewarding",
+          "doi": "10.1038/s41467-022-33551-y",
+          "agents": 16,
+          "rounds": 6,
+          "information": 1,
+          "mutation": 0.1,
+          "selection": 1,
+          "benefit": 4,
+          "cost": 1,
+          "reward": 3,
+          "reward_cost": 1,
+          "seed": 7,
+          "reused": "Original 16 donor/reward policies, balanced random initial traits, analytical well-mixed payoff and cooperation functions.",
+          "replaced": "Fresh keep/adopt decisions replace Fermi imitation; uniform novel proposals still require a decision.",
+          "timing": "All members observe start-of-sweep payoffs and revise synchronously; author code used single asynchronous updates.",
+          "scope": "Paper-derived behavioral mechanism test, not original stationary evolutionary distribution."
+        }
+      },
+      {
+        "id": "nc_reward_l1_s11",
+        "paper_id": "nc_social_rewarding",
+        "rounds": 6,
+        "seed": 11,
+        "condition": {
+          "information": 1
+        },
+        "environment": {
+          "model": "fresh_jev_social_rewarding",
+          "doi": "10.1038/s41467-022-33551-y",
+          "agents": 16,
+          "rounds": 6,
+          "information": 1,
+          "mutation": 0.1,
+          "selection": 1,
+          "benefit": 4,
+          "cost": 1,
+          "reward": 3,
+          "reward_cost": 1,
+          "seed": 11,
+          "reused": "Original 16 donor/reward policies, balanced random initial traits, analytical well-mixed payoff and cooperation functions.",
+          "replaced": "Fresh keep/adopt decisions replace Fermi imitation; uniform novel proposals still require a decision.",
+          "timing": "All members observe start-of-sweep payoffs and revise synchronously; author code used single asynchronous updates.",
+          "scope": "Paper-derived behavioral mechanism test, not original stationary evolutionary distribution."
+        }
+      },
+      {
+        "id": "nc_forage_smooth_cues0_s7",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 7,
+        "condition": {
+          "pattern": "smooth",
+          "social_cues": false
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "smooth",
+          "seed": 7,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "525cd7d42fb755147324eed69e243a3f93749112274f72aedcb36057f68af708",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": false,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      },
+      {
+        "id": "nc_forage_smooth_cues0_s11",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 11,
+        "condition": {
+          "pattern": "smooth",
+          "social_cues": false
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "smooth",
+          "seed": 11,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "9c04ce97e22318130250c7d2ce7e78681da572a3a6137ab449043f1ed05e0ac2",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": false,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      },
+      {
+        "id": "nc_forage_smooth_cues1_s7",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 7,
+        "condition": {
+          "pattern": "smooth",
+          "social_cues": true
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "smooth",
+          "seed": 7,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "525cd7d42fb755147324eed69e243a3f93749112274f72aedcb36057f68af708",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": true,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      },
+      {
+        "id": "nc_forage_smooth_cues1_s11",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 11,
+        "condition": {
+          "pattern": "smooth",
+          "social_cues": true
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "smooth",
+          "seed": 11,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "9c04ce97e22318130250c7d2ce7e78681da572a3a6137ab449043f1ed05e0ac2",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": true,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      },
+      {
+        "id": "nc_forage_random_cues0_s7",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 7,
+        "condition": {
+          "pattern": "random",
+          "social_cues": false
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "random",
+          "seed": 7,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "15d47969afb37575ef69ddffb23048decc26b2dde63bd3b3192a419eefc3c4c6",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": false,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      },
+      {
+        "id": "nc_forage_random_cues0_s11",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 11,
+        "condition": {
+          "pattern": "random",
+          "social_cues": false
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "random",
+          "seed": 11,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "5f0e54870089804eba8473d73c3d4ef863fe450cbe9b82d316d7d8d4d9ec4cba",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": false,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      },
+      {
+        "id": "nc_forage_random_cues1_s7",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 7,
+        "condition": {
+          "pattern": "random",
+          "social_cues": true
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "random",
+          "seed": 7,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "15d47969afb37575ef69ddffb23048decc26b2dde63bd3b3192a419eefc3c4c6",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": true,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      },
+      {
+        "id": "nc_forage_random_cues1_s11",
+        "paper_id": "nc_collective_foraging",
+        "rounds": 480,
+        "seed": 11,
+        "condition": {
+          "pattern": "random",
+          "social_cues": true
+        },
+        "environment": {
+          "scenario": "published_collective_foraging",
+          "doi": "10.1038/s41467-025-58365-6",
+          "environment": "random",
+          "seed": 11,
+          "agents": 4,
+          "steps": 120,
+          "mining_steps": 9,
+          "initial_state_sha256": "5f0e54870089804eba8473d73c3d4ef863fe450cbe9b82d316d7d8d4d9ec4cba",
+          "observation": "Author AgentView; visible rewards and remembered visible players; author shared revealed-map mask.",
+          "scheduling": "Original author run loop, paused at one goal-selection call; mechanical navigation/mining unchanged.",
+          "horizon": "agents*steps safe goal-choice upper bound; terminal empty SDK rounds are padding, not physical time.",
+          "model": "fresh_jev_collective_foraging",
+          "social_cues": true,
+          "decision": "Every next-cell choice comes from the external engine; native Policy.sample_next_cell is never called.",
+          "candidate_set": "Up to 24 unrevealed cells: 12 nearest to self and 12 evenly spaced over remaining row-major coordinates. No hidden reward is used.",
+          "ablation": "Explicit other-agent positions/directions/success flags withheld when social_cues=False. Visible reward observations and depletion mask remain.",
+          "scope": "Two fixed author maps, reduced horizon and shortlist; not original fitted policy or full empirical reproduction."
+        }
+      }
+    ],
+    "batch_semantics": "independent ready decisions; each question embeds only its local context",
+    "action_sampling": "SDK stable seed with namespaced actor IDs; not paired common random numbers",
+    "probability_reuse": false
+  },
+  "claim": "fresh decision-model substitution; phenomenon tests, not full-paper replication"
+}

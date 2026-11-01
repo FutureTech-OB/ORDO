@@ -1,0 +1,320 @@
+{
+  "naming": {
+    "configurations": {
+      "w0": {
+        "family": "naming",
+        "condition": "spontaneous_W10",
+        "repeat": 0,
+        "seed": 1001
+      },
+      "w1": {
+        "family": "naming",
+        "condition": "spontaneous_W10",
+        "repeat": 1,
+        "seed": 1002
+      },
+      "w2": {
+        "family": "naming",
+        "condition": "spontaneous_W10",
+        "repeat": 2,
+        "seed": 1003
+      },
+      "w3": {
+        "family": "naming",
+        "condition": "spontaneous_W10",
+        "repeat": 3,
+        "seed": 1004
+      },
+      "w4": {
+        "family": "naming",
+        "condition": "spontaneous_W2",
+        "repeat": 0,
+        "seed": 1005
+      },
+      "w5": {
+        "family": "naming",
+        "condition": "spontaneous_W2",
+        "repeat": 1,
+        "seed": 1006
+      },
+      "w6": {
+        "family": "naming",
+        "condition": "spontaneous_W2",
+        "repeat": 2,
+        "seed": 1007
+      },
+      "w7": {
+        "family": "naming",
+        "condition": "spontaneous_W2",
+        "repeat": 3,
+        "seed": 1008
+      },
+      "w8": {
+        "family": "naming",
+        "condition": "Q_to_M_0",
+        "repeat": 0,
+        "seed": 1009,
+        "committed": 0,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w9": {
+        "family": "naming",
+        "condition": "Q_to_M_0",
+        "repeat": 1,
+        "seed": 1010,
+        "committed": 0,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w10": {
+        "family": "naming",
+        "condition": "Q_to_M_0",
+        "repeat": 2,
+        "seed": 1011,
+        "committed": 0,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w11": {
+        "family": "naming",
+        "condition": "Q_to_M_4",
+        "repeat": 0,
+        "seed": 1012,
+        "committed": 4,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w12": {
+        "family": "naming",
+        "condition": "Q_to_M_4",
+        "repeat": 1,
+        "seed": 1013,
+        "committed": 4,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w13": {
+        "family": "naming",
+        "condition": "Q_to_M_4",
+        "repeat": 2,
+        "seed": 1014,
+        "committed": 4,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w14": {
+        "family": "naming",
+        "condition": "Q_to_M_5",
+        "repeat": 0,
+        "seed": 1015,
+        "committed": 5,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w15": {
+        "family": "naming",
+        "condition": "Q_to_M_5",
+        "repeat": 1,
+        "seed": 1016,
+        "committed": 5,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w16": {
+        "family": "naming",
+        "condition": "Q_to_M_5",
+        "repeat": 2,
+        "seed": 1017,
+        "committed": 5,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w17": {
+        "family": "naming",
+        "condition": "Q_to_M_8",
+        "repeat": 0,
+        "seed": 1018,
+        "committed": 8,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w18": {
+        "family": "naming",
+        "condition": "Q_to_M_8",
+        "repeat": 1,
+        "seed": 1019,
+        "committed": 8,
+        "initial": "Q",
+        "target": "M"
+      },
+      "w19": {
+        "family": "naming",
+        "condition": "Q_to_M_8",
+        "repeat": 2,
+        "seed": 1020,
+        "committed": 8,
+        "initial": "Q",
+        "target": "M"
+      }
+    },
+    "max_updates": {
+      "w0": 1000,
+      "w1": 1000,
+      "w2": 1000,
+      "w3": 1000,
+      "w4": 1000,
+      "w5": 1000,
+      "w6": 1000,
+      "w7": 1000,
+      "w8": 1000,
+      "w9": 1000,
+      "w10": 1000,
+      "w11": 1000,
+      "w12": 1000,
+      "w13": 1000,
+      "w14": 1000,
+      "w15": 1000,
+      "w16": 1000,
+      "w17": 1000,
+      "w18": 1000,
+      "w19": 1000
+    },
+    "stop_rules": "spontaneous: 72 most recent matches and >=95% one name; opinion: unanimity or t=10; minority: fixed 1000 pairs, report first 95% target window and final window"
+  },
+  "opinion": {
+    "configurations": {
+      "w0": {
+        "family": "opinion",
+        "condition": "N10",
+        "agents": 10,
+        "repeat": 0,
+        "seed": 3001
+      },
+      "w1": {
+        "family": "opinion",
+        "condition": "N10",
+        "agents": 10,
+        "repeat": 1,
+        "seed": 3002
+      },
+      "w2": {
+        "family": "opinion",
+        "condition": "N10",
+        "agents": 10,
+        "repeat": 2,
+        "seed": 3003
+      },
+      "w3": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 0,
+        "seed": 3004
+      },
+      "w4": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 1,
+        "seed": 3005
+      },
+      "w5": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 2,
+        "seed": 3006
+      },
+      "w6": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 3,
+        "seed": 3007
+      },
+      "w7": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 4,
+        "seed": 3008
+      },
+      "w8": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 5,
+        "seed": 3009
+      },
+      "w9": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 6,
+        "seed": 3010
+      },
+      "w10": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 7,
+        "seed": 3011
+      },
+      "w11": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 8,
+        "seed": 3012
+      },
+      "w12": {
+        "family": "opinion",
+        "condition": "N50",
+        "agents": 50,
+        "repeat": 9,
+        "seed": 3013
+      },
+      "w13": {
+        "family": "opinion",
+        "condition": "N100",
+        "agents": 100,
+        "repeat": 0,
+        "seed": 3014
+      },
+      "w14": {
+        "family": "opinion",
+        "condition": "N100",
+        "agents": 100,
+        "repeat": 1,
+        "seed": 3015
+      },
+      "w15": {
+        "family": "opinion",
+        "condition": "N100",
+        "agents": 100,
+        "repeat": 2,
+        "seed": 3016
+      }
+    },
+    "max_updates": {
+      "w0": 100,
+      "w1": 100,
+      "w2": 100,
+      "w3": 500,
+      "w4": 500,
+      "w5": 500,
+      "w6": 500,
+      "w7": 500,
+      "w8": 500,
+      "w9": 500,
+      "w10": 500,
+      "w11": 500,
+      "w12": 500,
+      "w13": 1000,
+      "w14": 1000,
+      "w15": 1000
+    },
+    "stop_rules": "spontaneous: 72 most recent matches and >=95% one name; opinion: unanimity or t=10; minority: fixed 1000 pairs, report first 95% target window and final window"
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "catalog_version": "0.3.0",
+  "description": "Reusable template catalog. Each runnable entry links to a complete plan accepted by MCP/expand_plan.",
+  "default_decision": {
+    "provider": "rule",
+    "rule": "best"
+  },
+  "composition_status": "Editable complete plans with five browser workflow templates; cross-scenario composition and MCP template discovery are planned.",
+  "templates": [
+    {
+      "id": "open_learning_group",
+      "version": "0.1.0",
+      "title": "Open learning group",
+      "kind": "organization",
+      "status": "runnable",
+      "plan": "plans/open_learning_group.json",
+      "scenario": "nk_organization",
+      "mechanism": "One member group; each member observes three peers per round.",
+      "limits": [
+        "NK learning group with adoption conditional on positive performance improvement.",
+        "Results use the NK organizational-learning reference model."
+      ],
+      "editable_fields": [
+        "base.agents",
+        "base.rounds",
+        "base.departments",
+        "base.contact",
+        "base.anonymous",
+        "base.guidance",
+        "base.penalty",
+        "base.approval_gain",
+        "base.intervention_round",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "gross_performance",
+        "explore_share",
+        "unique_solutions",
+        "cross_department_adoptions",
+        "approval_denials",
+        "department_gap"
+      ]
+    },
+    {
+      "id": "department_silos",
+      "version": "0.1.0",
+      "title": "Department silos",
+      "kind": "organization",
+      "status": "runnable",
+      "plan": "plans/department_silos.json",
+      "scenario": "nk_organization",
+      "mechanism": "Four departments; each member observes three colleagues in the same department per round.",
+      "limits": [
+        "Department labels restrict contact in the NK reference environment.",
+        "Results use the NK organizational-learning reference model."
+      ],
+      "editable_fields": [
+        "base.agents",
+        "base.rounds",
+        "base.departments",
+        "base.contact",
+        "base.anonymous",
+        "base.guidance",
+        "base.penalty",
+        "base.approval_gain",
+        "base.intervention_round",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "gross_performance",
+        "explore_share",
+        "unique_solutions",
+        "cross_department_adoptions",
+        "approval_denials",
+        "department_gap"
+      ]
+    },
+    {
+      "id": "cross_department_bridges",
+      "version": "0.1.0",
+      "title": "Cross-department contacts",
+      "kind": "organization",
+      "status": "runnable",
+      "plan": "plans/cross_department_bridges.json",
+      "scenario": "nk_organization",
+      "mechanism": "Each member observes two departmental colleagues and one member of another department.",
+      "limits": [
+        "Contacts are sampled afresh each round.",
+        "Results use the NK organizational-learning reference model."
+      ],
+      "editable_fields": [
+        "base.agents",
+        "base.rounds",
+        "base.departments",
+        "base.contact",
+        "base.anonymous",
+        "base.guidance",
+        "base.penalty",
+        "base.approval_gain",
+        "base.intervention_round",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "gross_performance",
+        "explore_share",
+        "unique_solutions",
+        "cross_department_adoptions",
+        "approval_denials",
+        "department_gap"
+      ]
+    },
+    {
+      "id": "contact_comparison",
+      "version": "0.1.0",
+      "title": "Department-contact comparison",
+      "kind": "experiment",
+      "status": "runnable",
+      "plan": "plans/contact_comparison.json",
+      "scenario": "nk_organization",
+      "mechanism": "Keep four departments and three contacts per member; compare within-department and cross-department contact.",
+      "limits": [
+        "Vary contact scope while holding approval rules and organizational population fixed.",
+        "Results use the NK organizational-learning reference model."
+      ],
+      "editable_fields": [
+        "base.agents",
+        "base.rounds",
+        "base.departments",
+        "base.contact",
+        "base.anonymous",
+        "base.guidance",
+        "base.penalty",
+        "base.approval_gain",
+        "base.intervention_round",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "gross_performance",
+        "explore_share",
+        "unique_solutions",
+        "cross_department_adoptions",
+        "approval_denials",
+        "department_gap"
+      ]
+    },
+    {
+      "id": "contact_permission_comparison",
+      "version": "0.1.0",
+      "title": "Contact and adoption-threshold comparison",
+      "kind": "experiment",
+      "status": "runnable",
+      "plan": "plans/contact_permission_comparison.json",
+      "scenario": "nk_organization",
+      "mechanism": "Compare information contact and adoption thresholds using paired seeds.",
+      "limits": [
+        "The institutional adoption threshold requires strictly positive improvement, including at threshold zero.",
+        "Results use the NK organizational-learning reference model."
+      ],
+      "editable_fields": [
+        "base.agents",
+        "base.rounds",
+        "base.departments",
+        "base.contact",
+        "base.anonymous",
+        "base.guidance",
+        "base.penalty",
+        "base.approval_gain",
+        "base.intervention_round",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "gross_performance",
+        "explore_share",
+        "unique_solutions",
+        "cross_department_adoptions",
+        "approval_denials",
+        "department_gap"
+      ]
+    },
+    {
+      "id": "functional_hierarchy",
+      "version": "0.5.0",
+      "title": "Functional hierarchy and centralized approval",
+      "kind": "organization",
+      "status": "runnable",
+      "plan": "plans/functional_hierarchy.json",
+      "scenario": "task_workflow",
+      "mechanism": "Fixed positions, task DAGs, staged managerial review, finite capacity, shared budgets, and reward allocation.",
+      "limits": [
+        "Simplified task-workflow reference model.",
+        "Static task and reporting structures."
+      ],
+      "editable_fields": [
+        "base.tasks",
+        "base.structure",
+        "base.population",
+        "base.delegation_limit",
+        "base.authority_level",
+        "base.review_capacity",
+        "base.worker_capacity",
+        "base.budget",
+        "base.individual_reward_weight",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "completed_tasks",
+        "successful_tasks",
+        "blocked_tasks",
+        "queue_length",
+        "net_value",
+        "missed_deadlines"
+      ]
+    },
+    {
+      "id": "delegated_teams",
+      "version": "0.5.0",
+      "title": "Delegation within limits",
+      "kind": "organization",
+      "status": "runnable",
+      "plan": "plans/delegated_teams.json",
+      "scenario": "task_workflow",
+      "mechanism": "Keep positions and tasks fixed; permit execution within the delegated cost limit while retaining review requests.",
+      "limits": [
+        "Simplified task-workflow reference model.",
+        "Static task and reporting structures."
+      ],
+      "editable_fields": [
+        "base.tasks",
+        "base.structure",
+        "base.population",
+        "base.delegation_limit",
+        "base.authority_level",
+        "base.review_capacity",
+        "base.worker_capacity",
+        "base.budget",
+        "base.individual_reward_weight",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "completed_tasks",
+        "successful_tasks",
+        "blocked_tasks",
+        "queue_length",
+        "net_value",
+        "missed_deadlines"
+      ]
+    },
+    {
+      "id": "authority_comparison",
+      "version": "0.5.0",
+      "title": "Centralized approval versus delegation",
+      "kind": "organization",
+      "status": "runnable",
+      "plan": "plans/authority_comparison.json",
+      "scenario": "task_workflow",
+      "mechanism": "Keep people, tasks, capacity, and budgets fixed; cross delegation limits with three paired seeds.",
+      "limits": [
+        "Simplified task-workflow reference model.",
+        "Static task and reporting structures."
+      ],
+      "editable_fields": [
+        "base.tasks",
+        "base.structure",
+        "base.population",
+        "base.delegation_limit",
+        "base.authority_level",
+        "base.review_capacity",
+        "base.worker_capacity",
+        "base.budget",
+        "base.individual_reward_weight",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "completed_tasks",
+        "successful_tasks",
+        "blocked_tasks",
+        "queue_length",
+        "net_value",
+        "missed_deadlines"
+      ]
+    },
+    {
+      "id": "review_capacity_comparison",
+      "version": "0.5.0",
+      "title": "Manager review-capacity comparison",
+      "kind": "organization",
+      "status": "runnable",
+      "plan": "plans/review_capacity_comparison.json",
+      "scenario": "task_workflow",
+      "mechanism": "Keep people and authorization rules fixed; vary reviews processed per manager per round.",
+      "limits": [
+        "Simplified task-workflow reference model.",
+        "Static task and reporting structures."
+      ],
+      "editable_fields": [
+        "base.tasks",
+        "base.structure",
+        "base.population",
+        "base.delegation_limit",
+        "base.authority_level",
+        "base.review_capacity",
+        "base.worker_capacity",
+        "base.budget",
+        "base.individual_reward_weight",
+        "vary",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "completed_tasks",
+        "successful_tasks",
+        "blocked_tasks",
+        "queue_length",
+        "net_value",
+        "missed_deadlines"
+      ]
+    },
+    {
+      "id": "memory_permissions",
+      "version": "0.6.0",
+      "title": "Organizational memory and access permissions",
+      "kind": "experiment",
+      "status": "runnable",
+      "plan": "plans/memory_permissions.json",
+      "scenario": "task_workflow",
+      "mechanism": "Organizational, departmental, and personal memory trees with inherited permissions, summary/detail access, and release times; filter before constructing questions.",
+      "limits": [
+        "The rule baseline evaluates input delivery and access permissions.",
+        "Memory is configured in advance; active retrieval and writing are planned."
+      ],
+      "editable_fields": [
+        "base.memory",
+        "base.structure",
+        "base.population",
+        "base.tasks",
+        "seeds",
+        "decision"
+      ],
+      "metrics": [
+        "completed_tasks",
+        "net_value",
+        "memory_visibility in stage effects"
+      ]
+    }
+  ],
+  "planned_organization_families": [
+    {
+      "id": "self_managed_team",
+      "title": "Self-directed team",
+      "required_mechanisms": [
+        "Task and role assignment",
+        "Explicit autonomous-action rights",
+        "Shared resources or team performance"
+      ],
+      "status": "design_only"
+    },
+    {
+      "id": "functional_hierarchy",
+      "title": "Functional hierarchy",
+      "required_mechanisms": [
+        "Functional task allocation",
+        "Manager agent",
+        "Formal reporting",
+        "Staged approval and capacity limits"
+      ],
+      "status": "reference_implemented",
+      "plan": "plans/functional_hierarchy.json",
+      "scope": "Task and approval reference implementation with domain-specific specialization available through adapters."
+    },
+    {
+      "id": "divisional_organization",
+      "title": "Division",
+      "required_mechanisms": [
+        "Divisional autonomy",
+        "Separate resource and performance accounts",
+        "Headquarters resource allocation"
+      ],
+      "status": "design_only"
+    },
+    {
+      "id": "cross_functional_project",
+      "title": "Cross-functional project team",
+      "required_mechanisms": [
+        "Department and project memberships",
+        "Shared tasks and handoffs",
+        "Project resource allocation"
+      ],
+      "status": "design_only"
+    },
+    {
+      "id": "matrix_organization",
+      "title": "Matrix organization",
+      "required_mechanisms": [
+        "Dual reporting",
+        "Functional and project authority",
+        "Conflicting-instruction handling",
+        "Budget and responsibility allocation"
+      ],
+      "status": "design_only"
+    },
+    {
+      "id": "interorganizational_network",
+      "title": "Interorganizational collaboration network",
+      "required_mechanisms": [
+        "Multiple organizations with separate boundaries",
+        "Resource exchange or transactions",
+        "Cooperation rules and partner contacts"
+      ],
+      "status": "design_only"
+    }
+  ]
+}
